@@ -7,11 +7,9 @@ const NavBar: React.FC = () => {
     return (
         <nav>
             <div className="nav-wrapper">
-                <div className="logo-container">
-                    <Link className={"logo-nav"} to={"/"} style={{textDecoration: "none"}}>
-                        <img src={Logo} alt="logo"/>
-                    </Link>
-                </div>
+                <h1 id="nave-name">
+                    santa barbara Myo
+                </h1>
                 <div className="nav-links">
                     <Link className={"nav-link"} to={"/home"} style={{textDecoration: "none"}}>
                         HOME
@@ -36,6 +34,11 @@ const NavBar: React.FC = () => {
                     </Link>
                     <Link className={"nav-link"} to={"/book-appointment"} style={{textDecoration: "none"}}>
                         BOOK APPOINTMENT
+                    </Link>
+                </div>
+                <div className="logo-container">
+                    <Link className={"logo-nav"} to={"/"} style={{textDecoration: "none"}}>
+                        <img src={Logo} alt="logo" />
                     </Link>
                 </div>
             </div>
