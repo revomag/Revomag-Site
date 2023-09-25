@@ -1,5 +1,6 @@
 import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import Footer from "../../components/footer/footer";
 import './resources.scss';
 
 export default function Resources(): ReactElement {
@@ -7,6 +8,7 @@ export default function Resources(): ReactElement {
         <>
             <NavBar/>
             <div>This is the Resources page</div>
+            <Footer/>
         </>
     );
 }

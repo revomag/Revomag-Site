@@ -1,5 +1,6 @@
 import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import Footer from "../../components/footer/footer";
 import './about.scss';
 
 export default function About(): ReactElement {
@@ -7,6 +8,7 @@ export default function About(): ReactElement {
         <>
             <NavBar/>
             <div>This is the about page</div>
+            <Footer/>
         </>
     );
 }

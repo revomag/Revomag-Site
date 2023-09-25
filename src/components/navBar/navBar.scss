@@ -9,7 +9,7 @@ nav {
 	@media (min-width: 1024px) {
 		top: 0;
 		left: 0;
-		height: 70px;
+		height: 128px;
 		width: 100%;
 		background: white;
 		color: black;
@@ -75,6 +75,7 @@ nav {
 				position: relative;
 				font-family: "Seymour One", sans-serif;
 				max-width: 150px;
+				margin-top: -30px;
 			}
 
 			.logo-nav {
