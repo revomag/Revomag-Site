@@ -5,7 +5,7 @@ import About from "./pages/about/about";
 import BookAppointment from "./pages/bookAppointment/bookAppointment";
 import Contact from "./pages/contact/contact";
 import Information from "./pages/Information/information";
-import HowItWorks from "./pages/how_it_works/howItWorks";
+import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
 

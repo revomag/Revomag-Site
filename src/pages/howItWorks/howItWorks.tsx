@@ -1,7 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import './howItWorks.scss';
 
-export default function HowItWorks() {
+export default function HowItWorks(): ReactElement {
     return (
         <>
             <NavBar/>

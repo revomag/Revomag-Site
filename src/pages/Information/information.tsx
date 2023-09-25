@@ -1,7 +1,7 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
 
-export default function Information() {
+export default function Information(): ReactElement {
     return (
         <>
             <NavBar/>

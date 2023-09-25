@@ -1,7 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import Footer from "../../components/footer/footer";
 
-export default function Home() {
+export default function Home(): ReactElement {
     return (
         <>
             <NavBar/>
@@ -18,6 +19,7 @@ export default function Home() {
                     Therapy utilizes exercises, awareness and reduction of muscle compensation with the overarching goal to correct improper muscle movements to restore proper function.
                 </p>
             </div>
+            <Footer/>
         </>
     );
 }

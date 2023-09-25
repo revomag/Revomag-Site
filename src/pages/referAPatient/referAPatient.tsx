@@ -1,7 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import './referAPatient.scss';
 
-export default function ReferAPatient() {
+export default function ReferAPatient(): ReactElement {
     return (
         <>
             <NavBar/>
