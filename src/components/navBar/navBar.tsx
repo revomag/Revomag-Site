@@ -1,14 +1,16 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import {Link} from "react-router-dom";
 import Logo from '../../../favicon.ico/apple-touch-icon.png';
 import './navBar.scss';
 
-const NavBar: React.FC = () => {
+export default function NavBar(): ReactElement {
     return (
         <nav>
             <div className="nav-wrapper">
                 <h1 id="nave-name">
-                    santa barbara Myo
+                    <Link to={"/home"} style={{textDecoration: "none"}}>
+                        santa barbara Myo
+                    </Link>
                 </h1>
                 <div className="nav-links">
                     <Link className={"nav-link"} to={"/home"} style={{textDecoration: "none"}}>
@@ -44,6 +46,4 @@ const NavBar: React.FC = () => {
             </div>
         </nav>
     );
-};
-
-export default NavBar;
+}

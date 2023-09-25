@@ -1,7 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import './contact.scss';
 
-export default function Contact() {
+export default function Contact(): ReactElement {
     return (
         <>
             <NavBar/>

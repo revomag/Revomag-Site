@@ -1,7 +1,8 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
+import './bookAppointment.scss';
 
-export default function BookAppointment() {
+export default function BookAppointment(): ReactElement {
     return (
         <>
             <NavBar/>
