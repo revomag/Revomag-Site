@@ -8,7 +8,6 @@ export default function Footer(): ReactElement {
     return (
         <div className={'footer-section'}>
             <p>This is where the office address would go.</p>
-            <br/><br/>
             <div className={'footer-social-media-container'}>
                 <div className={'social-icon'}>
                     <a href={""} target={"_blank"} rel={"noreferrer"}>
