@@ -1,21 +1,23 @@
-import React, {ReactElement} from "react";
+import React, { ReactElement } from "react";
 import NavBar from "../../components/navBar/navBar";
 import Footer from "../../components/footer/footer";
-import SBPano from '../../assets/SBPano.jpg';
+import Banner from "../../components/banner/banner";
 import './home.scss';
+import SBPano from '../../assets/SBPano.jpg';
 
+/**
+ * Renders home page
+ * @constructor
+ */
 export default function Home(): ReactElement {
     return (
         <>
-            <NavBar/>
-            <div className={'banner-area'}>
-                <div className={'hero-image-container'}>
-                    <img id={'hero-image'} src={SBPano}/>
-                </div>
-                <div className={'banner-overlay'}>
-                    ORAL MYOFUNCTIONAL THERAPY
-                </div>
-            </div>
+            <NavBar />
+            <Banner
+                imageSrc={SBPano}
+                imageAlt={'Santa Barbara cityscape'}
+                message={'ORAL MYOFUNCTIONAL THERAPY'}
+            />
             <div className={'location-info'}>
                 <p>
                     Oral Myofunctional Therapy in the Santa Barbara region of the California Central Coast serving
