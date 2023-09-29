@@ -1,0 +1,27 @@
+.banner-area {
+	text-align: center;
+	width: 100vw;
+	height: 40em;
+	position: relative;
+	padding-bottom: 4em;
+	padding-top: 85px;
+
+	.hero-image-container img {
+		height: 640px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.banner-overlay {
+		color: white;
+		font-size: 3em;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 95;
+		height: 597px;
+	}
+}
