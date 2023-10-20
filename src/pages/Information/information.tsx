@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
 
 export default function Information(): ReactElement {

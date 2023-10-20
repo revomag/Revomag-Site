@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import Facebook from '../../assets/socialMediaIcons/facebook.svg';
 import Instagram from '../../assets/socialMediaIcons/instagram.svg';
 import LinkedIn from '../../assets/socialMediaIcons/linkedin.svg';

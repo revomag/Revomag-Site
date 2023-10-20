@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import NavBar from "../../components/navBar/navBar";
 import Footer from "../../components/footer/footer";
 import './bookAppointment.scss';
