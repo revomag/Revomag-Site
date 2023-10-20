@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import {Link} from "react-router-dom";
 import Logo from '../../../favicon.ico/apple-touch-icon.png';
 import './navBar.scss';
