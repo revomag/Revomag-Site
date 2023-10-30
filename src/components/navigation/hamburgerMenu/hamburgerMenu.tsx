@@ -14,7 +14,7 @@ export default function HamburgerMenu(): ReactElement {
     // Open and close hamburger menu
     const handleHamburgerToggle = () => {
         const toggle = document.getElementById('toggle');
-        if (toggle.className === "open") {
+        if (toggle.className && toggle.className === "open") {
             setHamburgerToggle("opening");
             setHamburgerToggleIcon('hamburger-toggle opening');
         }
