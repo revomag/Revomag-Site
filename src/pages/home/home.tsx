@@ -26,12 +26,12 @@ export default function Home(): ReactElement {
                 </p>
             </div>
             <div className={'myo-info'}>
-                <h1>What is Myofunctional Therapy?</h1>
+                <h2>What is Myofunctional Therapy?</h2>
                 <p>Orofacial Myofunctional Therapy (OMT) is a neuromuscular re-education of the oral and facial muscles. It’s done through a series of tailored exercises, awareness and reduction of muscle compensations. The overarching goal is to restore normal function by correcting improper muscle movements, teaching correct chewing, swallowing and breathing patterns, and improving airway health.</p>
                 <div className={"home-image-container"}>
                     <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
                 </div>
-                <h3>This therapy is used to manage a variety of disorders including:</h3>
+                <h2>This therapy is used to manage a variety of disorders including:</h2>
                 <ul>
                     <li>Tongue tie</li>
                     <li>Tongue thrust</li>
@@ -52,7 +52,7 @@ export default function Home(): ReactElement {
                     <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
                 </div>
                 <p>Myofunctional therapy is for everyone, both children and adults. It is completely non-invasive and can be instrumental in re-training the muscles of the face and tongue that have been in dysfunction for years. Restoring normal function to the tongue and facial muscles can have full body benefits.</p>
-                <h3>Benefits of Myofunctional Therapy:</h3>
+                <h2>Benefits of Myofunctional Therapy:</h2>
                 <ul>
                     <li>Improved airway health</li>
                     <li>Increased energy and alertness</li>

@@ -4,17 +4,36 @@
 		margin: 0 auto;
 		text-align: left;
 		font-size: .8em;
+
+		@media (max-width: 1023px) {
+			text-align: center;
+			max-width: 80%;
+		}
 	}
 }
 
 .myo-info {
 	padding-top: 4em;
 
+	@media (max-width: 1023px) {
+		padding-top: 1em;
+	}
+
+	h2 {
+		@media (max-width: 1023px) {
+			font-size: 1.25em;
+		}
+	}
+
 	p {
 		text-align: left;
 		max-width: 50%;
 		margin: 0 auto;
 		font-size: 1.25em;
+
+		@media (max-width: 1023px) {
+			max-width: 90%;
+		}
 	}
 
 	ul {
@@ -22,6 +41,10 @@
 		text-align: left;
 		margin: 0 auto;
 		padding-bottom: 1.5em;
+
+		@media (max-width: 1023px) {
+			max-width: 80vw;
+		}
 	}
 
 	.disclaimer {
@@ -31,7 +54,8 @@
 
 	.home-image-container {
 		@media (max-width: 1023px) {
-			max-width: 40vw;
+			max-width: 60vw;
+			margin: 0 auto;
 		}
 
 		img {
@@ -41,9 +65,8 @@
 			padding-bottom: 1em;
 
 			@media (max-width: 1023px) {
-				height: 200px;
+				height: 300px;
 				padding-top: 1em;
-				float: left;
 			}
 		}
 	}
