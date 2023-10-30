@@ -1,12 +1,12 @@
 import {ReactElement} from "react";
-import NavBar from "../../components/navBar/navBar";
+import Navigation from "../../components/navigation/navigation";
 import Footer from "../../components/footer/footer";
 import './bookAppointment.scss';
 
 export default function BookAppointment(): ReactElement {
     return (
         <>
-            <NavBar/>
+            <Navigation/>
             <div>This is the Book Appointment page</div>
             <Footer/>
         </>
