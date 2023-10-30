@@ -2,13 +2,38 @@
 	display: flex;
 	margin: 0 15em;
 
-	img {
-		height: 700px;
-		padding-right: 2em;
-		padding-top: 8em;
+	@media (max-width: 1023px) {
+		margin: 0 1em;
 	}
+
+	.about-image-container {
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			height: 700px;
+			padding-right: 2em;
+			padding-top: 8em;
+
+			@media (max-width: 1023px) {
+				height: 30vh;
+				padding-top: 1em;
+				float: left;
+			}
+		}
+	}
+
 
 	.about-content {
 		text-align: left;
+
+		@media (max-width: 1023px) {
+			max-width: 50vw;
+
+			h1 {
+				display: none;
+			}
+		}
 	}
 }

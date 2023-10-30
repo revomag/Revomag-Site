@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import NavBar from "../../components/navBar/navBar";
+import NavBar from "../../components/navigation/navBar/navBar";
 
 export default function Information(): ReactElement {
     return (

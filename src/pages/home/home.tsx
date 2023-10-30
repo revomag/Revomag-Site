@@ -1,9 +1,9 @@
 import { ReactElement } from "react";
-import NavBar from "../../components/navBar/navBar";
 import Footer from "../../components/footer/footer";
 import Banner from "../../components/banner/banner";
 import './home.scss';
 import SBPano from '../../assets/SBPano.jpg';
+import Navigation from "../../components/navigation/navigation";
 
 /**
  * Renders home page
@@ -12,7 +12,7 @@ import SBPano from '../../assets/SBPano.jpg';
 export default function Home(): ReactElement {
     return (
         <>
-            <NavBar />
+            <Navigation/>
             <Banner
                 imageSrc={SBPano}
                 imageAlt={'Santa Barbara cityscape'}
