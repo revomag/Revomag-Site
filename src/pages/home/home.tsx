@@ -1,9 +1,9 @@
 import { ReactElement } from "react";
-import Footer from "../../components/footer/footer";
-import Banner from "../../components/banner/banner";
-import './home.scss';
-import SBPano from '../../assets/SBPano.jpg';
 import Navigation from "../../components/navigation/navigation";
+import Banner from "../../components/banner/banner";
+import Footer from "../../components/footer/footer";
+import SBPano from '../../assets/SBPano.jpg';
+import './home.scss';
 
 /**
  * Renders home page
