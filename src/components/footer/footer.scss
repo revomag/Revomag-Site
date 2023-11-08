@@ -1,11 +1,25 @@
 .footer-section {
 	border-top: 1px solid #E8E8E8;
+	height: 200px;
 	width: 100%;
 	margin-top: 10em;
 
 	@media (max-width: 1023px) {
 		width: 100vw;
 		margin-top: 3em;
+	}
+
+	.footer-contact-container {
+		padding-top: 2em;
+
+		div {
+			padding: 5px;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
 	}
 
 	.footer-social-media-container {
