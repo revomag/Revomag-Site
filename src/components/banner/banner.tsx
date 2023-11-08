@@ -4,7 +4,7 @@ import './banner.scss';
 interface BannerProps {
     imageSrc: string;
     imageAlt: string;
-    message: string;
+    message?: string;
 }
 
 /**
