@@ -16,9 +16,14 @@ export default function NavBar(): ReactElement {
                     <Link className={"nav-link"} to={"/home"} style={{textDecoration: "none"}}>
                         HOME
                     </Link>
-                    <Link className={"nav-link"} to={"/information"} style={{textDecoration: "none"}}>
+                    <div className={"nav-dropdown"}>
                         INFORMATION
-                    </Link>
+                        <div className={"nav-dropdown-content"}>
+                            <Link className={"nav-link"} to={"/mouth-breathing"} style={{textDecoration: "none"}}>
+                                MOUTH BREATHING
+                            </Link>
+                        </div>
+                    </div>
                     <Link className={"nav-link"} to={"/how-it-works"} style={{textDecoration: "none"}}>
                         HOW IT WORKS
                     </Link>

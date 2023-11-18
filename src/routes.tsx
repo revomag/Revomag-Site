@@ -3,17 +3,17 @@ import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import BookAppointment from "./pages/bookAppointment/bookAppointment";
 import Contact from "./pages/contact/contact";
-import Information from "./pages/Information/information";
 import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
+import MouthBreathing from "./pages/Information/mouthBreathing/mouthBreathing";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route path="/" element={<Home/>}/>
             <Route path="/home" element={<Home/>}/>
-            <Route path="/information" element={<Information/>}/>
+            <Route path="/mouth-breathing" element={<MouthBreathing/>}/>
             <Route path="/how-it-works" element={<HowItWorks/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>

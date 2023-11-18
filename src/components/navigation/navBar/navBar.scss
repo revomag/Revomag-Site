@@ -47,6 +47,35 @@ nav {
 				line-height: 1.8;
 			}
 
+			.nav-dropdown {
+				position: relative;
+				padding-top: 2px;
+
+				@media (min-width: 1024px) {
+					margin-right: 1rem;
+				}
+
+				.dropdown-nav-name {
+					font-size: 1.25rem;
+					color: #ffffff;
+					margin: 0;
+				}
+
+				.nav-dropdown-content {
+					display: none;
+					position: absolute;
+					background-color: white;
+					z-index: 1;
+					margin-left: -25px;
+					padding: 25px 0 15px 20px;
+					width: 150px;
+				}
+			}
+
+			.nav-dropdown:hover .nav-dropdown-content {
+				display: block;
+			}
+
 			a {
 				@media (min-width: 1024px) {
 					margin-right: 1rem;
