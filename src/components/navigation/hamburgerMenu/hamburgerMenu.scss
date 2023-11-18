@@ -43,20 +43,19 @@
 	}
 }
 
-.ham-nav-dropdown {
-	//position: relative;
-	//padding-top: 2px;
-	//
-	//@media (min-width: 1024px) {
-	//	margin-right: 1rem;
-	//}
-	//
-	//.dropdown-nav-name {
-	//	font-size: 1.25rem;
-	//	color: #ffffff;
-	//	margin: 0;
-	//}
+.ham-add-info {
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+	color: black;
+	background: white;
+	display: block;
+	padding: .5em 4em 0 1em;
+	font-size: .75em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 
+.ham-nav-dropdown {
 	.nav-dropdown-content {
 		display: none;
 		position: absolute;
