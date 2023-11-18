@@ -1,7 +1,6 @@
 import {ReactElement, useState} from "react";
 import {Link} from "react-router-dom";
 import Logo from "../../../assets/navLogo.png";
-import RightChevron from "../../../assets/chevron-right-icon.svg";
 import './hamburgerMenu.scss';
 
 /**
