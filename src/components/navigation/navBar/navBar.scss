@@ -41,11 +41,12 @@ nav {
 			@media (min-width: 1024px) {
 				display: flex;
 				font-size: 1em;
-				margin-right: 60px;
+				margin-right: 80px;
 			}
 
 			.nav-link {
 				line-height: 1.8;
+				text-decoration: none;
 			}
 
 			.nav-dropdown {
@@ -66,15 +67,21 @@ nav {
 					display: none;
 					position: absolute;
 					background-color: white;
+					text-align: left;
 					z-index: 1;
 					margin-left: -25px;
-					padding: 25px 0 15px 20px;
-					width: 150px;
+					padding: 60px 0 15px 20px;
+					width: 200px;
 				}
 			}
 
-			.nav-dropdown:hover .nav-dropdown-content {
+			.nav-dropdown:hover {
 				display: block;
+
+				.nav-dropdown-content {
+					display: flex;
+					flex-direction: column;
+				}
 			}
 
 			a {

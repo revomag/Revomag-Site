@@ -8,35 +8,38 @@ export default function NavBar(): ReactElement {
         <nav>
             <div className="nav-wrapper">
                 <div className="logo-container">
-                    <Link className={"logo-nav"} to={"/"} style={{textDecoration: "none"}}>
+                    <Link className={"logo-nav"} to={"/"}>
                         <img src={Logo} alt="logo" />
                     </Link>
                 </div>
                 <div className="nav-links">
-                    <Link className={"nav-link"} to={"/home"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/home"}>
                         HOME
                     </Link>
                     <div className={"nav-dropdown"}>
                         INFORMATION
                         <div className={"nav-dropdown-content"}>
-                            <Link className={"nav-link"} to={"/mouth-breathing"} style={{textDecoration: "none"}}>
+                            <Link className={"nav-link"} to={"/mouth-breathing"}>
                                 MOUTH BREATHING
+                            </Link>
+                            <Link className={"nav-link"} to={"/snoring-and-sleep-apnea"}>
+                                SNORING AND SLEEP APNEA
                             </Link>
                         </div>
                     </div>
-                    <Link className={"nav-link"} to={"/how-it-works"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/how-it-works"}>
                         HOW IT WORKS
                     </Link>
-                    <Link className={"nav-link"} to={"/contact"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/contact"}>
                         CONTACT
                     </Link>
-                    <Link className={"nav-link"} to={"/about"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/about"}>
                         ABOUT NICOLE
                     </Link>
-                    <Link className={"nav-link"} to={"/refer-a-patient"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/refer-a-patient"}>
                         REFER A PATIENT
                     </Link>
-                    <Link className={"nav-link"} to={"/book-appointment"} style={{textDecoration: "none"}}>
+                    <Link className={"nav-link"} to={"/book-appointment"}>
                         BOOK APPOINTMENT
                     </Link>
                 </div>
