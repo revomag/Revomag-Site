@@ -21,8 +21,7 @@ export default function Home(): ReactElement {
             />
             <div className={'location-info'}>
                 <p>
-                    Oral Myofunctional Therapy in the Santa Barbara region of the California Central Coast serving
-                    communities of Montecito, Santa Barbara, Goleta, Summerland, Carpinteria, Solvang, Santa Ynez, and surrounding communities.
+                    Oral Myofunctional Therapy in the Santa Barbara region of the California Central Coast serving Montecito, Santa Barbara, Goleta, Summerland, Carpinteria, Solvang, Santa Ynez, and surrounding communities.
                 </p>
             </div>
             <div className={'myo-info'}>
