@@ -49,6 +49,10 @@ nav {
 				text-decoration: none;
 			}
 
+			.nav-link:hover {
+				color: dimgrey;
+			}
+
 			.nav-dropdown {
 				position: relative;
 				padding-top: 2px;
@@ -71,12 +75,13 @@ nav {
 					z-index: 1;
 					margin-left: -25px;
 					padding: 60px 0 15px 20px;
-					width: 200px;
+					width: 310px;
 				}
 			}
 
 			.nav-dropdown:hover {
 				display: block;
+				color: dimgrey;
 
 				.nav-dropdown-content {
 					display: flex;

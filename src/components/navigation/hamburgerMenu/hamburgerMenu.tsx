@@ -76,6 +76,11 @@ export default function HamburgerMenu(): ReactElement {
                             Snoring and Sleep Apnea
                         </Link>
                     </li>
+                    <li>
+                        <Link className={"ham-nav-link ham-add-info-link"} to={"/adhd-and-sleep-disordered-breathing"}>
+                            ADHD and Sleep Disordered Breathing
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="ham-logo-container">
