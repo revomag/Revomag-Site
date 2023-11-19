@@ -71,6 +71,11 @@ export default function HamburgerMenu(): ReactElement {
                             Mouth Breathing
                         </Link>
                     </li>
+                    <li>
+                        <Link className={"ham-nav-link ham-add-info-link"} to={"/snoring-and-sleep-apnea"}>
+                            Snoring and Sleep Apnea
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="ham-logo-container">
