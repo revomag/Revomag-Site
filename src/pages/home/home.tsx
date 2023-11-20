@@ -65,7 +65,7 @@ export default function Home(): ReactElement {
                 <div className={"home-image-container"}>
                     <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
                 </div>
-                <p className={"disclaimer"}>The information on this website is in no way considered to be medical advice and is in no way intended to treat, cure or prevent any disease, symptom or condition. Medical advice should be obtained from an appropriately qualified and licensed medical professional. Please consult with your doctor for any change in lifestyle.</p>
+                <p className={"disclaimer italic"}>The information on this website is in no way considered to be medical advice and is in no way intended to treat, cure or prevent any disease, symptom or condition. Medical advice should be obtained from an appropriately qualified and licensed medical professional. Please consult with your doctor for any change in lifestyle.</p>
             </div>
             <Footer/>
         </>
