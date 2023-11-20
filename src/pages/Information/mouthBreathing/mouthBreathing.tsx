@@ -45,7 +45,8 @@ export default function MouthBreathing(): ReactElement {
                 <p>*A note on nitric oxide- nitric oxide is a very important signaling molecule in the CV system. Enzymes in the nose and sinus produce Nitric Oxide and its released into our bodies when we inhale through our nose. It has anti-inflammatory, anti- microbial and anti-viral properties. When we mouth breath, we bypass this entire system and don’t get this immune function from Nitric Oxide bathing our airway.</p>
                 <div className={'mouth-breathing-video-container'}>
                     <iframe src="https://www.youtube.com/embed/AcCHaNgwtwo?si=zlQUuXXhnWn_2rcI"
-                            title="YouTube video player" frameBorder="0"
+                            title="YouTube video player"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
                     </iframe>

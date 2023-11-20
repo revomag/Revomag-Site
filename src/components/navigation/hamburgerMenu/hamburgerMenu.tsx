@@ -81,6 +81,11 @@ export default function HamburgerMenu(): ReactElement {
                             ADHD and Sleep Disordered Breathing
                         </Link>
                     </li>
+                    <li>
+                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tmj-pain"}>
+                            TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="ham-logo-container">
