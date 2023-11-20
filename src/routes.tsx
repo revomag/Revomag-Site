@@ -5,6 +5,7 @@ import SnoringAndSleepApnea from "./pages/Information/snoringAndSleepApnea/snori
 import AdhdAndSleepDisorderedBreathing
     from "./pages/Information/adhdAndSleepDisorderedBreathing/adhdAndSleepDisorderedBreathing";
 import TmjPain from "./pages/Information/tmjPain/tmjPain";
+import TongueTie from "./pages/Information/tongueTie/tongueTie";
 import About from "./pages/about/about";
 import BookAppointment from "./pages/bookAppointment/bookAppointment";
 import Contact from "./pages/contact/contact";
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
             <Route path="/snoring-and-sleep-apnea" element={<SnoringAndSleepApnea/>}/>
             <Route path="/adhd-and-sleep-disordered-breathing" element={<AdhdAndSleepDisorderedBreathing/>}/>
             <Route path="/tmj-pain" element={<TmjPain/>}/>
+            <Route path="/tongue-tie" element={<TongueTie/>}/>
             <Route path="/how-it-works" element={<HowItWorks/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>

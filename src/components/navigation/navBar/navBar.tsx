@@ -31,6 +31,9 @@ export default function NavBar(): ReactElement {
                             <Link className={"nav-link"} to={"/tmj-pain"}>
                                 TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
                             </Link>
+                            <Link className={"nav-link"} to={"/tongue-tie"}>
+                                TONGUE TIE
+                            </Link>
                         </div>
                     </div>
                     <Link className={"nav-link"} to={"/how-it-works"}>

@@ -86,6 +86,11 @@ export default function HamburgerMenu(): ReactElement {
                             TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
                         </Link>
                     </li>
+                    <li>
+                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-tie"}>
+                            TONGUE TIE
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="ham-logo-container">
