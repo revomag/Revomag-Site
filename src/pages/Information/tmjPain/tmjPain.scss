@@ -1,0 +1,105 @@
+.tmj-pain-content-container {
+	margin: 0 15em;
+	text-align: left;
+	max-width: 90vw;
+
+	h2 {
+		text-align: center;
+	}
+
+	@media (max-width: 1023px) {
+		margin: 0 1em;
+		display: block;
+	}
+
+	ul {
+		padding-top: 0;
+		padding-left: .5em;
+
+		li {
+			padding-bottom: 1em;
+		}
+	}
+
+	.tmj-pain-image1-container {
+		float: left;
+
+		@media (max-width: 1023px) {
+			max-width: 60vw;
+			float: none;
+			margin: 0 auto;
+		}
+
+		img {
+			float: left;
+			height: 550px;
+			padding: 1em 2em 1em 0;
+
+
+			@media (max-width: 1023px) {
+				float: none;
+				height: 300px;
+				padding-top: 1em;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.tmj-pain-image2-container {
+		float: right;
+
+		@media (max-width: 1023px) {
+			max-width: 60vw;
+			float: none;
+			margin: 0 auto;
+		}
+
+		img {
+			float: right;
+			height: 550px;
+			padding: 1em 0 1em 2em;
+
+			@media (max-width: 1023px) {
+				float: none;
+				height: 300px;
+				padding-top: 1em;
+				padding-left: 0;
+			}
+		}
+	}
+
+	.tmj-pain-video-container {
+		padding-top: 12em;
+		height: 400px;
+		width: 700px;
+		margin: 0 auto;
+
+		@media (max-width: 1023px) {
+			padding-top: 2em;
+			width: 85vw;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			p {
+				text-align: center;
+			}
+		}
+
+		iframe {
+			width: 700px;
+			height: 394px;
+			float: left;
+			padding-right: 4em;
+			margin: 0 auto;
+
+			@media (max-width: 1023px) {
+				width: 80vw;
+				height: 45vw;
+				padding-right: 0;
+				display: block;
+				padding-bottom: 2em;
+			}
+		}
+	}
+}

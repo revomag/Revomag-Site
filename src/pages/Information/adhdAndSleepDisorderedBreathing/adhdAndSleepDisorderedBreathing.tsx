@@ -4,7 +4,7 @@ import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import BeachPano from "../../../assets/BeachPano.jpg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
-import './AdhdAndSleepDisorderedBreathing.scss';
+import './adhdAndSleepDisorderedBreathing.scss';
 
 /**
  * Renders Mouth Breathing page

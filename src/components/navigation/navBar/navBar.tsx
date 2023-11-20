@@ -28,6 +28,9 @@ export default function NavBar(): ReactElement {
                             <Link className={"nav-link"} to={"/adhd-and-sleep-disordered-breathing"}>
                                 ADHD and Sleep Disordered Breathing
                             </Link>
+                            <Link className={"nav-link"} to={"/tmj-pain"}>
+                                TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
+                            </Link>
                         </div>
                     </div>
                     <Link className={"nav-link"} to={"/how-it-works"}>
