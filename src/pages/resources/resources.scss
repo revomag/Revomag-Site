@@ -11,6 +11,10 @@
 		padding-top: 0;
 	}
 
+	a:hover {
+		color: dimgrey;
+	}
+
 	@media (max-width: 1023px) {
 		margin: 0 1em;
 		display: block;
