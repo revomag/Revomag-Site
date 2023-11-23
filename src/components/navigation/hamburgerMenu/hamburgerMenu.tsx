@@ -96,6 +96,11 @@ export default function HamburgerMenu(): ReactElement {
                             THUMB AND FINGER SUCKING
                         </Link>
                     </li>
+                    <li>
+                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-thrust"}>
+                            TONGUE THRUST
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="ham-logo-container">
