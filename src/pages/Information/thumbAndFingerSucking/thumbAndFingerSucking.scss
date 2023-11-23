@@ -1,0 +1,146 @@
+.thumb-sucking-content-container {
+	margin: 0 15em;
+	text-align: left;
+	max-width: 90vw;
+
+	h2 {
+		text-align: center;
+	}
+
+	@media (max-width: 1023px) {
+		margin: 0 1em;
+		display: block;
+	}
+
+	.thumb-sucking-image1-container {
+		float: left;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: left;
+			height: 550px;
+			padding-right: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-right: 1em;
+			}
+		}
+	}
+
+	.thumb-sucking-image2-container {
+		float: right;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: right;
+			height: 550px;
+			padding-left: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-left: 1em;
+			}
+		}
+	}
+
+	.thumb-sucking-image3-container {
+		float: left;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: left;
+			height: 550px;
+			padding-left: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-left: 1em;
+			}
+		}
+	}
+
+	.thumb-sucking-image4-container {
+		float: right;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: right;
+			height: 550px;
+			padding-left: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-left: 1em;
+			}
+		}
+	}
+
+	.thumb-sucking-image5-container {
+		float: left;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: left;
+			height: 550px;
+			padding-left: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-left: 1em;
+			}
+		}
+	}
+
+	.thumb-sucking-image6-container {
+		float: right;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			float: right;
+			height: 550px;
+			padding-left: 2em;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
+				padding-left: 1em;
+			}
+		}
+	}
+}

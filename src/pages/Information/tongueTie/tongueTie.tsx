@@ -7,7 +7,7 @@ import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './tongueTie.scss';
 
 /**
- * Renders Mouth Breathing page
+ * Renders Tongue Tie page
  * @constructor
  */
 export default function TongueTie(): ReactElement {
