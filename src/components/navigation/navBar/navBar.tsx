@@ -51,6 +51,9 @@ export default function NavBar(): ReactElement {
                     <Link className={"nav-link"} to={"/about"}>
                         ABOUT NICOLE
                     </Link>
+                    <Link className={"nav-link"} to={"/resources"}>
+                        RESOURCES
+                    </Link>
                     <Link className={"nav-link"} to={"/refer-a-patient"}>
                         REFER A PATIENT
                     </Link>

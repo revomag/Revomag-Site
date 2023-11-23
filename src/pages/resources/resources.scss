@@ -1,0 +1,18 @@
+.resources-content-container {
+	margin: 0 15em;
+	text-align: left;
+	max-width: 90vw;
+
+	h2 {
+		text-align: center;
+	}
+
+	ul {
+		padding-top: 0;
+	}
+
+	@media (max-width: 1023px) {
+		margin: 0 1em;
+		display: block;
+	}
+}

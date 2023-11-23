@@ -13,6 +13,7 @@ import BookAppointment from "./pages/bookAppointment/bookAppointment";
 import Contact from "./pages/contact/contact";
 import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
+import Resources from "./pages/resources/resources";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
             <Route path="/how-it-works" element={<HowItWorks/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/resources" element={<Resources/>}/>
             <Route path="/refer-a-patient" element={<ReferAPatient/>}/>
             <Route path="/book-appointment" element={<BookAppointment/>}/>
         </>
