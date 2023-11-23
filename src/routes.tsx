@@ -7,6 +7,7 @@ import AdhdAndSleepDisorderedBreathing
 import TmjPain from "./pages/Information/tmjPain/tmjPain";
 import TongueTie from "./pages/Information/tongueTie/tongueTie";
 import ThumbAndFingerSucking from "./pages/Information/thumbAndFingerSucking/thumbAndFingerSucking";
+import TongueThrust from "./pages/Information/tongueThrust/tongueThrust";
 import About from "./pages/about/about";
 import BookAppointment from "./pages/bookAppointment/bookAppointment";
 import Contact from "./pages/contact/contact";
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
             <Route path="/tmj-pain" element={<TmjPain/>}/>
             <Route path="/tongue-tie" element={<TongueTie/>}/>
             <Route path="/thumb-and-finger-sucking" element={<ThumbAndFingerSucking/>}/>
+            <Route path="/tongue-thrust" element={<TongueThrust/>}/>
             <Route path="/how-it-works" element={<HowItWorks/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
