@@ -60,6 +60,14 @@ export default function MouthBreathing(): ReactElement {
                         <li>Increased mental clarity and alertness</li>
                     </ul>
                 </div>
+                <div className={'mouth-breathing-video-container'}>
+                    <iframe src="https://www.youtube.com/embed/u1GUuZsHDZY?si=Ao6bE56FdixPlxDd"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                    </iframe>
+                </div>
             </section>
             <Footer/>
         </div>
