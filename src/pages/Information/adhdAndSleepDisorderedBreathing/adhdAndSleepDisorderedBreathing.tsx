@@ -31,6 +31,14 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
                 <div className={"adhd-and-sleep-disordered-breathing-image2-container"}>
                     <img id={'adhd-and-sleep-disordered-breathing-image2'} src={Headshot} alt={"nicole headshot"}/>
                 </div>
+                <div className={'adhd-and-sleep-disordered-breathing-video-container'}>
+                    <iframe src="https://www.youtube.com/embed/yDHdo4ezs64?si=VLlUxHZOVFe99_xD"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                    </iframe>
+                </div>
                 <h3>Resources:</h3>
                 <ol>
                     <li>
