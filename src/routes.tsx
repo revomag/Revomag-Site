@@ -14,6 +14,23 @@ import Contact from "./pages/contact/contact";
 import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
+import withScrollRestoration from "./components/withScrollRestoration";
+
+/** Wrap routes in withScrollRestoration so that pages always load at top */
+const HomeWithScrollRestoration = withScrollRestoration(Home);
+const MouthBreathingWithScrollRestoration = withScrollRestoration(MouthBreathing);
+const SnoringAndSleepApneaWithScrollRestoration = withScrollRestoration(SnoringAndSleepApnea);
+const AdhdAndSleepDisorderedBreathingWithScrollRestoration = withScrollRestoration(AdhdAndSleepDisorderedBreathing);
+const TmjPainWithScrollRestoration = withScrollRestoration(TmjPain);
+const TongueTieWithScrollRestoration = withScrollRestoration(TongueTie);
+const ThumbAndFingerSuckingWithScrollRestoration = withScrollRestoration(ThumbAndFingerSucking);
+const TongueThrustWithScrollRestoration = withScrollRestoration(TongueThrust);
+const AboutWithScrollRestoration = withScrollRestoration(About);
+const BookAppointmentWithScrollRestoration = withScrollRestoration(BookAppointment);
+const ContactWithScrollRestoration = withScrollRestoration(Contact);
+const HowItWorksWithScrollRestoration = withScrollRestoration(HowItWorks);
+const ReferAPatientWithScrollRestoration = withScrollRestoration(ReferAPatient);
+const ResourcesWithScrollRestoration = withScrollRestoration(Resources);
 
 /**
  * Site routing
@@ -21,21 +38,21 @@ import Resources from "./pages/resources/resources";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/mouth-breathing" element={<MouthBreathing/>}/>
-            <Route path="/snoring-and-sleep-apnea" element={<SnoringAndSleepApnea/>}/>
-            <Route path="/adhd-and-sleep-disordered-breathing" element={<AdhdAndSleepDisorderedBreathing/>}/>
-            <Route path="/tmj-pain" element={<TmjPain/>}/>
-            <Route path="/tongue-tie" element={<TongueTie/>}/>
-            <Route path="/thumb-and-finger-sucking" element={<ThumbAndFingerSucking/>}/>
-            <Route path="/tongue-thrust" element={<TongueThrust/>}/>
-            <Route path="/how-it-works" element={<HowItWorks/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/resources" element={<Resources/>}/>
-            <Route path="/refer-a-patient" element={<ReferAPatient/>}/>
-            <Route path="/book-appointment" element={<BookAppointment/>}/>
+            <Route path="/" element={<HomeWithScrollRestoration/>}/>
+            <Route path="/home" element={<HomeWithScrollRestoration/>}/>
+            <Route path="/mouth-breathing" element={<MouthBreathingWithScrollRestoration/>}/>
+            <Route path="/snoring-and-sleep-apnea" element={<SnoringAndSleepApneaWithScrollRestoration/>}/>
+            <Route path="/adhd-and-sleep-disordered-breathing" element={<AdhdAndSleepDisorderedBreathingWithScrollRestoration/>}/>
+            <Route path="/tmj-pain" element={<TmjPainWithScrollRestoration/>}/>
+            <Route path="/tongue-tie" element={<TongueTieWithScrollRestoration/>}/>
+            <Route path="/thumb-and-finger-sucking" element={<ThumbAndFingerSuckingWithScrollRestoration/>}/>
+            <Route path="/tongue-thrust" element={<TongueThrustWithScrollRestoration/>}/>
+            <Route path="/how-it-works" element={<HowItWorksWithScrollRestoration/>}/>
+            <Route path="/contact" element={<ContactWithScrollRestoration/>}/>
+            <Route path="/about" element={<AboutWithScrollRestoration/>}/>
+            <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
+            <Route path="/refer-a-patient" element={<ReferAPatientWithScrollRestoration/>}/>
+            <Route path="/book-appointment" element={<BookAppointmentWithScrollRestoration/>}/>
         </>
     )
 );
