@@ -1,6 +1,7 @@
 import {ReactElement, useState} from "react";
 import {Link} from "react-router-dom";
-import Logo from "../../../assets/MyoLogo.svg";
+import CollapsibleSection from "../../collapsibleSection/collapsibleSection";
+import Logo from "../../../assets/blackMyoLogo.svg";
 import './hamburgerMenu.scss';
 
 /**
@@ -62,49 +63,56 @@ export default function HamburgerMenu(): ReactElement {
                         </Link>
                     </li>
                     <li>
-                        <Link className={"ham-nav-link"} to={"/resources"}>
+                        <Link className={"ham-nav-link last"} to={"/resources"}>
                             RESOURCES
                         </Link>
                     </li>
                     <li>
-                        <div className={'ham-add-info'}>
-                            Additional Information:
-                        </div>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/mouth-breathing"}>
-                            Mouth Breathing
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/snoring-and-sleep-apnea"}>
-                            Snoring and Sleep Apnea
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/adhd-and-sleep-disordered-breathing"}>
-                            ADHD and Sleep Disordered Breathing
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tmj-pain"}>
-                            TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-tie"}>
-                            TONGUE TIE
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/thumb-and-finger-sucking"}>
-                            THUMB AND FINGER SUCKING
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-thrust"}>
-                            TONGUE THRUST
-                        </Link>
+                        <CollapsibleSection
+                            className={'additional-information'}
+                            title={'Additional Information'}
+                            children={
+                                <ul id={"ham-collapse-ul"}>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/mouth-breathing"}>
+                                            Mouth Breathing
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/snoring-and-sleep-apnea"}>
+                                            Snoring and Sleep Apnea
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/adhd-and-sleep-disordered-breathing"}>
+                                            ADHD and Sleep Disordered Breathing
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tmj-pain"}>
+                                            TEMPORAL MANDIBULAR JOINT (TMJ) PAIN
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-tie"}>
+                                            TONGUE TIE
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/thumb-and-finger-sucking"}>
+                                            THUMB AND FINGER SUCKING
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className={"ham-nav-link ham-add-info-link"} to={"/tongue-thrust"}>
+                                            TONGUE THRUST
+                                        </Link>
+                                    </li>
+                                </ul>
+                            }
+                            defaultOpen={false}
+                            outsideToggle={hamburgerToggle}
+                        />
                     </li>
                 </ul>
             </div>

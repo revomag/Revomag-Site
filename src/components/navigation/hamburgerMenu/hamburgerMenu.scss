@@ -38,16 +38,12 @@
 	text-decoration: none;
 }
 
-.ham-add-info {
-	font-family: Raleway, sans-serif;
-	font-weight: bold;
-	color: black;
-	background: white;
-	display: block;
-	padding: .5em 4em 0 75px;
-	font-size: .75em;
-	text-transform: uppercase;
-	text-decoration: none;
+.last {
+	padding-bottom: 0;
+}
+
+.ham-add-info-link {
+	padding-left: 8em;
 }
 
 .ham-nav-dropdown {
@@ -133,7 +129,28 @@
 	}
 }
 
+.additional-information-collapsible-div {
+	font-family: Raleway, sans-serif;
+	color: black;
+	background: white;
+	display: block;
+	padding: .5em 4em 0 75px;
+	font-size: .75em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.additional-information-collapsible-div:hover {
+	color: #6e6e6e;
+	cursor: pointer;
+}
+
 ul {
 	text-align: left;
 	padding-top: 2em;
+}
+
+#ham-collapse-ul {
+	padding-top: 0;
+	padding-left: 0;
 }

@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import {Link} from "react-router-dom";
-import Logo from '../../../assets/MyoLogo.svg';
+import Logo from '../../../assets/blackMyoLogo.svg';
 import './navBar.scss';
 
 export default function NavBar(): ReactElement {

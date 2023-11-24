@@ -15,6 +15,9 @@ import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
 
+/**
+ * Site routing
+ */
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
