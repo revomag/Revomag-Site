@@ -19,7 +19,7 @@ export default function Footer(): ReactElement {
                 </div>
                 <div>
                     <a
-                        href={"https://www.google.com/maps/search/?api=1&query=5290%20Overpass%20Road%20Suite%20211%20Santa%20Barbara%2C%20California%2C%93111"}
+                        href={"https://www.google.com/maps/search/?api=1&query=5290%20Overpass%20Road%20Suite%20211%20Santa%20Barbara%2C%20California%2C%2093111"}
                         target={"_blank"}
                         rel={"noreferrer"}
                     >
