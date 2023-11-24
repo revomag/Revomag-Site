@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import TongueTieBannerImage from "../../../assets/bannerImages/tongueTie.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './tongueTie.scss';
 
@@ -14,7 +14,7 @@ export default function TongueTie(): ReactElement {
     return (
         <div className={'tongue-tie-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Tongue Tie'}/>
+            <Banner imageSrc={TongueTieBannerImage} imageAlt={'Child with tongue tie'}/>
             <section className={'tongue-tie-content-container'}>
                 <h2>TONGUE TIE</h2>
                 <div className={"tongue-tie-image1-container"}>

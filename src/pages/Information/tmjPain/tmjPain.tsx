@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import TMJpain from "../../../assets/bannerImages/TMJpain.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './tmjPain.scss';
 
@@ -14,7 +14,7 @@ export default function TmjPain(): ReactElement {
     return (
         <div className={'tmj-pain-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Temporal Mandibular Joint Pain'}/>
+            <Banner imageSrc={TMJpain} imageAlt={'Skull showing TMJ Pain'}/>
             <section className={'tmj-pain-content-container'}>
                 <h2>TEMPORAL MANDIBULAR JOINT PAIN</h2>
                 <p>Many patients see a myofunctional therapist as a part of their treatment for temporal mandibular joint “TMJ” pain . Low tongue posture, mouth breathing, open mouth posture, tongue thrust swallow and other dysfunctional swallowing patterns over a lifetime increase the risk of pain in the TMJ. This pain can be from the joint itself or from the muscles that allow the joint to function. This pain is interchangeably called “TMJ” “TMD” “TMJD” or just simply “Jaw Pain.”</p>

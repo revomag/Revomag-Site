@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import ThumbSucking from "../../../assets/bannerImages/thumbSucking.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './thumbAndFingerSucking.scss';
 
@@ -14,7 +14,7 @@ export default function ThumbAndFingerSucking(): ReactElement {
     return (
         <div className={'thumb-sucking-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Thumb and Finger Sucking'}/>
+            <Banner imageSrc={ThumbSucking} imageAlt={'Girl sucking thumb'}/>
             <section className={'thumb-sucking-content-container'}>
                 <h2>THUMB AND FINGER SUCKING</h2>
                 <div className={"thumb-sucking-image1-container"}>

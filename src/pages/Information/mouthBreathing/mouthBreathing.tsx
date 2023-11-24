@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import OpenMouthBreathing from "../../../assets/bannerImages/OpenMouthWomanSeeping.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './mouthBreathing.scss';
 
@@ -14,7 +14,7 @@ export default function MouthBreathing(): ReactElement {
     return (
         <div className={'mouth-breathing-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Mouth Breathing'}/>
+            <Banner imageSrc={OpenMouthBreathing} imageAlt={'Sleeping woman breathing through her mouth'}/>
             <section className={'mouth-breathing-content-container'}>
                 <h2>MOUTH BREATHING</h2>
                 <div className={"mouth-breathing-image1-container"}>
