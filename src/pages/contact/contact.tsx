@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import Footer from "../../components/footer/footer";
-import BeachPano from "../../assets/BeachPano.jpg";
+import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
 
 /**
@@ -13,7 +13,7 @@ export default function Contact(): ReactElement {
     return (
         <div className={'contact-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Contact'}/>
+            <Banner imageSrc={ContactIcons} imageAlt={'contact methods'}/>
             <section className={'contact-content-container'}>
                 <h2>Contact Me</h2>
                 <div className={'contact-info-container'}>

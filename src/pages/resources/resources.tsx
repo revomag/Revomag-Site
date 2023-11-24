@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import Footer from "../../components/footer/footer";
-import BeachPano from "../../assets/BeachPano.jpg";
+import Research from "../../assets/bannerImages/resources.jpeg";
 import './resources.scss';
 
 /**
@@ -13,7 +13,7 @@ export default function Resources(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Resources'}/>
+            <Banner imageSrc={Research} imageAlt={'woman researching'}/>
             <section className={'resources-content-container'}>
                 <h2>RESOURCES</h2>
                 <p>Below are peer reviewed research studies, systemic reviews, meta studies/analysis, medical reviews, case reports, and research papers pertaining to Orofacial Myofuntional Therapy (OMT) and treatment/relation to the following:</p>

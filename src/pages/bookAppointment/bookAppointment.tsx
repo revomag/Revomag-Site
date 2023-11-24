@@ -9,7 +9,7 @@ export default function BookAppointment(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={ScheduleAppointment} imageAlt={'calendar'} message={'Book Appointment'}/>
+            <Banner imageSrc={ScheduleAppointment} imageAlt={'calendar'}/>
             <div>This is the Book Appointment page</div>
             <Footer/>
         </>

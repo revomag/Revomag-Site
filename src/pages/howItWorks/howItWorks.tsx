@@ -2,14 +2,14 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import Footer from "../../components/footer/footer";
-import BeachPano from "../../assets/BeachPano.jpg";
+import SmilingWoman from "../../assets/bannerImages/howItWorksWomanSmiling.jpeg";
 import './howItWorks.scss';
 
 export default function HowItWorks(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'}/>
+            <Banner imageSrc={SmilingWoman} imageAlt={'Woman smiling'}/>
             <div className={'how-content'}>
                 <h1>How It Works</h1>
                 <h2 className={'how-goals'}>These are the four goals of myofunctional therapy:</h2>
