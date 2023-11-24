@@ -18,8 +18,12 @@ export default function Contact(): ReactElement {
                 <h2>Contact Me</h2>
                 <div className={'contact-info-container'}>
                     <p>Nicole Cantello, RDH, Myofunctional Therapist</p>
-                    <p>(805) 570-2356 (text or phone calls welcome)</p>
-                    <p>nicole@santabarbaramyo.com</p>
+                    <div>
+                        <a className={'contact-phone'} href={"tel:805-453-1343"}>(805) 570-2356 (text or phone calls welcome)</a>
+                    </div>
+                    <div>
+                        <a className={'contact-email'} href={'mailto:nicole@santabarbaramyo.com'}>nicole@santabarbaramyo.com</a>
+                    </div>
                 </div>
                 <div className={'contact-services-description'}>
                     <p>I am currently working with children aged 7 and older, teens, and adult patients. Common symptoms addressed by myofunctional therapy include: tongue tie, tongue thrust, TMJ pain, TMD, jaw pain, sleep disordered breathing, upper respiratory resistance syndrome, sleep apnea, snoring, and mouth breathing.</p>
