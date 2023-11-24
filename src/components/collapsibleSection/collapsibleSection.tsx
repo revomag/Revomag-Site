@@ -1,6 +1,6 @@
 import React, { useState, ReactElement, ReactNode } from "react";
-import collapseIcon from "../../assets/chevron-right-icon.svg";
-import expandIcon from "../../assets/chevron-right-icon.svg";
+import expandIcon from "../../assets/chevronRight.svg";
+import collapseIcon from "../../assets/chevronDown.svg";
 
 interface CollapsibleSectionProps {
     title?: string;
