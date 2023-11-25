@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
 import Navigation from "../../components/navigation/navigation";
-import Banner from "../../components/banner/banner";
+import VideoBanner from "../../components/videoBanner/videoBanner";
 import Footer from "../../components/footer/footer";
-import SBPano from '../../assets/SBPano.jpg';
+import SBPano from '../../assets/bannerImages/06f46bd7-c28b-4d23-8aa0-a9c4fa374a45.mp4';
 import Headshot from "../../assets/NicoleHeadshot.jpg";
 import './home.scss';
 
@@ -14,11 +14,7 @@ export default function Home(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner
-                imageSrc={SBPano}
-                imageAlt={'Santa Barbara cityscape'}
-                message={'ORAL MYOFUNCTIONAL THERAPY'}
-            />
+            <VideoBanner videoSrc={SBPano} />
             <div className={'location-info'}>
                 <p>
                     Oral Myofunctional Therapy in the Santa Barbara region of the California Central Coast serving Montecito, Santa Barbara, Goleta, Summerland, Carpinteria, Solvang, Santa Ynez, and surrounding communities.

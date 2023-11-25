@@ -1,0 +1,44 @@
+.video-banner-area {
+	text-align: center;
+	width: 100vw;
+	height: 40em;
+	position: relative;
+	padding-bottom: 4em;
+	padding-top: 85px;
+
+	@media (max-width: 1023px) {
+		padding-top: 85px;
+		padding-bottom: 2em;
+		max-height: 40vh;
+	}
+
+	.hero-image-container video {
+		height: 640px;
+		width: 100%;
+		object-fit: cover;
+
+		@media (max-width: 1023px) {
+			padding-top: 0;
+			max-height: 40vh;
+		}
+	}
+
+	.video-banner-overlay {
+		color: white;
+		font-size: 3em;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 90;
+		height: 597px;
+
+		@media (max-width: 1023px) {
+			max-height: 40vh;
+			top: 35%;
+			font-size: 2.5em;
+		}
+	}
+}
