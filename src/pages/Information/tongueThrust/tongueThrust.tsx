@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import TongueThrustBanner from "../../../assets/bannerImages/girlWithBracesSmiling.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './tongueThrust.scss';
 
@@ -14,9 +14,9 @@ export default function TongueThrust(): ReactElement {
     return (
         <div className={'tongue-thrust-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Tongue Thrust'}/>
+            <Banner imageSrc={TongueThrustBanner} imageAlt={'beach pano'}/>
             <section className={'tongue-thrust-content-container'}>
-                <h2>TONGUE THRUST</h2>
+                <h2>TONGUE THRUST AND ORTHODONTICS</h2>
                 <p>A tongue thrust describes a swallowing pattern in which an individual pushes the tongue against or between the teeth during swallowing.</p>
                 <p>Our teeth will move with consistent light pressure and our tongue is actually quite strong. Specifically, it takes 1.5 grams of consistent force to move a tooth. The tongue has a median average force of 499 grams and can go up to 700-800 grams of force. Individuals with a tongue thrust swallowing pattern will commonly have anterior open bite. This is where the front teeth do not touch when biting down with the back teeth.</p>
                 <p>This can affect the ability to have proper oral rest posture, correct tongue posture, ability to breathe through your nose and swallowing.</p>

@@ -5,6 +5,10 @@ import Footer from "../../components/footer/footer";
 import SmilingWoman from "../../assets/bannerImages/howItWorksWomanSmiling.jpeg";
 import './howItWorks.scss';
 
+/**
+ * Renders the How it works page
+ * @constructor
+ */
 export default function HowItWorks(): ReactElement {
     return (
         <>

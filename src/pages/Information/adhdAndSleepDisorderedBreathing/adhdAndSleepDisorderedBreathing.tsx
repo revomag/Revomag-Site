@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import SleepDisorderedBreathing from "../../../assets/bannerImages/sleepDisruptedBreathing.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './adhdAndSleepDisorderedBreathing.scss';
 
@@ -14,11 +14,7 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
     return (
         <div className={'adhd-and-sleep-disordered-breathing-content'}>
             <Navigation/>
-            <Banner
-                imageSrc={BeachPano}
-                imageAlt={'beach pano'}
-                message={'ADHD and Sleep Disordered Breathing'}
-            />
+            <Banner imageSrc={SleepDisorderedBreathing} imageAlt={'beach pano'}/>
             <section className={'adhd-and-sleep-disordered-breathing-content-container'}>
                 <h2>Children with Sleep Disordered Breathing (SDB) and ADHD</h2>
                 <div className={"adhd-and-sleep-disordered-breathing-image1-container"}>
