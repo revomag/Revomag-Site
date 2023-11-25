@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
-import BeachPano from "../../../assets/BeachPano.jpg";
+import SleepApneaCpap from "../../../assets/bannerImages/manUsingCpap.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './snoringAndSleepApnea.scss';
 
@@ -14,7 +14,7 @@ export default function SnoringAndSleepApnea(): ReactElement {
     return (
         <div className={'snoring-apnea-content'}>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'Snoring And Sleep Apnea'}/>
+            <Banner imageSrc={SleepApneaCpap} imageAlt={'beach pano'}/>
             <section className={'snoring-apnea-content-container'}>
                 <h2>SNORING AND SLEEP APNEA</h2>
                 <div className={"snoring-apnea-image1-container"}>
