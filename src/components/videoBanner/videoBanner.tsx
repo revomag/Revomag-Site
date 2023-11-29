@@ -17,9 +17,12 @@ export default function VideoBanner({
                                    message,
                                }: VideoBannerProps): ReactElement {
 
-    const videoRef = useRef();
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
     const setPlayBack = () => {
-        videoRef.current.playbackRate = 0.6;
+        if (videoRef.current) {
+            videoRef.current!.playbackRate = 0.7;
+        }
     };
 
     return (

@@ -37,6 +37,7 @@ export default function TongueThrust(): ReactElement {
                     <h4>This video represents correct swallowing:</h4>
                     <iframe src="https://www.youtube.com/embed/j9RfQPC1IlY?si=sBY_FXrF4-6tsTlL"
                             title="YouTube video player"
+                            loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
@@ -46,6 +47,7 @@ export default function TongueThrust(): ReactElement {
                     <h4>This video represents what a tongue thrust looks like:</h4>
                     <iframe src="https://www.youtube.com/embed/loXCfn7m41k?si=0oPf2RVvRbbFma45"
                             title="YouTube video player"
+                            loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
@@ -53,25 +55,25 @@ export default function TongueThrust(): ReactElement {
                 </div>
                 <h4>Below are several photos of patients with a tongue thrust before and after myofunctional therapy:</h4>
                 <div className={"tongue-thrust-image1-container"}>
-                    <img id={'tongue-thrust-image1'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image2-container"}>
-                    <img id={'tongue-thrust-image2'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image2'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image3-container"}>
-                    <img id={'tongue-thrust-image3'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image3'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image4-container"}>
-                    <img id={'tongue-thrust-image4'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image4'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image5-container"}>
-                    <img id={'tongue-thrust-image5'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image5'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image6-container"}>
-                    <img id={'tongue-thrust-image6'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image6'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image7-container"}>
-                    <img id={'tongue-thrust-image7'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tongue-thrust-image7'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
             </section>
             <Footer/>

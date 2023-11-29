@@ -24,7 +24,7 @@ export default function Home(): ReactElement {
                 <h2>What is Myofunctional Therapy?</h2>
                 <p>Orofacial Myofunctional Therapy (OMT) is a neuromuscular re-education of the oral and facial muscles. It’s done through a series of tailored exercises, awareness and reduction of muscle compensations. The overarching goal is to restore normal function by correcting improper muscle movements, teaching correct chewing, swallowing and breathing patterns, and improving airway health.</p>
                 <div className={"home-image-container"}>
-                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <h2>This therapy is used to manage a variety of disorders including:</h2>
                 <ul>
@@ -44,7 +44,7 @@ export default function Home(): ReactElement {
                 </ul>
                 <p>These dysfunctions can significantly affect sleep quality, dentition, chewing, swallowing, speech and overall mental and physical health including hormone regulation, growth, attention span and more.</p>
                 <div className={"home-image-container"}>
-                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <p>Myofunctional therapy is for everyone, both children and adults. It is completely non-invasive and can be instrumental in re-training the muscles of the face and tongue that have been in dysfunction for years. Restoring normal function to the tongue and facial muscles can have full body benefits.</p>
                 <h2>Benefits of Myofunctional Therapy:</h2>
@@ -59,7 +59,7 @@ export default function Home(): ReactElement {
                     <li>Establishing symmetry to the face</li>
                 </ul>
                 <div className={"home-image-container"}>
-                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <p className={"disclaimer italic"}>The information on this website is in no way considered to be medical advice and is in no way intended to treat, cure or prevent any disease, symptom or condition. Medical advice should be obtained from an appropriately qualified and licensed medical professional. Please consult with your doctor for any change in lifestyle.</p>
             </div>

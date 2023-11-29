@@ -19,7 +19,7 @@ export default function TmjPain(): ReactElement {
                 <h2>TEMPORAL MANDIBULAR JOINT PAIN</h2>
                 <p>Many patients see a myofunctional therapist as a part of their treatment for temporal mandibular joint “TMJ” pain . Low tongue posture, mouth breathing, open mouth posture, tongue thrust swallow and other dysfunctional swallowing patterns over a lifetime increase the risk of pain in the TMJ. This pain can be from the joint itself or from the muscles that allow the joint to function. This pain is interchangeably called “TMJ” “TMD” “TMJD” or just simply “Jaw Pain.”</p>
                 <div className={"tmj-pain-image1-container"}>
-                    <img id={'tmj-pain-image1'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tmj-pain-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <h3>There are 4 main causes for jaw pain:</h3>
                 <ul>
@@ -29,7 +29,7 @@ export default function TmjPain(): ReactElement {
                     <li>Problem 4: Changes to Occlusion - the narrowing of the upper arch, flattening of the biting surface of the teeth and incorrect tongue posture may lead to disc compression and displacement. Tongue posture influences growth and development. When the tongue is low, the maxilla grows down or “drops” (instead of growing out and forward) and the mandible grows down and back. The maxilla “traps” the mandible from coming forward and the disc inside the TMJ is compressed.</li>
                 </ul>
                 <div className={"tmj-pain-image2-container"}>
-                    <img id={'tmj-pain-image2'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'tmj-pain-image2'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <p>Chronic pain is often the result of a combination of the problems mentioned. Changes to occlusion and craniofacial development add to the problems. If there is no tongue-to-palate contact there is no stability/support for the jaw joints.</p>
                 <p>TMD symptoms can include but are not limited to: inability to open the jaw very much, history of night guard, bite guard or splint, headaches or migraines, facial pain or tension, clicking/popping/grinding from the jaw joint, neck and shoulder pain or tension, and pain in the muscles around the jaw joint or above the ear.</p>
@@ -38,6 +38,7 @@ export default function TmjPain(): ReactElement {
                     <p>This video explains the intimate relationship between TMJ problems and breathing. Jaw pain, crooked teeth, forward head posture and headaches are often seen together.</p>
                     <iframe src="https://www.youtube.com/embed/W7zz-xRn2k4?si=aXSlApxae6n9Lhgp"
                             title="YouTube video player"
+                            loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>

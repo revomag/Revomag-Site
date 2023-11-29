@@ -18,7 +18,7 @@ export default function SnoringAndSleepApnea(): ReactElement {
             <section className={'snoring-apnea-content-container'}>
                 <h2>SNORING AND SLEEP APNEA</h2>
                 <div className={"snoring-apnea-image1-container"}>
-                    <img id={'snoring-apnea-image1'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'snoring-apnea-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <p>Millions of people suffer from a severe lack of quality sleep. Sleep disruption can come from a variety of causes. One of the most serious conditions that can cause it is a medical disorder caused by your tongue as it blocks your airway while you sleep. The type of blockage is called obstructive sleep apnea (OSA). In the U.S. approximately 6 million people have been diagnosed with sleep apnea and it is estimated that 23 million people are suffering from the effects of OSA without being diagnosed.</p>
                 <p>When the muscles in your throat, soft palate and tongue do not function properly, your tongue drops to the back of your airway while you sleep. If the tongue causes a partial blockage, the vibrations of the tongue tissue against your airway cause a snoring sound. If the tongue blocks your airway completely, you cannot breathe and your body reflexes cause you to grind your teeth, partially wake up, toss and turn and gasp for air in an attempt to open up your airway to get oxygen.</p>
