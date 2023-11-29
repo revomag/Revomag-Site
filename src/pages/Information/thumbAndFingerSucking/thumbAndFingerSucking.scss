@@ -65,8 +65,8 @@
 
 		img {
 			float: left;
-			height: 550px;
-			padding-left: 2em;
+			height: 250px;
+			padding-right: 2em;
 			padding-bottom: 1em;
 			padding-top: 1em;
 
@@ -123,16 +123,15 @@
 	}
 
 	.thumb-sucking-image6-container {
-		float: right;
+		display: flex;
+		justify-content: center;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
-			height: 550px;
-			padding-left: 2em;
+			height: 250px;
 			padding-bottom: 1em;
 			padding-top: 1em;
 

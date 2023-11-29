@@ -4,6 +4,8 @@ import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import ThumbSucking from "../../../assets/bannerImages/thumbSucking.jpeg";
 import Headshot from "../../../assets/NicoleHeadshot.jpg";
+import OpenBite from "../../../assets/thumbAndFingerSucking/Thumb sucking, open bite.jpeg"
+import Profile from "../../../assets/mouthBreathing/profile.png"
 import './thumbAndFingerSucking.scss';
 
 /**
@@ -38,7 +40,7 @@ export default function ThumbAndFingerSucking(): ReactElement {
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Teeth:</span> A dental “open bite” may form, as well as a cross bite of the back teeth, and/or an over-jet. This further </p>
                 <div className={"thumb-sucking-image3-container"}>
-                    <img id={'thumb-sucking-image3'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'thumb-sucking-image3'} src={OpenBite} alt={"Open bite teeth from thumb sucking"} loading={'lazy'}/>
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Upper Jaw:</span> Forms narrow and high, leaving less space for the nasal sinuses, often affecting the airway and breathing. The tongue can no longer fit easily in the palate, where it should naturally rest.</p>
                 <div className={"thumb-sucking-image4-container"}>
@@ -50,7 +52,7 @@ export default function ThumbAndFingerSucking(): ReactElement {
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Tongue:</span> The tongue is trained to rest low and forward in the mouth by the thumb. An abnormal “tongue thrust" swallow is learned affecting eating, drinking, breathing, speech, appearance, and rest posture of the face.</p>
                 <div className={"thumb-sucking-image6-container"}>
-                    <img id={'thumb-sucking-image6'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'thumb-sucking-image6'} src={Profile} alt={"Under developed craniofacial anatomy comparison"} loading={'lazy'}/>
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Appearance:</span> A longer, narrower, and flattened face shape is assumed. All of the structures have grown in downward patterns, as the jaw and mouth are constantly open to accommodate the thumb or finger. The jaw bones and cheek bones form to be much less prominent. A general ‘dull’ or sleepy appearance is common.</p>
                 <h3>How can a Myofunctional Therapist help?</h3>

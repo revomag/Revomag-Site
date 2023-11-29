@@ -3,7 +3,13 @@ import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import TongueThrustBanner from "../../../assets/bannerImages/girlWithBracesSmiling.jpeg";
-import Headshot from "../../../assets/NicoleHeadshot.jpg";
+import TongueThrustOne from "../../../assets/tongueThrust/before after OMT.png";
+import TongueThrustTwo from "../../../assets/tongueThrust/before after OMT 2.png";
+import TongueThrustThree from "../../../assets/tongueThrust/before after OMT 3.png";
+import TongueThrustFour from "../../../assets/tongueThrust/before after OMT 4.png";
+import TongueThrustFive from "../../../assets/tongueThrust/before after OMT 5.png";
+import TongueThrustFiveWords from "../../../assets/tongueThrust/OMT 5 words.png";
+import TongueThrustSix from "../../../assets/tongueThrust/before after OMT 6.png";
 import './tongueThrust.scss';
 
 /**
@@ -55,25 +61,25 @@ export default function TongueThrust(): ReactElement {
                 </div>
                 <h4>Below are several photos of patients with a tongue thrust before and after myofunctional therapy:</h4>
                 <div className={"tongue-thrust-image1-container"}>
-                    <img id={'tongue-thrust-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image1'} src={TongueThrustOne} alt={"Orthodontic damage due to tongue thrust example 1"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image2-container"}>
-                    <img id={'tongue-thrust-image2'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image2'} src={TongueThrustTwo} alt={"Orthodontic damage due to tongue thrust example 2"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image3-container"}>
-                    <img id={'tongue-thrust-image3'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image3'} src={TongueThrustThree} alt={"Orthodontic damage due to tongue thrust example 3"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image4-container"}>
-                    <img id={'tongue-thrust-image4'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image4'} src={TongueThrustFour} alt={"Orthodontic damage due to tongue thrust example 4"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image5-container"}>
-                    <img id={'tongue-thrust-image5'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image5'} src={TongueThrustFive} alt={"Orthodontic damage due to tongue thrust example 5"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image6-container"}>
-                    <img id={'tongue-thrust-image6'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image6'} src={TongueThrustFiveWords} alt={"Orthodontic damage due to tongue thrust example 5 explanation"} loading={'lazy'}/>
                 </div>
                 <div className={"tongue-thrust-image7-container"}>
-                    <img id={'tongue-thrust-image7'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img id={'tongue-thrust-image7'} src={TongueThrustSix} alt={"Orthodontic damage due to tongue thrust example 6"} loading={'lazy'}/>
                 </div>
             </section>
             <Footer/>
