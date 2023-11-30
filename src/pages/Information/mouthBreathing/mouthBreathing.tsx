@@ -54,6 +54,15 @@ export default function MouthBreathing(): ReactElement {
                         alt={"stanford study details"}
                         loading={'lazy'}/>
                 </div>
+                <div className={'mouth-breathing-video-container'}>
+                    <iframe src="https://www.youtube.com/embed/u1GUuZsHDZY?si=Ao6bE56FdixPlxDd"
+                            title="YouTube video player"
+                            loading={'lazy'}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                    </iframe>
+                </div>
                 <h4>Oxygen absorption</h4>
                 <p>Nasal breathing regulates the amount of air that comes into the body. When you breathe through your mouth, you’re exhaling out too much carbon dioxide. We need CO2 to accumulate in our body in order to optimally utilize the oxygen we breathe in. Carbon dioxide plays a significant role in the release of oxygen from hemoglobin, it triggers breathing, maintains blood pH and prevents smooth muscle spasms.</p>
                 <p className={'italic'}>Contrary to popular belief, oxygen is absorbed on the exhale, not the inhale. The back pressure created in the lungs with the slower exhale of nose breathing allows more time for the lungs to transfer oxygen to the blood. This exchange requires CO2. Exhaling through the mouth blows the CO2 out too quickly, resulting in less oxygen being absorbed.</p>
@@ -77,15 +86,6 @@ export default function MouthBreathing(): ReactElement {
                         <li>Improved athletic performance</li>
                         <li>Increased mental clarity and alertness</li>
                     </ul>
-                </div>
-                <div className={'mouth-breathing-video-container'}>
-                    <iframe src="https://www.youtube.com/embed/u1GUuZsHDZY?si=Ao6bE56FdixPlxDd"
-                            title="YouTube video player"
-                            loading={'lazy'}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen>
-                    </iframe>
                 </div>
             </section>
             <Footer/>
