@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Footer from "../../components/footer/footer";
 import Banner from "../../components/banner/banner";
-import BeachPano from "../../assets/BeachPano.jpg";
+import Bougainvillea from "../../assets/bannerImages/bougainvillea.jpeg"
 import Headshot from "../../assets/NicoleHeadshot.jpg";
 import './about.scss';
 
@@ -10,7 +10,7 @@ export default function About(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'About Nicole Cantello'}/>
+            <Banner imageSrc={Bougainvillea} imageAlt={'beach pano'}/>
             <div className={"about-content-container"}>
                 <div className={"about-image-container"}>
                     <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>

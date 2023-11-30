@@ -6,8 +6,11 @@ import Footer from "../../components/footer/footer";
 // import Headshot from "../../assets/NicoleHeadshot.jpg";
 import './home.scss';
 import Banner from "../../components/banner/banner";
-import BannerImageOne from "../../assets/bannerImages/girlWithBracesSmiling.jpeg";
-import BannerImageTwo from "../../assets/bannerImages/manUsingCpap.jpeg";
+import BannerImageOne from "../../assets/bannerImages/sbHomeImage1.jpeg";
+import BannerImageTwo from "../../assets/bannerImages/sbHomeImage2.jpeg";
+import BannerImageThree from "../../assets/bannerImages/sbHomeImage3.jpeg";
+import BannerImageFour from "../../assets/bannerImages/sbHomeImage4.jpeg";
+import BannerImageFive from "../../assets/bannerImages/sbHomeImage5.jpeg";
 
 /**
  * Renders home page
@@ -17,7 +20,17 @@ export default function Home(): ReactElement {
     // const [videoLoaded, setVideoLoaded] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [bannerImage, setBannerImage] = useState(BannerImageOne);
-    const bannerImageArray = useMemo(() => [BannerImageOne, BannerImageTwo], []);
+
+    const bannerImageArray = useMemo(() =>
+        [
+            BannerImageOne,
+            BannerImageTwo,
+            BannerImageThree,
+            BannerImageFour,
+            BannerImageFive
+        ], []
+    );
+
     // const videoBanner = <VideoBanner videoSrc={SBPano} id={"home-video-banner"}/>;
     const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'}/>;
     // const [videoBannerLoaded, setVideoBannerLoaded] = useState(false);
@@ -25,7 +38,7 @@ export default function Home(): ReactElement {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % bannerImageArray.length);
-        }, 15000);
+        }, 7000);
 
         setBannerImage(bannerImageArray[currentImageIndex]);
 
