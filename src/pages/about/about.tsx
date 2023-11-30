@@ -13,7 +13,7 @@ export default function About(): ReactElement {
             <Banner imageSrc={BeachPano} imageAlt={'beach pano'} message={'About Nicole Cantello'}/>
             <div className={"about-content-container"}>
                 <div className={"about-image-container"}>
-                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"}/>
+                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"about-content"}>
                     <h1>About Nicole</h1>

@@ -21,7 +21,7 @@
 
 		img {
 			float: left;
-			height: 550px;
+			height: 300px;
 			padding-right: 2em;
 			padding-bottom: 1em;
 			padding-top: 1em;
@@ -35,23 +35,41 @@
 	}
 
 	.mouth-breathing-image2-container {
-		float: right;
+		display: flex;
+		justify-content: center;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
-			height: 550px;
-			padding-left: 2em;
+			height: 225px;
 			padding-bottom: 1em;
 			padding-top: 1em;
 
 			@media (max-width: 1023px) {
 				height: 200px;
 				padding-top: 1em;
-				padding-left: 1em;
+			}
+		}
+	}
+
+	.mouth-breathing-image3-container {
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: 1023px) {
+			max-width: 40vw;
+		}
+
+		img {
+			height: 450px;
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			@media (max-width: 1023px) {
+				height: 200px;
+				padding-top: 1em;
 			}
 		}
 	}
