@@ -70,7 +70,7 @@
 	position: absolute;
 	padding: 0.5em 0.5em;
 	top: 1.5em;
-	left: 1.5em;
+	left: 1em;
 	cursor: pointer;
 }
 
@@ -148,6 +148,7 @@
 ul {
 	text-align: left;
 	padding-top: 2em;
+	line-height: 1.5;
 }
 
 #ham-collapse-ul {
