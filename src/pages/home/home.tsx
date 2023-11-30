@@ -3,7 +3,7 @@ import Navigation from "../../components/navigation/navigation";
 // import VideoBanner from "../../components/videoBanner/videoBanner";
 import Footer from "../../components/footer/footer";
 // import SBPano from '../../assets/bannerImages/06f46bd7-c28b-4d23-8aa0-a9c4fa374a45.mp4';
-import Headshot from "../../assets/NicoleHeadshot.jpg";
+// import Headshot from "../../assets/NicoleHeadshot.jpg";
 import './home.scss';
 import Banner from "../../components/banner/banner";
 import BannerImageOne from "../../assets/bannerImages/girlWithBracesSmiling.jpeg";
@@ -19,7 +19,7 @@ export default function Home(): ReactElement {
     const [bannerImage, setBannerImage] = useState(BannerImageOne);
     const bannerImageArray = useMemo(() => [BannerImageOne, BannerImageTwo], []);
     // const videoBanner = <VideoBanner videoSrc={SBPano} id={"home-video-banner"}/>;
-    const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'} id={"home-image-banner"}/>;
+    const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'}/>;
     // const [videoBannerLoaded, setVideoBannerLoaded] = useState(false);
 
     useEffect(() => {
