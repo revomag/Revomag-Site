@@ -38,7 +38,7 @@ export default function Home(): ReactElement {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % bannerImageArray.length);
-        }, 10000);
+        }, 7000);
 
         setBannerImage(bannerImageArray[currentImageIndex]);
 
