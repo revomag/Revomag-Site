@@ -58,7 +58,7 @@ export default function HamburgerMenu(): ReactElement {
                         </Link>
                     </li>
                     <li>
-                        <Link className={"ham-nav-link"} to={"/refer-a-patient"}>
+                        <Link className={"ham-nav-link"} to={"/refer"}>
                             REFER A PATIENT
                         </Link>
                     </li>

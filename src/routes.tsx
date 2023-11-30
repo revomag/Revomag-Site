@@ -51,7 +51,7 @@ const router = createBrowserRouter(
             <Route path="/contact" element={<ContactWithScrollRestoration/>}/>
             <Route path="/about" element={<AboutWithScrollRestoration/>}/>
             <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
-            <Route path="/refer-a-patient" element={<ReferAPatientWithScrollRestoration/>}/>
+            <Route path="/refer" element={<ReferAPatientWithScrollRestoration/>}/>
             <Route path="/book-appointment" element={<BookAppointmentWithScrollRestoration/>}/>
         </>
     )
