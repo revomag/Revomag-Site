@@ -2,7 +2,7 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Footer from "../../components/footer/footer";
 import Banner from "../../components/banner/banner";
-import Bougainvillea from "../../assets/bannerImages/bougainvillea.jpeg"
+import Bougainvillea from "../../assets/bannerImages/Bougainvillea2.jpeg"
 import Headshot from "../../assets/NicoleHeadshot.jpg";
 import './about.scss';
 
