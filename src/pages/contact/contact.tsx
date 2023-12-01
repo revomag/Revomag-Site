@@ -1,13 +1,10 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import SimplePracticeAppointmentRequestWidget
-    from "../../components/simplePracticeWidgets/simplePracticeAppointmentRequestWidget";
-import SimplePracticeExistingPatientLoginWidget
-    from "../../components/simplePracticeWidgets/simplePracticeExistingPatientLoginWidget";
 import Footer from "../../components/footer/footer";
 import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
+import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
 
 /**
  * Renders the contact page
@@ -36,9 +33,15 @@ export default function Contact(): ReactElement {
                 <div className={'contact-button-container'}>
                     <button>Send an Encrypted Message</button>
                     {/*Book an Appointment through Simple Practice*/}
-                    <SimplePracticeAppointmentRequestWidget/>
+                    <SimplePracticeWidget
+                        buttonText={'Book an Appointment'}
+                        href={"https://nicole-cantello.clientsecure.me"}
+                    />
                     {/*Existing patient Simple Practice login*/}
-                    <SimplePracticeExistingPatientLoginWidget/>
+                    <SimplePracticeWidget
+                        buttonText={'Existing Patient - Access Client Portal'}
+                        href={"https://nicole-cantello.clientsecure.me/sign-in"}
+                    />
                 </div>
             </section>
             <Footer/>

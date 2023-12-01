@@ -13,6 +13,7 @@ interface BannerProps {
  * @param imageSrc
  * @param imageAlt
  * @param message
+ * @param className
  * @constructor
  */
 export default function Banner({
