@@ -1,6 +1,10 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
+import SimplePracticeAppointmentRequestWidget
+    from "../../components/simplePracticeWidgets/simplePracticeAppointmentRequestWidget";
+import SimplePracticeExistingPatientLoginWidget
+    from "../../components/simplePracticeWidgets/simplePracticeExistingPatientLoginWidget";
 import Footer from "../../components/footer/footer";
 import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
@@ -31,8 +35,10 @@ export default function Contact(): ReactElement {
                 </div>
                 <div className={'contact-button-container'}>
                     <button>Send an Encrypted Message</button>
-                    <button>Book an Appointment</button>
-                    <button>Existing Patient - Access Client Portal</button>
+                    {/*Book an Appointment through Simple Practice*/}
+                    <SimplePracticeAppointmentRequestWidget/>
+                    {/*Existing patient Simple Practice login*/}
+                    <SimplePracticeExistingPatientLoginWidget/>
                 </div>
             </section>
             <Footer/>
