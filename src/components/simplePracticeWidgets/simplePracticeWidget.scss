@@ -1,0 +1,26 @@
+.spwidget-button-wrapper {
+	text-align: center
+}
+
+.spwidget-button {
+	display: inline-block;
+	width: 305px;
+	padding: 10px;
+	margin: 10px;
+	color: #fff !important;
+	background: #327979;
+	border: 0;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.spwidget-button:hover {
+	background: #3a8b8b;
+}
+
+.spwidget-button:active {
+	color: rgba(255, 255, 255, .75) !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset;
+}
