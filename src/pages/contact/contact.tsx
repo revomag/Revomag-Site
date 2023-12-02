@@ -31,6 +31,7 @@ export default function Contact(): ReactElement {
                     <p>If you have questions, would like more information or would like to discuss referring a patient to Santa Barbara Myo, please feel free to reach out via phone, email, text or by using the secure message button below. I look forward to caring for you.</p>
                 </div>
                 <div className={'contact-button-container'}>
+                    {/*Send message via Hushmail *still need to integrate**/}
                     <button>Send an Encrypted Message</button>
                     {/*Book an Appointment through Simple Practice*/}
                     <SimplePracticeWidget

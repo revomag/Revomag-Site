@@ -11,12 +11,12 @@ export default function About(): ReactElement {
         <>
             <Navigation/>
             <Banner imageSrc={Bougainvillea} imageAlt={'beach pano'}/>
+            <h2>About Nicole</h2>
             <div className={"about-content-container"}>
                 <div className={"about-image-container"}>
                     <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
                 <div className={"about-content"}>
-                    <h1>About Nicole</h1>
                     <div>
                         <p>Nicole Cantello is an orofacial myofunctional therapist who is passionate about improving the quality of her patient’s lives through optimized airway and dental health.</p>
                         <p>Practicing clinical dental hygiene since 2015, Nicole has seen thousands of patients with myofuctional disorders that have had a substantial negative impact on their lives. She decided to pursue becoming a myofunctional therapist to help educate and provide therapy to those patients.</p>

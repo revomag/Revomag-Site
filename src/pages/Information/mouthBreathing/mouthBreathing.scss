@@ -1,5 +1,5 @@
 .mouth-breathing-content-container {
-	margin: 0 15em;
+	margin: 0 auto;
 	text-align: left;
 	max-width: 90vw;
 
@@ -63,7 +63,7 @@
 
 	.mouth-breathing-media-wrapper {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		@media (max-width: 1023px) {
 			display: block;
@@ -79,8 +79,7 @@
 
 			img {
 				height: 450px;
-				padding-bottom: 1em;
-				padding-top: 1em;
+				padding: 1em 0.5em 1em 0;
 
 				@media (max-width: 1023px) {
 					height: auto;
@@ -93,7 +92,7 @@
 	}
 
 	.mouth-breathing-video-container {
-		padding: 1em 0 4em 0;
+		padding: 1em 0 4em 0.5em;
 
 		@media (max-width: 1023px) {
 			padding-right: 0;
