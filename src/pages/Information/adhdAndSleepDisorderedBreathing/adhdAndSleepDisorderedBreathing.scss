@@ -13,12 +13,19 @@
 	}
 
 	.adhd-and-sleep-disordered-breathing-video-container {
-		padding: 1em 0 4em 0;
+		padding: 2em 0 1em 0;
+		width: 100%;
+		margin: 4em auto;
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: 1023px) {
+			margin: 0 auto;
+		}
 
 		iframe {
 			width: 700px;
 			height: 394px;
-			float: left;
 			padding-right: 4em;
 
 			@media (max-width: 1023px) {
@@ -32,12 +39,15 @@
 	}
 
 	.adhd-and-sleep-disordered-breathing-image1-container {
+		float: left;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
+			float: none;
 		}
 
 		img {
+			float: left;
 			height: 550px;
 			padding-right: 2em;
 			padding-bottom: 1em;
@@ -47,26 +57,6 @@
 				height: 200px;
 				padding-top: 1em;
 				padding-right: 1em;
-			}
-		}
-	}
-
-	.adhd-and-sleep-disordered-breathing-image2-container {
-
-		@media (max-width: 1023px) {
-			max-width: 40vw;
-		}
-
-		img {
-			height: 550px;
-			padding-left: 2em;
-			padding-bottom: 1em;
-			padding-top: 1em;
-
-			@media (max-width: 1023px) {
-				height: 200px;
-				padding-top: 1em;
-				padding-left: 1em;
 			}
 		}
 	}

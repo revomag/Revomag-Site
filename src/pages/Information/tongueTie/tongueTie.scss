@@ -3,13 +3,13 @@
 	text-align: left;
 	max-width: 90vw;
 
-	h2 {
-		text-align: center;
-	}
-
 	@media (max-width: 1023px) {
 		margin: 0 1em;
 		display: block;
+	}
+
+	h2 {
+		text-align: center;
 	}
 
 	.tongue-tie-image1-container {
@@ -22,7 +22,7 @@
 		img {
 			float: left;
 			height: 550px;
-			padding-right: 2em;
+			padding-right: 2.5em;
 			padding-bottom: 1em;
 			padding-top: 1em;
 
@@ -31,6 +31,14 @@
 				padding-top: 1em;
 				padding-right: 1em;
 			}
+		}
+	}
+
+	.tongue-tie-list {
+		padding-top: 0;
+
+		li {
+			padding-bottom: 1em;
 		}
 	}
 
@@ -44,7 +52,7 @@
 		img {
 			float: right;
 			height: 550px;
-			padding-left: 2em;
+			padding-left: 2.5em;
 			padding-bottom: 1em;
 			padding-top: 1em;
 

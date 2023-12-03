@@ -23,7 +23,7 @@ export default function TongueTie(): ReactElement {
                 <p>Under the tongue is a band of tissue called the frenum. The frenum attaches the tongue to the floor of the mouth. If this attachment is too tight or restrictive, this is called a tongue tie.</p>
                 <p>How your tongue is attached to the floor of the mouth plays a significant role in how your face grows and how your mouth functions through breathing, speech and swallowing.</p>
                 <h3>Tongue ties can affect:</h3>
-                <ul>
+                <ul className={'tongue-tie-list'}>
                     <li>Craniofacial development: Our tongue is natures “natural retainer”. The pressure of it being lightly suctioned to the roof of the mouth guides optimal growth and development. When there’s a tethered oral tissues (TOT) like a tongue tie, it will prevent the tongue from resting in that optimal position. As a result, underdeveloped jaw and facial structures will occur. The palate will grow narrow instead of wide, which causes malocclusion or “crooked teeth”. The maxilla will grow down and drop, instead of growing out and forward, which causes the typical long and narrow face we call “adenoid face”. It also causes “gummy smile” which is when there is an excess of upper jaw gum tissue showing due to vertical maxillary growth from low tongue posture and open mouth resting state.</li>
                     <li>Eating and swallowing: In normal function, our tongue fully reaches the hard and soft palate during swallowing, which guides our food down our throat. When there is a restriction, the tongue is limited with har far to the palate it can go, and the individual will often feel like food is “stuck” in the back of mouth. Children especially are affected by this and will often avoid certain foods with certain textures that are more likely to get stuck. This is often make a child appear to be a “picky eater”, when in reality, they are protecting their airway.</li>
                     <li>How we clear food in mouth: Both children and adults with tongue ties will have limited mobility of the tongue. The tongue is the best cleaning tool we have to clear food debris from our mouth while eating. With very limited range of motion, debris will “get stuck” around our teeth, gums and cheeks, unable to be reached and dislodged by our tongue. This will cause decay and periodontal disease.</li>
@@ -36,7 +36,7 @@ export default function TongueTie(): ReactElement {
                 <p>The IAAP (International  Affiliation  of  Tongue-Tie  Professionals) defines “tongue-tie” as an embryological remnant of tissue in the midline between  the  undersurface  of  the  tongue  and  the  floor  of  the  mouth that  restricts  normal  tongue  movement.</p>
 
                 <h3>We currently describe ‘tongue tie’ or ‘tongue restriction’ in 5 dimensions:</h3>
-                <ul>
+                <ul className={'tongue-tie-list'}>
                     <li>How far you can stick out the tongue*</li>
                     <li>How far you lift the tongue up to the incisive papilla (just behind the upper back teeth with mouth open)*</li>
                     <li>How far you can open your mouth while your tongue is fully suctioned to the roof of  your mouth*</li>

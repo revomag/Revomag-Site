@@ -1,0 +1,40 @@
+.appointment-content-wrapper {
+	width: 80vw;
+	margin: 0 auto;
+	text-align: left;
+
+	@media (max-width: 1024px) {
+		width: 95vw;
+	}
+
+	h2 {
+		@media (max-width: 1024px) {
+			font-weight: 300;
+			text-align: center;
+			width: 80vw;
+			margin: 0 auto 2em;
+		}
+	}
+
+	p {
+		@media (max-width: 1024px) {
+			width: 80vw;
+			margin: 0 auto;
+			padding-bottom: 1em;
+		}
+	}
+
+	.spwidget-button-wrapper {
+		margin-bottom: 1em;
+	}
+
+	.section-line {
+		width: 100%;
+		border-bottom: 1px solid lightgray;
+		padding: 1em 0;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 2em;
+		}
+	}
+}

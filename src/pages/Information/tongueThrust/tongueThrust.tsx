@@ -39,25 +39,27 @@ export default function TongueThrust(): ReactElement {
                     <li>Prevent relapse of corrected malocclusion</li>
                     <li>Improve sleep-disordered breathing</li>
                 </ul>
-                <div className={'tongue-thrust-video-container'}>
-                    <h4>This video represents correct swallowing:</h4>
-                    <iframe src="https://www.youtube.com/embed/j9RfQPC1IlY?si=sBY_FXrF4-6tsTlL"
-                            title="YouTube video player"
-                            loading={'lazy'}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen>
-                    </iframe>
-                </div>
-                <div className={'tongue-thrust-video-container'}>
-                    <h4>This video represents what a tongue thrust looks like:</h4>
-                    <iframe src="https://www.youtube.com/embed/loXCfn7m41k?si=0oPf2RVvRbbFma45"
-                            title="YouTube video player"
-                            loading={'lazy'}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen>
-                    </iframe>
+                <div className={'tongue-thrust-videos-wrapper'}>
+                    <div className={'tongue-thrust-video-container'}>
+                        <h4>This video represents correct swallowing:</h4>
+                        <iframe src="https://www.youtube.com/embed/j9RfQPC1IlY?si=sBY_FXrF4-6tsTlL"
+                                title="YouTube video player"
+                                loading={'lazy'}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen>
+                        </iframe>
+                    </div>
+                    <div className={'tongue-thrust-video-container'}>
+                        <h4>This video represents what a tongue thrust looks like:</h4>
+                        <iframe src="https://www.youtube.com/embed/loXCfn7m41k?si=0oPf2RVvRbbFma45"
+                                title="YouTube video player"
+                                loading={'lazy'}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen>
+                        </iframe>
+                    </div>
                 </div>
                 <h4>Below are several photos of patients with a tongue thrust before and after myofunctional therapy:</h4>
                 <div className={"tongue-thrust-image1-container"}>

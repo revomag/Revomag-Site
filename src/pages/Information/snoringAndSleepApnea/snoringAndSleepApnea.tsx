@@ -16,7 +16,7 @@ export default function SnoringAndSleepApnea(): ReactElement {
             <Navigation/>
             <Banner imageSrc={SleepApneaCpap} imageAlt={'beach pano'}/>
             <section className={'snoring-apnea-content-container'}>
-                <h2>SNORING AND SLEEP APNEA</h2>
+                <h2>Snoring and Sleep Apnea</h2>
                 <div className={"snoring-apnea-image1-container"}>
                     <img id={'snoring-apnea-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>

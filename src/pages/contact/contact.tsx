@@ -1,13 +1,10 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import SimplePracticeAppointmentRequestWidget
-    from "../../components/simplePracticeWidgets/simplePracticeAppointmentRequestWidget";
-import SimplePracticeExistingPatientLoginWidget
-    from "../../components/simplePracticeWidgets/simplePracticeExistingPatientLoginWidget";
 import Footer from "../../components/footer/footer";
 import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
+import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
 
 /**
  * Renders the contact page
@@ -34,11 +31,18 @@ export default function Contact(): ReactElement {
                     <p>If you have questions, would like more information or would like to discuss referring a patient to Santa Barbara Myo, please feel free to reach out via phone, email, text or by using the secure message button below. I look forward to caring for you.</p>
                 </div>
                 <div className={'contact-button-container'}>
+                    {/*Send message via Hushmail *still need to integrate**/}
                     <button>Send an Encrypted Message</button>
                     {/*Book an Appointment through Simple Practice*/}
-                    <SimplePracticeAppointmentRequestWidget/>
+                    <SimplePracticeWidget
+                        buttonText={'Book an Appointment'}
+                        href={"https://nicole-cantello.clientsecure.me"}
+                    />
                     {/*Existing patient Simple Practice login*/}
-                    <SimplePracticeExistingPatientLoginWidget/>
+                    <SimplePracticeWidget
+                        buttonText={'Existing Patient - Access Client Portal'}
+                        href={"https://nicole-cantello.clientsecure.me/sign-in"}
+                    />
                 </div>
             </section>
             <Footer/>
