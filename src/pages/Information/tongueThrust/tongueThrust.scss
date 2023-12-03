@@ -1,10 +1,14 @@
 .tongue-thrust-content-container {
-	margin: 0 15em;
+	margin: 0 auto;
 	text-align: left;
 	max-width: 90vw;
 
 	h2 {
 		text-align: center;
+	}
+
+	ul {
+		padding-top: 0;
 	}
 
 	@media (max-width: 1023px) {
@@ -166,21 +170,26 @@
 		}
 	}
 
-	.tongue-thrust-video-container {
-		padding: 1em 0 4em 0;
+	.tongue-thrust-videos-wrapper {
+		display: flex;
+		justify-content: space-around;
 
-		iframe {
-			width: 700px;
-			height: 394px;
-			float: left;
-			padding-right: 4em;
+		.tongue-thrust-video-container {
+			padding: 1em 0 4em 0;
 
-			@media (max-width: 1023px) {
-				width: 80vw;
-				height: 45vw;
-				padding-right: 0;
-				display: block;
-				padding-bottom: 2em;
+			iframe {
+				width: 700px;
+				height: 394px;
+				float: left;
+				padding-right: 4em;
+
+				@media (max-width: 1023px) {
+					width: 80vw;
+					height: 45vw;
+					padding-right: 0;
+					display: block;
+					padding-bottom: 2em;
+				}
 			}
 		}
 	}

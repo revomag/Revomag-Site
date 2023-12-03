@@ -18,7 +18,7 @@ export default function ThumbAndFingerSucking(): ReactElement {
             <Navigation/>
             <Banner imageSrc={ThumbSucking} imageAlt={'Girl sucking thumb'}/>
             <section className={'thumb-sucking-content-container'}>
-                <h2>THUMB AND FINGER SUCKING</h2>
+                <h2>Thumb and Finger Sucking</h2>
                 <div className={"thumb-sucking-image1-container"}>
                     <img id={'thumb-sucking-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
                 </div>
