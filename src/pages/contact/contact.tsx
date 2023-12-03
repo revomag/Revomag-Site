@@ -32,7 +32,6 @@ export default function Contact(): ReactElement {
                 </div>
                 <div className={'contact-button-container'}>
                     {/*Send message via Hushmail *still need to integrate**/}
-                    <button>Send an Encrypted Message</button>
                     {/*Book an Appointment through Simple Practice*/}
                     <SimplePracticeWidget
                         buttonText={'Book an Appointment'}
@@ -43,6 +42,10 @@ export default function Contact(): ReactElement {
                         buttonText={'Existing Patient - Access Client Portal'}
                         href={"https://nicole-cantello.clientsecure.me/sign-in"}
                     />
+                    <div>
+                        <div data-secure-form="santabarbaramyo_contact" data-secure-form-transparent-background="true"></div>
+                        <script src="https://hushforms.com/f/public/javascript/embed-hush-form.js"></script>
+                    </div>
                 </div>
             </section>
             <Footer/>
