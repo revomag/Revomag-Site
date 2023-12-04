@@ -43,7 +43,10 @@ export default function Contact(): ReactElement {
                         href={"https://nicole-cantello.clientsecure.me/sign-in"}
                     />
                     {/*Send message via Hushmail*/}
-                    <SimpleButton buttonText={'Send An Encrypted Message'} destination={'https://hushforms.com/santabarbaramyo_contact'}/>
+                    <SimpleButton
+                        buttonText={'Send An Encrypted Message'}
+                        destination={'https://hushforms.com/santabarbaramyo_contact'}
+                    />
                 </div>
             </section>
             <Footer/>

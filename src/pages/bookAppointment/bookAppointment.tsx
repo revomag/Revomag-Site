@@ -5,6 +5,7 @@ import './bookAppointment.scss';
 import Banner from "../../components/banner/banner";
 import ScheduleAppointment from "../../assets/bannerImages/appointmentBanner.jpeg";
 import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
+import SimpleButton from "../../components/simpleButton/simpleButton";
 
 /**
  * Renders the Book and Appointment page
@@ -24,7 +25,10 @@ export default function BookAppointment(): ReactElement {
                     href={"https://nicole-cantello.clientsecure.me/request/service"}
                 />
                 <p>Not ready to schedule yet? Do you have questions you would like to talk through? You can book a free 15 minute call with Nicole!</p>
-                {/*Add hushmail contact form here to schedule 15 minute call*/}
+                <SimpleButton
+                    buttonText={'Request a Consultation'}
+                    destination={'https://hushforms.com/santabarbaramyo_consultation'}
+                />
                 <div className={'section-line'}/>
                 <h2>Existing Patients</h2>
                 <p>Existing patients who have already had a consultation appointment and are starting a treatment plan, or are booking their first therapy session after the consultation can use this link. When prompted, use the email address you provided during your initial scheduling or at your consultation appointment.</p>
