@@ -26,21 +26,5 @@
 		flex-direction: column;
 		padding-top: 30px;
 		align-items: center;
-
-		button {
-			background-color: #327979;
-			border: #327979 solid 1px;
-			border-radius: 15px;
-			color: white;
-			height: 50px;
-			width: 300px;
-			padding: 10px;
-			margin: 10px;
-		}
-
-		button:hover {
-			background-color: #3a8b8b;
-			cursor: pointer;
-		}
 	}
 }

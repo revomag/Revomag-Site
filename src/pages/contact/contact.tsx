@@ -1,10 +1,11 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
+import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
+import SimpleButton from "../../components/simpleButton/simpleButton";
 import Footer from "../../components/footer/footer";
 import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
-import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
 
 /**
  * Renders the contact page
@@ -31,7 +32,6 @@ export default function Contact(): ReactElement {
                     <p>If you have questions, would like more information or would like to discuss referring a patient to Santa Barbara Myo, please feel free to reach out via phone, email, text or by using the secure message button below. I look forward to caring for you.</p>
                 </div>
                 <div className={'contact-button-container'}>
-                    {/*Send message via Hushmail *still need to integrate**/}
                     {/*Book an Appointment through Simple Practice*/}
                     <SimplePracticeWidget
                         buttonText={'Book an Appointment'}
@@ -42,10 +42,8 @@ export default function Contact(): ReactElement {
                         buttonText={'Existing Patient - Access Client Portal'}
                         href={"https://nicole-cantello.clientsecure.me/sign-in"}
                     />
-                    <div>
-                        <div data-secure-form="santabarbaramyo_contact" data-secure-form-transparent-background="true"></div>
-                        <script src="https://hushforms.com/f/public/javascript/embed-hush-form.js"></script>
-                    </div>
+                    {/*Send message via Hushmail*/}
+                    <SimpleButton buttonText={'Send An Encrypted Message'} destination={'https://hushforms.com/santabarbaramyo_contact'}/>
                 </div>
             </section>
             <Footer/>
