@@ -1,7 +1,7 @@
 .tongue-thrust-content-container {
 	margin: 0 auto;
 	text-align: left;
-	max-width: 90vw;
+	max-width: 80vw;
 
 	h2 {
 		text-align: center;
@@ -10,6 +10,10 @@
 	.tongue-thrust-content-wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		.tongue-thrust-content-copy {
+			width: 40vw;
+		}
 	}
 
 	ul {
@@ -29,7 +33,7 @@
 
 		img {
 			height: auto;
-			width: 40vw;
+			width: 30vw;
 			padding-bottom: 1em;
 			padding-top: 1em;
 
