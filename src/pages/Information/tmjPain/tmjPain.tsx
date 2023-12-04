@@ -3,7 +3,7 @@ import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import TMJpain from "../../../assets/bannerImages/TMJpain.jpeg";
-import Headshot from "../../../assets/NicoleHeadshot.jpg";
+// import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import './tmjPain.scss';
 
 /**
@@ -18,9 +18,9 @@ export default function TmjPain(): ReactElement {
             <section className={'tmj-pain-content-container'}>
                 <h2>Temporal Mandibular Joint Pain</h2>
                 <p>Many patients see a myofunctional therapist as a part of their treatment for temporal mandibular joint “TMJ” pain . Low tongue posture, mouth breathing, open mouth posture, tongue thrust swallow and other dysfunctional swallowing patterns over a lifetime increase the risk of pain in the TMJ. This pain can be from the joint itself or from the muscles that allow the joint to function. This pain is interchangeably called “TMJ” “TMD” “TMJD” or just simply “Jaw Pain.”</p>
-                <div className={"tmj-pain-image1-container"}>
-                    <img id={'tmj-pain-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
-                </div>
+                {/*<div className={"tmj-pain-image1-container"}>*/}
+                {/*    <img id={'tmj-pain-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>*/}
+                {/*</div>*/}
                 <h3>There are 4 main causes for jaw pain:</h3>
                 <ul>
                     <li>Problem 1: Clenching and Grinding - this activation of the sympathetic fight or flight response of the nervous system often occurs as a drive to be able to open the airway to breathe better. The activation of the facial muscles often occurs while you are sleeping to bring the lower jaw forward (much the same way you would manually bring the jaw forward to open the airway when performing CPR). The activation of the facial muscles can exert as much as 1000psi of force on the teeth often leaving them worn down, cracked, and broken over time.</li>

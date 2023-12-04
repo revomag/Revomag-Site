@@ -3,7 +3,7 @@ import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import ThumbSucking from "../../../assets/bannerImages/thumbSucking.jpeg";
-import Headshot from "../../../assets/NicoleHeadshot.jpg";
+// import Headshot from "../../../assets/NicoleHeadshot.jpg";
 import OpenBite from "../../../assets/thumbAndFingerSucking/Thumb sucking, open bite.jpeg"
 import Profile from "../../../assets/mouthBreathing/profile.png"
 import './thumbAndFingerSucking.scss';
@@ -19,9 +19,9 @@ export default function ThumbAndFingerSucking(): ReactElement {
             <Banner imageSrc={ThumbSucking} imageAlt={'Girl sucking thumb'}/>
             <section className={'thumb-sucking-content-container'}>
                 <h2>Thumb and Finger Sucking</h2>
-                <div className={"thumb-sucking-image1-container"}>
-                    <img id={'thumb-sucking-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
-                </div>
+                {/*<div className={"thumb-sucking-image1-container"}>*/}
+                {/*    <img id={'thumb-sucking-image1'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>*/}
+                {/*</div>*/}
                 <p>Thumb or finger sucking habits are quite normal in infancy and early childhood. Many children have these habits for their first few years of life and then stop naturally on their own. It is unnecessary to cause undue attention to these habits at a very early age, as it may cause more harm than good.</p>
                 <p>Sucking habits become a concern when they are considered excessive. The intensity, frequency, and duration of the habit are factors that can help you determine if your child’s sucking habit is excessive.</p>
                 <h3>Ask yourself the questions below as a guide:</h3>
@@ -35,26 +35,26 @@ export default function ThumbAndFingerSucking(): ReactElement {
                 <h3>Facial Growth and Development</h3>
                 <p>The front teeth are the most noticeable structure to be negatively impacted by a thumb or finger sucking habit. However, the entire growth pattern and development of the face can be altered when an excessive sucking habit is present.</p>
                 <p>These are the most common growth problems associated with sucking habits:</p>
-                <div className={"thumb-sucking-image2-container"}>
-                    <img id={'thumb-sucking-image2'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
-                </div>
+                {/*<div className={"thumb-sucking-image2-container"}>*/}
+                {/*    <img id={'thumb-sucking-image2'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>*/}
+                {/*</div>*/}
                 <p><span style={{fontWeight: 'bold'}}>Teeth:</span> A dental “open bite” may form, as well as a cross bite of the back teeth, and/or an over-jet. This further </p>
                 <div className={"thumb-sucking-image3-container"}>
                     <img id={'thumb-sucking-image3'} src={OpenBite} alt={"Open bite teeth from thumb sucking"} loading={'lazy'}/>
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Upper Jaw:</span> Forms narrow and high, leaving less space for the nasal sinuses, often affecting the airway and breathing. The tongue can no longer fit easily in the palate, where it should naturally rest.</p>
-                <div className={"thumb-sucking-image4-container"}>
-                    <img id={'thumb-sucking-image4'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
-                </div>
+                {/*<div className={"thumb-sucking-image4-container"}>*/}
+                {/*    <img id={'thumb-sucking-image4'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>*/}
+                {/*</div>*/}
                 <p><span style={{fontWeight: 'bold'}}>Lower Jaw:</span> Develops smaller and less prominent, creating a “weak chin” appearance. The profile can be drastically changed by the pressure of the thumb resting on the lower jaw and lower teeth.</p>
-                <div className={"thumb-sucking-image5-container"}>
-                    <img id={'thumb-sucking-image5'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
-                </div>
+                {/*<div className={"thumb-sucking-image5-container"}>*/}
+                {/*    <img id={'thumb-sucking-image5'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>*/}
+                {/*</div>*/}
                 <p><span style={{fontWeight: 'bold'}}>Tongue:</span> The tongue is trained to rest low and forward in the mouth by the thumb. An abnormal “tongue thrust" swallow is learned affecting eating, drinking, breathing, speech, appearance, and rest posture of the face.</p>
+                <p><span style={{fontWeight: 'bold'}}>Appearance:</span> A longer, narrower, and flattened face shape is assumed. All of the structures have grown in downward patterns, as the jaw and mouth are constantly open to accommodate the thumb or finger. The jaw bones and cheek bones form to be much less prominent. A general ‘dull’ or sleepy appearance is common.</p>
                 <div className={"thumb-sucking-image6-container"}>
                     <img id={'thumb-sucking-image6'} src={Profile} alt={"Under developed craniofacial anatomy comparison"} loading={'lazy'}/>
                 </div>
-                <p><span style={{fontWeight: 'bold'}}>Appearance:</span> A longer, narrower, and flattened face shape is assumed. All of the structures have grown in downward patterns, as the jaw and mouth are constantly open to accommodate the thumb or finger. The jaw bones and cheek bones form to be much less prominent. A general ‘dull’ or sleepy appearance is common.</p>
                 <h3>How can a Myofunctional Therapist help?</h3>
                 <p>A myofunctional therapist can be an instrumental figure in helping to stop a sucking habit. Some children need positive reinforcement from an outside source to help them become motivated to stop the habit. Treating underlying myofunctional disorders is the key to treating thumb sucking and other oral habits. Myofunctional therapists are specially trained to help children and adults gain control over habits in a very positive and non-threatening manner.</p>
                 <p>Orthodontic appliances may also be used to stop a habit, but are often considered a last resort and often don’t address the root cause which can cause relapse when the appliance is removed. If necessary, an appliance may be prescribed by your orthodontist and used in combination with Myofunctional Therapy. No matter how your child is able to break the habit, a consultation with a MFT can be very valuable. There is no guarantee that the growth problems associated with sucking habits will normalize on their own.</p>

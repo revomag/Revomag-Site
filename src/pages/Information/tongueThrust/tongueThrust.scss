@@ -7,6 +7,11 @@
 		text-align: center;
 	}
 
+	.tongue-thrust-content-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	ul {
 		padding-top: 0;
 	}
@@ -16,37 +21,32 @@
 		display: block;
 	}
 
-	.tongue-thrust-image1-container {
-		float: left;
+	.tongue-thrust-image-container {
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: left;
-			height: 550px;
-			padding-right: 2em;
+			height: auto;
+			width: 40vw;
 			padding-bottom: 1em;
 			padding-top: 1em;
 
 			@media (max-width: 1023px) {
 				height: 200px;
 				padding-top: 1em;
-				padding-right: 1em;
 			}
 		}
 	}
 
 	.tongue-thrust-image2-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
@@ -61,14 +61,12 @@
 	}
 
 	.tongue-thrust-image3-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
@@ -83,14 +81,12 @@
 	}
 
 	.tongue-thrust-image4-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
@@ -105,14 +101,12 @@
 	}
 
 	.tongue-thrust-image5-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
@@ -127,14 +121,12 @@
 	}
 
 	.tongue-thrust-image6-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
@@ -149,14 +141,12 @@
 	}
 
 	.tongue-thrust-image7-container {
-		float: right;
 
 		@media (max-width: 1023px) {
 			max-width: 40vw;
 		}
 
 		img {
-			float: right;
 			height: 550px;
 			padding-left: 2em;
 			padding-bottom: 1em;
