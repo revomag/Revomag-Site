@@ -1,7 +1,7 @@
 .about-content-container {
 	display: flex;
 	margin: 0 auto;
-	width: 80vw;
+	width: 70vw;
 
 	@media (max-width: 1023px) {
 		display: block;
@@ -15,8 +15,8 @@
 		}
 
 		img {
-			height: 700px;
-			padding-right: 2em;
+			height: 400px;
+			padding-right: 3em;
 			padding-top: 2em;
 
 			@media (max-width: 1023px) {
@@ -38,5 +38,15 @@
 				display: none;
 			}
 		}
+	}
+}
+
+#family-image {
+	height: 500px;
+	padding-top: 3em;
+
+	@media (max-width: 1023px) {
+		width: 70vw;
+		height: auto;
 	}
 }
