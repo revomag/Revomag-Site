@@ -4,7 +4,6 @@ import './banner.scss';
 interface BannerProps {
     imageSrc: string;
     imageAlt: string;
-    message?: string;
     className?: string;
 }
 
@@ -19,7 +18,6 @@ interface BannerProps {
 export default function Banner({
                                    imageSrc,
                                    imageAlt,
-                                   message,
                                    className,
                                }: BannerProps): ReactElement {
     return (
@@ -27,7 +25,6 @@ export default function Banner({
             <div className={'hero-image-container'}>
                 <img id={'hero-image ' + className} src={imageSrc} alt={imageAlt} />
             </div>
-            <div className={'banner-overlay'}>{message}</div>
         </div>
     );
 }

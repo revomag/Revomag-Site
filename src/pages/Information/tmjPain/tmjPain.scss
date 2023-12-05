@@ -5,6 +5,7 @@
 
 	h2 {
 		text-align: center;
+		padding-bottom: 1em;
 	}
 
 	@media (max-width: 1023px) {
@@ -22,39 +23,16 @@
 		}
 	}
 
-	.tmj-pain-image1-container {
-		float: left;
-
-		@media (max-width: 1023px) {
-			max-width: 60vw;
-			float: none;
-			margin: 0 auto;
-		}
-
-		img {
-			float: left;
-			height: 550px;
-			padding: 1em 2em 1em 0;
-
-
-			@media (max-width: 1023px) {
-				float: none;
-				height: 300px;
-				padding-top: 1em;
-				padding-right: 0;
-			}
-		}
-	}
-
 	.tmj-pain-video-container {
 		padding-top: 3em;
-		height: 400px;
-		width: 700px;
+		height: calc(40vw * 11 / 16);
+		width: 40vw;
 		margin: 0 auto;
 
 		@media (max-width: 1023px) {
 			padding-top: 2em;
 			width: 85vw;
+			height: auto;
 			display: flex;
 			align-items: center;
 			flex-direction: column;
@@ -65,8 +43,8 @@
 		}
 
 		iframe {
-			width: 700px;
-			height: 394px;
+			width: 40vw;
+			height: calc(40vw * 9 / 16);
 			float: left;
 			padding-right: 4em;
 			margin: 0 auto;
@@ -77,6 +55,14 @@
 				padding-right: 0;
 				display: block;
 			}
+		}
+	}
+
+	.tmj-resources {
+		padding-top: 5em;
+
+		@media (max-width: 1023px) {
+			padding-top: 3em;
 		}
 	}
 }

@@ -1,37 +1,44 @@
 .snoring-apnea-content-container {
-	margin: 0 15em;
+	margin: 0 auto;
 	text-align: left;
-	max-width: 90vw;
+	max-width: 85vw;
 
 	h2 {
 		text-align: center;
 	}
 
 	@media (max-width: 1023px) {
-		margin: 0 1em;
+		margin: 0 auto;
 		display: block;
 	}
 
-	.snoring-apnea-image1-container {
-		float: left;
+	.snoring-image-container {
+		display: flex;
+		justify-content: center;
+		padding: 2em 0;
+		width: 60vw;
+		height: auto;
+		margin: 0 auto;
 
 		@media (max-width: 1023px) {
-			max-width: 40vw;
-			float: none;
+			max-width: 80vw;
 		}
 
-		img {
-			float: left;
-			height: 550px;
-			padding-right: 2em;
-			padding-bottom: 1em;
-			padding-top: 1em;
+		#snoring-image {
+			width: 40vw;
+			height: auto;
 
 			@media (max-width: 1023px) {
-				height: 200px;
-				padding-top: 1em;
-				padding-right: 1em;
+				width: 85vw;
+				height: auto;
 			}
+		}
+	}
+
+	ul {
+		padding-top: 0;
+		li {
+			padding-bottom: 1em;
 		}
 	}
 }
