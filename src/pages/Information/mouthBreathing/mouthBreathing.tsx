@@ -3,7 +3,6 @@ import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
 import Footer from "../../../components/footer/footer";
 import OpenMouthBreathing from "../../../assets/bannerImages/OpenMouthWomanSeeping.jpeg";
-import Stanford from "../../../assets/mouthBreathing/Stanford Study.png"
 import GummySmile from "../../../assets/mouthBreathing/Gummy Smile.png"
 import Profile from "../../../assets/mouthBreathing/profile.png"
 import './mouthBreathing.scss';
