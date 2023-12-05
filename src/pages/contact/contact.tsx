@@ -28,7 +28,7 @@ export default function Contact(): ReactElement {
                     </div>
                 </div>
                 <div className={'contact-services-description'}>
-                    <p>I am currently working with children aged 7 and older, teens, and adult patients. Common symptoms addressed by myofunctional therapy include: tongue tie, tongue thrust, TMJ pain, TMD, jaw pain, sleep disordered breathing, upper respiratory resistance syndrome, sleep apnea, snoring, and mouth breathing.</p>
+                    <p>I am currently working with children age 5 and older, teens, and adult patients. Common symptoms addressed by myofunctional therapy include: tongue tie, tongue thrust, TMJ pain, TMD, jaw pain, sleep disordered breathing, upper respiratory resistance syndrome, sleep apnea, snoring, and mouth breathing.</p>
                     <p>If you have questions, would like more information or would like to discuss referring a patient to Santa Barbara Myo, please feel free to reach out via phone, email, text or by using the secure message button below. I look forward to caring for you.</p>
                 </div>
                 <div className={'contact-button-container'}>

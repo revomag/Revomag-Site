@@ -25,9 +25,9 @@ export default function MouthBreathing(): ReactElement {
                 <p>Humans are designed to breath through our nose. It is the primary organ responsible for oxygenating our body.</p>
                 <h3>Reasons to nasal breathe:</h3>
                 <h4>Immunity</h4>
-                <p>Breathing through our nose warms, humidifies and filters the air we take into our body. Air that is breathed directly into the lungs is not filtered. Breathing through the nose filters the air before it enters our body. Allergens, bacteria and viruses are filtered out of the body through the turbinates and adenoids. The mucous of airway linings also collects potential contaminants where they’re destroyed by nasal enzymes before they can enter our body.</p>
+                <p>Breathing through our nose warms, humidifies and filters the air we take into our body. Nitric Oxide, only released through nasal breathing, sterilizes the air. Allergens, bacteria and viruses are filtered out of the body through the turbinates and adenoids. The mucous of airway linings also collects potential contaminants where they’re destroyed by nasal enzymes before they can enter our body. When mouth breathing, the air that enters our lungs is cold, not sterilized and enters in too quickly. This way of entry is harsh, suboptimal and not how our body was designed to function.</p>
                 <h4>Dental health</h4>
-                <p>Breathing through the mouth causes the oral cavity to become dried out, Saliva is the buffering agent which neutralizes acids so a dehydrated oral cavity causes excess acids in the mouth. This will lead to increased cavities and gum disease.</p>
+                <p>Breathing through the mouth causes the oral cavity to become dried out. Saliva is the buffering agent which neutralizes acids and restores our mouths neutral pH. A dehydrated oral cavity causes excess acids in the mouth which leads to increased cavities and gum disease.</p>
                 <h4>Proper Craniofacial growth</h4>
                 <div className={"mouth-breathing-image2-container"}>
                     <img
@@ -45,16 +45,9 @@ export default function MouthBreathing(): ReactElement {
                         loading={'lazy'}/>
                 </div>
                 <h4>Reduces snoring, sleep apnea and improves airway health</h4>
-                <p>When we breathe through our mouth we have to have a low tongue posture (tongue on floor of mouth). Low tongue posture directly reduces airway diameter, especially in the evening. Daytime effects of low tongue posture can cause the head to shift forward out of the natural alignment of our spine in an effort to create more space and open the airway. During nighttime, if the tongue is not suctioned to the roof of mouth, it will naturally shift back into our airway and partially or fully obstruct it. This is what causes snoring and sleep apnea. It also activates the sympathetic nervous system. The sympathetic nervous system activates fight or flight during a threat or perceived danger. It is difficult to get into “deep sleep”, which is the restorative and regenerative sleep we need, when our bodies are in a fight or flight response all night. This greatly affects sleep quality, hormone health and overall mental and physical health. Children are commonly misdiagnosed with ADHD due to sleep disordered breathing.</p>
+                <p>When we breathe through our mouth we have to have a low tongue posture (tongue on floor of mouth). Low tongue posture directly reduces airway diameter, especially in the evening. Daytime effects of low tongue posture can cause the head to shift forward out of the natural alignment of our spine in an effort to create more space and open the airway. During nighttime, if the tongue is not suctioned to the roof of mouth, it will naturally shift back into our airway and partially or fully obstruct it. This is what causes snoring and sleep apnea. Additionally, it activates the sympathetic nervous system. The sympathetic nervous system triggers a “fight or flight” response during a threat or perceived danger. It is difficult to get into “deep sleep”, which is the restorative and regenerative sleep we need, when our bodies are in a fight or flight response all night. This greatly affects sleep quality, hormone health and overall mental and physical health. Children are commonly misdiagnosed with ADHD due to sleep disordered breathing.</p>
                 <p className={'italic'}> **Current literature demonstrates that myofunctional therapy decreases apnea-hypopnea index (AHI) by approximately 50% in adults and 62% in children.</p>
                 <div className={'mouth-breathing-media-wrapper'}>
-                    <div className={"mouth-breathing-image3-container"}>
-                        <img
-                            id={'mouth-breathing-image3'}
-                            src={Stanford}
-                            alt={"stanford study details"}
-                            loading={'lazy'}/>
-                    </div>
                     <div className={'mouth-breathing-video-container'}>
                         <iframe src="https://www.youtube.com/embed/u1GUuZsHDZY?si=Ao6bE56FdixPlxDd"
                                 title="YouTube video player"
@@ -87,6 +80,19 @@ export default function MouthBreathing(): ReactElement {
                         <li>Increased lung capacity</li>
                         <li>Improved athletic performance</li>
                         <li>Increased mental clarity and alertness</li>
+                    </ul>
+                    <h3>Additional Resources:</h3>
+                    <ul>
+                        <li>
+                            <a href={"https://academic.oup.com/ejo/article/29/5/426/426214?login=false"}>
+                                The effect of mode of breathing on craniofacial growth
+                            </a>
+                        </li>
+                        <li>
+                            <a href={"https://link.springer.com/article/10.1007/s11325-015-1154-6"}>
+                                Mouth breathing, “nasal disuse”, and pediatric sleep-disordered breathing
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>

@@ -13,7 +13,7 @@ export default function ReferAPatient(): ReactElement {
             <Banner imageSrc={Handshake} imageAlt={'handshake'}/>
             <section className={'refer-a-patient-container'}>
                 <h2>Refer a Patient</h2>
-                <p>If you are a dentist, orthodontist, periodontist, oral surgeon, physician, chiropractor, craniosacral therapist, massage therapist or a staff member of a professional office, you can submit an encrypted referral. I am currently working with patients age 7 and older.</p>
+                <p>If you are a dentist, orthodontist, periodontist, oral surgeon, physician, chiropractor, craniosacral therapist, massage therapist or a staff member of a professional office, you can submit an encrypted referral. I am currently working with patients age 5 and older.</p>
                 <p>Our team will reach out to your patient to schedule a comprehensive evaluation.</p>
                 <SimpleButton
                     buttonText={'Submit an Encrypted Referral'}

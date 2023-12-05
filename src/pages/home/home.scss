@@ -13,13 +13,15 @@
 }
 
 .myo-info {
-	padding-top: 4em;
+	padding-top: 2em;
 
 	@media (max-width: 1023px) {
 		padding-top: 1em;
 	}
 
 	h2 {
+		padding-top: 2em;
+
 		@media (max-width: 1023px) {
 			font-size: 1.25em;
 		}
@@ -39,7 +41,7 @@
 		max-width: 30%;
 		text-align: left;
 		margin: 0 auto;
-		padding-bottom: 1.5em;
+		padding-bottom: 2em;
 		padding-top: 0;
 
 		@media (max-width: 1023px) {
@@ -48,7 +50,13 @@
 	}
 
 	.disclaimer {
+		padding-top: 8em;
+		margin-bottom: -5em;
 		font-size: .75em;
+
+		@media (max-width: 1023px) {
+			margin-bottom: -3em;
+		}
 	}
 
 	.home-image-container {
