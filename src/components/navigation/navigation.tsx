@@ -1,4 +1,5 @@
 import {ReactElement} from "react";
+import {isMobileDevice} from "../../utils/helperFunctions";
 import NavBar from "./navBar/navBar";
 import HamburgerMenu from "./hamburgerMenu/hamburgerMenu";
 
@@ -7,13 +8,11 @@ import HamburgerMenu from "./hamburgerMenu/hamburgerMenu";
  * @constructor
  */
 export default function Navigation(): ReactElement {
-    const deviceDetails = navigator.userAgent;
-    const regExpList = /android|iphone|kindle|ipad|mobile/i;
-    const isMobileDevice = regExpList.test(deviceDetails);
+    const isMobile = isMobileDevice();
 
     return (
         <>
-            {isMobileDevice ? <HamburgerMenu/> : <NavBar/>}
+            {isMobile ? <HamburgerMenu/> : <NavBar/>}
         </>
     );
 }

@@ -1,24 +1,22 @@
 import {ReactElement, useEffect, useMemo, useState} from "react";
 import Navigation from "../../components/navigation/navigation";
-// import VideoBanner from "../../components/videoBanner/videoBanner";
 import Footer from "../../components/footer/footer";
-// import SBPano from '../../assets/bannerImages/06f46bd7-c28b-4d23-8aa0-a9c4fa374a45.mp4';
-import './home.scss';
 import Banner from "../../components/banner/banner";
 import BannerImageOne from "../../assets/bannerImages/sbHomeImage1.jpeg";
 import BannerImageTwo from "../../assets/bannerImages/sbHomeImage2.jpeg";
 import BannerImageThree from "../../assets/bannerImages/sbHomeImage3.jpeg";
 import BannerImageFour from "../../assets/bannerImages/sbHomeImage4.jpeg";
 import BannerImageFive from "../../assets/bannerImages/sbHomeImage5.jpeg";
+import './home.scss';
 
 /**
  * Renders home page
  * @constructor
  */
 export default function Home(): ReactElement {
-    // const [videoLoaded, setVideoLoaded] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [bannerImage, setBannerImage] = useState(BannerImageOne);
+    const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'}/>;
 
     const bannerImageArray = useMemo(() =>
         [
@@ -29,10 +27,6 @@ export default function Home(): ReactElement {
             BannerImageFive
         ], []
     );
-
-    // const videoBanner = <VideoBanner videoSrc={SBPano} id={"home-video-banner"}/>;
-    const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'}/>;
-    // const [videoBannerLoaded, setVideoBannerLoaded] = useState(false);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -45,44 +39,9 @@ export default function Home(): ReactElement {
 
     }, [bannerImageArray, bannerImageArray.length, currentImageIndex]); // Run this effect once on mount
 
-    // useEffect(() => {
-    //     const handleCanPlay = () => {
-    //         setVideoLoaded(true);
-    //     };
-    //
-    //     if (videoRef.current) {
-    //         videoRef.current.addEventListener('canplay', handleCanPlay);
-    //     }
-    //
-    //     // Cleanup event listener on component unmount
-    //     return () => {
-    //         if (videoRef.current) {
-    //             videoRef.current.removeEventListener('canplay', handleCanPlay);
-    //         }
-    //     };
-    // }, []);
-    //
-    // const videoElement = (
-    //     <video
-    //         playsInline
-    //         autoPlay
-    //         muted
-    //         loop
-    //         ref={videoRef}
-    //         src={videoSrc}
-    //         style={{ display: videoLoaded ? 'block' : 'none' }}
-    //     >
-    //         <source src={videoSrc} type="video/mp4" />
-    //     </video>
-    // );
-
     return (
         <>
             <Navigation/>
-            {/*<VideoBanner videoSrc={SBPano} />*/}
-            {/*<div className={'hero-image-container'}>*/}
-            {/*    {videoLoaded ? videoBanner : imageBanner}*/}
-            {/*</div>*/}
             {imageBanner}
             <div className={'location-info'}>
                 <p>
