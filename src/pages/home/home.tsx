@@ -67,7 +67,7 @@ export default function Home(): ReactElement {
                     <li>Chronic fatigue/waking up tired</li>
                     <li>Anxiety</li>
                 </ul>
-                <p>These dysfunctions can significantly affect sleep quality, dentition, chewing, swallowing, speech and overall mental and physical health including hormone regulation, growth, attention span and more.</p>
+                <p>These dysfunctions can significantly affect sleep quality, dentition, chewing, swallowing, speech and overall mental and physical health including hormone regulation, growth, attention span and more.</p><br/>
                 <p>Myofunctional therapy is for everyone, both children and adults. It is completely non-invasive and can be instrumental in re-training the muscles of the face and tongue that have been in dysfunction for years. Restoring normal function to the tongue and facial muscles can have full body benefits.</p>
                 <h2>Benefits of Myofunctional Therapy:</h2>
                 <ul>
