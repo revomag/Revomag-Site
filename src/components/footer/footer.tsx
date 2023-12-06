@@ -4,6 +4,10 @@ import Instagram from '../../assets/socialMediaIcons/instagram.svg';
 import LinkedIn from '../../assets/socialMediaIcons/linkedin.svg';
 import './footer.scss';
 
+/**
+ * Renders the Footer component
+ * @constructor
+ */
 export default function Footer(): ReactElement {
     return (
         <div className={'footer-section'}>
@@ -29,17 +33,29 @@ export default function Footer(): ReactElement {
             </div>
             <div className={'footer-social-media-container'}>
                 <div className={'social-icon'}>
-                    <a href={""} target={"_blank"} rel={"noreferrer"}>
+                    <a
+                        href={"https://www.facebook.com/profile.php?id=61554085960201"}
+                        target={"_blank"}
+                        rel={"noreferrer"}
+                    >
                         <img src={Facebook} alt={'facebook link'}/>
                     </a>
                 </div>
                 <div className={'social-icon'}>
-                    <a href={""} target={"_blank"} rel={"noreferrer"}>
+                    <a
+                        href={"https://www.instagram.com/santabarbara.myo/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"}
+                        target={"_blank"}
+                        rel={"noreferrer"}
+                    >
                         <img src={Instagram} alt={'instagram link'}/>
                     </a>
                 </div>
                 <div className={'social-icon'}>
-                    <a href={""} target={"_blank"} rel={"noreferrer"}>
+                    <a
+                        href={"https://www.linkedin.com/company/santa-barbara-myo/"}
+                        target={"_blank"}
+                        rel={"noreferrer"}
+                    >
                         <img src={LinkedIn} alt={'linkedin link'}/>
                     </a>
                 </div>
