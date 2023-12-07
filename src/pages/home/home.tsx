@@ -16,7 +16,12 @@ import './home.scss';
 export default function Home(): ReactElement {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [bannerImage, setBannerImage] = useState(BannerImageOne);
-    const imageBanner = <Banner className={'image-fade'} imageSrc={bannerImage} imageAlt={'image slider'}/>;
+    const imageBanner = <Banner
+        className={'image-fade'}
+        imageSrc={bannerImage}
+        imageAlt={'image slider'}
+        imageTitle={'Santa Barbara California Scenery'}
+    />;
 
     const bannerImageArray = useMemo(() =>
         [

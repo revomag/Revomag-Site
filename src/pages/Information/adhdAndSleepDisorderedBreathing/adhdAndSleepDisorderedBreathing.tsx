@@ -13,7 +13,11 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
     return (
         <div className={'adhd-and-sleep-disordered-breathing-content'}>
             <Navigation/>
-            <Banner imageSrc={SleepDisorderedBreathing} imageAlt={'beach pano'}/>
+            <Banner
+                imageSrc={SleepDisorderedBreathing}
+                imageAlt={'boy mouth breathing while sleeping'}
+                imageTitle={'Boy mouth breathing while sleeping'}
+            />
             <section className={'adhd-and-sleep-disordered-breathing-content-container'}>
                 <h2>Children with Sleep Disordered Breathing (SDB) and ADHD</h2>
                 <p>Children with sleep disorders are often inattentive or hyperactive, and some carry a diagnosis of attention deficit/hyperactivity disorder (ADHD) until their sleep disorder is detected.</p>
@@ -22,14 +26,14 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
                 <p>Every child should be screened and assessed for sleep disordered breathing, especially any child that has ADHD symptoms or diagnosis.</p>
                 <div className={'adhd-and-sleep-disordered-breathing-video-container'}>
                     <iframe src="https://www.youtube.com/embed/yDHdo4ezs64?si=VLlUxHZOVFe99_xD"
-                            title="YouTube video player"
+                            title="ADHD and Orthodontics"
                             loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen>
                     </iframe>
                 </div>
-                <h3>Resources:</h3>
+                <h3>Additional Resources:</h3>
                 <ol>
                     <li>
                         <a href={'https://pubmed.ncbi.nlm.nih.gov/34934269/'}>

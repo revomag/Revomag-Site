@@ -13,7 +13,11 @@ export default function Resources(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={Research} imageAlt={'woman researching'}/>
+            <Banner
+                imageSrc={Research}
+                imageAlt={'woman researching'}
+                imageTitle={'Someone doing online research on myofunctional therapy'}
+            />
             <section className={'resources-content-container'}>
                 <h2>RESOURCES</h2>
                 <p>Below are peer reviewed research studies, systemic reviews, meta studies/analysis, medical reviews, case reports, and research papers pertaining to Orofacial Myofuntional Therapy (OMT) and treatment/relation to the following:</p>

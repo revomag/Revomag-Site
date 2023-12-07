@@ -14,7 +14,11 @@ export default function SnoringAndSleepApnea(): ReactElement {
     return (
         <div className={'snoring-apnea-content'}>
             <Navigation/>
-            <Banner imageSrc={SleepApneaCpap} imageAlt={'beach pano'}/>
+            <Banner
+                imageSrc={SleepApneaCpap}
+                imageAlt={'Man using a cpap while sleeping'}
+                imageTitle={'Man using a cpap while sleeping'}
+            />
             <section className={'snoring-apnea-content-container'}>
                 <h2>Snoring and Sleep Apnea</h2>
                 <p>Millions of people suffer from a severe lack of quality sleep. Sleep disruption can come from a variety of causes. One of the most serious conditions that can cause it is a medical disorder caused by your tongue as it blocks your airway while you sleep. The type of blockage is called obstructive sleep apnea (OSA). In the U.S. approximately 6 million people have been diagnosed with sleep apnea and it is estimated that 23 million people are suffering from the effects of OSA without being diagnosed.</p>
@@ -30,7 +34,9 @@ export default function SnoringAndSleepApnea(): ReactElement {
                         id={'snoring-image'}
                         src={Stanford}
                         alt={"stanford study details"}
-                        loading={'lazy'}/>
+                        title={'Stanford study of myofuntional therapy use to treat obstructive sleep apnea'}
+                        loading={'lazy'}
+                    />
                 </div>
                 <p>Orofacial Myofunctional therapy (OMT) is beneficial for both children and adults who snore or have been diagnosed with obstructive sleep apnea. It is especially beneficial for children who are showing beginning signs of sleep disordered breathing, like snoring or sleeping with an open mouth posture while breathing through the mouth. During formative years, OMT has been shown to guide palatal and craniofacial growth and possibly prevent serious sleep disordered breathing, like OSA, in adulthood.</p>
                 <h3>Additional Resources:</h3>

@@ -14,7 +14,11 @@ export default function TongueTie(): ReactElement {
     return (
         <div className={'tongue-tie-content'}>
             <Navigation/>
-            <Banner imageSrc={TongueTieBannerImage} imageAlt={'Child with tongue tie'}/>
+            <Banner
+                imageSrc={TongueTieBannerImage}
+                imageAlt={'Child with tongue tie'}
+                imageTitle={'Child with tongue tie'}
+            />
             <section className={'tongue-tie-content-container'}>
                 <h2>TONGUE TIE</h2>
                 <p>Under the tongue is a band of tissue called the frenum. The frenum attaches the tongue to the floor of the mouth. If this attachment is too tight or restrictive, this is called a tongue tie. How your tongue is attached to the floor of the mouth plays a significant role in how your face grows and how your mouth functions through breathing, speech and swallowing.</p>
@@ -26,7 +30,13 @@ export default function TongueTie(): ReactElement {
                                 Craniofacial development: Our tongue is natures “natural retainer”. The pressure of it being lightly suctioned to the roof of the mouth guides optimal growth and development. When there’s a tethered oral tissues (TOT) like a tongue tie, it will prevent the tongue from resting in that optimal position. As a result, underdeveloped jaw and facial structures will occur. The palate will grow narrow instead of wide, which causes malocclusion or “crooked teeth”. The maxilla will grow down and drop, instead of growing out and forward, which causes the typical long and narrow face we call “adenoid face”. It also causes “gummy smile” which is when there is an excess of upper jaw gum tissue showing due to vertical maxillary growth from low tongue posture and open mouth resting state.
                             </p>
                             <div className={"tongue-tie-image1-container"}>
-                                <img id={'tongue-tie-image1'} src={Snaggle} alt={"Narrow palate crooked teeth"} loading={'lazy'}/>
+                                <img
+                                    id={'tongue-tie-image1'}
+                                    src={Snaggle}
+                                    alt={"Narrow palate with crooked teeth"}
+                                    title={'Narrow palate with crooked teeth'}
+                                    loading={'lazy'}
+                                />
                             </div>
                         </div>
                     </li>
