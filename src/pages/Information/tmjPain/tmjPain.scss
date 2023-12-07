@@ -1,7 +1,8 @@
 .tmj-pain-content-container {
-	margin: 0 15em;
+	margin: 0 auto;
 	text-align: left;
-	max-width: 90vw;
+	width: 80vw;
+	max-width: 1400px;
 
 	h2 {
 		text-align: center;
@@ -17,6 +18,8 @@
 	ul {
 		padding-top: 0;
 		padding-left: .5em;
+		width: 95%;
+		margin: 0 auto;
 
 		li {
 			padding-bottom: 1em;
