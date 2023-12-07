@@ -4,6 +4,7 @@ import './banner.scss';
 interface BannerProps {
     imageSrc: string;
     imageAlt: string;
+    imageTitle: string;
     className?: string;
 }
 
@@ -18,12 +19,13 @@ interface BannerProps {
 export default function Banner({
                                    imageSrc,
                                    imageAlt,
+                                   imageTitle,
                                    className,
                                }: BannerProps): ReactElement {
     return (
         <div className={'banner-area'}>
             <div className={'hero-image-container'}>
-                <img id={'hero-image ' + className} src={imageSrc} alt={imageAlt} />
+                <img id={'hero-image ' + className} src={imageSrc} alt={imageAlt} title={imageTitle} />
             </div>
         </div>
     );

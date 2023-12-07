@@ -11,11 +11,21 @@ export default function About(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={Bougainvillea} imageAlt={'beach pano'}/>
+            <Banner
+                imageSrc={Bougainvillea}
+                imageAlt={'bougainvillea hanging over wall'}
+                imageTitle={'bougainvillea hanging over wall'}
+            />
             <h2>About Nicole</h2>
             <div className={"about-content-container"}>
                 <div className={"about-image-container"}>
-                    <img id={'headshot-image'} src={Headshot} alt={"nicole headshot"} loading={'lazy'}/>
+                    <img
+                        id={'headshot-image'}
+                        src={Headshot}
+                        alt={"nicole myofunctional therapist headshot"}
+                        title={'Nicole Cantello, orofacial myofunction therapist'}
+                        loading={'lazy'}
+                    />
                 </div>
                 <div className={"about-content"}>
                     <div>
@@ -30,7 +40,13 @@ export default function About(): ReactElement {
                 </div>
             </div>
             <div className={"about-image-container"}>
-                <img id={'family-image'} src={Family} alt={"family picture"} loading={'lazy'}/>
+                <img
+                    id={'family-image'}
+                    src={Family}
+                    alt={"family picture"}
+                    title={'Nicole\'s family'}
+                    loading={'lazy'}
+                />
             </div>
             <Footer/>
         </>

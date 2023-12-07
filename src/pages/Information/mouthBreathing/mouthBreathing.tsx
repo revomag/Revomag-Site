@@ -15,7 +15,11 @@ export default function MouthBreathing(): ReactElement {
     return (
         <div className={'mouth-breathing-content'}>
             <Navigation/>
-            <Banner imageSrc={OpenMouthBreathing} imageAlt={'Sleeping woman breathing through her mouth'}/>
+            <Banner
+                imageSrc={OpenMouthBreathing}
+                imageAlt={'Sleeping woman breathing through her mouth'}
+                imageTitle={'Woman mouth breathing while asleep'}
+            />
             <section className={'mouth-breathing-content-container'}>
                 <h2>MOUTH BREATHING</h2>
                 <p>Mouth breathing has a great use when we need it, such as times that we sense danger when our bodies need to shift into a “fight or flight” sympathetic state. However, habitual mouth breathing can sustain this fight or flight response. This makes it difficult for the body and mind to rest, even when there is no impending danger. Mouth breathing during sleep has been associated with sleep disordered breathing and obstructive sleep apnea.</p>
@@ -32,8 +36,10 @@ export default function MouthBreathing(): ReactElement {
                     <img
                         id={'mouth-breathing-image2'}
                         src={Profile}
-                        alt={"Examples of poor craniofacial formation"}
-                        loading={'lazy'}/>
+                        alt={"Comparison of poor craniofacial formation and proper craniofacial formation"}
+                        title={'Proper craniofacial growth vs abnormal craniofacial development'}
+                        loading={'lazy'}
+                    />
                 </div>
                 <p>Mouth breathing can change the shape of your face and alter your appearance. This is especially true in children as they’re still growing. Children whose mouth breathing goes untreated may suffer from abnormal facial, dental and neurological development. Symptoms include long and narrow face and mouth “adenoid face”, less defined and flat cheekbones, narrow palate and small lower jaws, recessed or “weak” chins and smaller airways. Other facial symptoms include crowding due to underdeveloped jaws and inadequate space and “gummy smiles”. Mouth breathing in children will often lead to a lifetime of sleep disordered breathing, snoring and sleep apnea.</p>
                 <div className={"mouth-breathing-image1-container"}>
@@ -41,7 +47,9 @@ export default function MouthBreathing(): ReactElement {
                         id={'mouth-breathing-image1'}
                         src={GummySmile}
                         alt={"Comparison of gummy smile to normal smile"}
-                        loading={'lazy'}/>
+                        title={'Gummy smile vs normal smile'}
+                        loading={'lazy'}
+                    />
                 </div>
                 <h4>Reduces snoring, sleep apnea and improves airway health</h4>
                 <p>When we breathe through our mouth we have to have a low tongue posture (tongue on floor of mouth). Low tongue posture directly reduces airway diameter, especially in the evening. Daytime effects of low tongue posture can cause the head to shift forward out of the natural alignment of our spine in an effort to create more space and open the airway. During nighttime, if the tongue is not suctioned to the roof of mouth, it will naturally shift back into our airway and partially or fully obstruct it. This is what causes snoring and sleep apnea. Additionally, it activates the sympathetic nervous system. The sympathetic nervous system triggers a “fight or flight” response during a threat or perceived danger. It is difficult to get into “deep sleep”, which is the restorative and regenerative sleep we need, when our bodies are in a fight or flight response all night. This greatly affects sleep quality, hormone health and overall mental and physical health. Children are commonly misdiagnosed with ADHD due to sleep disordered breathing.</p>
@@ -49,7 +57,7 @@ export default function MouthBreathing(): ReactElement {
                 <div className={'mouth-breathing-media-wrapper'}>
                     <div className={'mouth-breathing-video-container'}>
                         <iframe src="https://www.youtube.com/embed/u1GUuZsHDZY?si=Ao6bE56FdixPlxDd"
-                                title="YouTube video player"
+                                title="Mouth breathing causes sleep apnea"
                                 loading={'lazy'}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -65,7 +73,7 @@ export default function MouthBreathing(): ReactElement {
                 <p>*A note on nitric oxide- nitric oxide is a very important signaling molecule in the CV system. Enzymes in the nose and sinus produce Nitric Oxide and its released into our bodies when we inhale through our nose. It has anti-inflammatory, anti- microbial and anti-viral properties. When we mouth breath, we bypass this entire system and don’t get this immune function from Nitric Oxide bathing our airway.</p>
                 <div className={'mouth-breathing-video-container'}>
                     <iframe src="https://www.youtube.com/embed/AcCHaNgwtwo?si=zlQUuXXhnWn_2rcI"
-                            title="YouTube video player"
+                            title="The case against mouth breathing"
                             loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

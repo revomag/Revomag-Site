@@ -13,7 +13,11 @@ export default function HowItWorks(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={SmilingWoman} imageAlt={'Woman smiling'}/>
+            <Banner
+                imageSrc={SmilingWoman}
+                imageAlt={'Woman with proper facial structure smiling'}
+                imageTitle={'Woman with proper facial structure smiling'}
+            />
             <div className={'how-content'}>
                 <h2>How It Works</h2>
                 <h3 className={'how-goals'}>The four goals of myofunctional therapy are:</h3>

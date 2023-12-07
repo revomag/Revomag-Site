@@ -15,7 +15,11 @@ export default function BookAppointment(): ReactElement {
     return (
         <>
             <Navigation/>
-            <Banner imageSrc={ScheduleAppointment} imageAlt={'calendar'}/>
+            <Banner
+                imageSrc={ScheduleAppointment}
+                imageAlt={'therapy appointment calendar'}
+                imageTitle={'Therapy appointment schedule'}
+            />
             <section className={'appointment-content-wrapper'}>
                 <h2>Schedule a New Patient Comprehensive Exam</h2>
                 <p>Your first visit will be a comprehensive exam reviewing your story, your mouth, throat, and airway. This will take place in a comfortable office in Santa Barbara, CA by Nicole Cantello your Oral Myofunctional Therapist. You can expect about a sixty to ninety minute visit which will include photographs, video of swallowing, an explanation of your conditions, and a brief description of your treatment plan. We will also discuss the cost of your treatment and payment plan options. You should plan for an expense of $225 for your initial visit which will be collected at time of service. (For more detailed information about costs see the How It Works page) </p>

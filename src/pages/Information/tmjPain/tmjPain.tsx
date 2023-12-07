@@ -13,7 +13,11 @@ export default function TmjPain(): ReactElement {
     return (
         <div className={'tmj-pain-content'}>
             <Navigation/>
-            <Banner imageSrc={TMJpain} imageAlt={'Skull showing TMJ Pain'}/>
+            <Banner
+                imageSrc={TMJpain}
+                imageAlt={'Skull showing TMJ Pain'}
+                imageTitle={'Skull with temporal mandibular joint pain highlighted'}
+            />
             <section className={'tmj-pain-content-container'}>
                 <h2>Temporal Mandibular Joint Pain</h2>
                 <p>Many patients see a myofunctional therapist as a part of their treatment for temporal mandibular joint “TMJ” pain . Low tongue posture, mouth breathing, open mouth posture, tongue thrust swallow and other dysfunctional swallowing patterns over a lifetime increase the risk of pain in the TMJ. This pain can be from the joint itself or from the muscles that allow the joint to function. This pain is interchangeably called “TMJ” “TMD” “TMJD” or just simply “Jaw Pain.”</p>
@@ -30,7 +34,7 @@ export default function TmjPain(): ReactElement {
                 <div className={'tmj-pain-video-container'}>
                     <p>This video explains the intimate relationship between TMJ problems and breathing. Jaw pain, crooked teeth, forward head posture and headaches are often seen together.</p>
                     <iframe src="https://www.youtube.com/embed/W7zz-xRn2k4?si=aXSlApxae6n9Lhgp"
-                            title="YouTube video player"
+                            title="Airway and temporal mandibular joint pain"
                             loading={'lazy'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

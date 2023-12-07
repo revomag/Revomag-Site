@@ -15,7 +15,11 @@ export default function Contact(): ReactElement {
     return (
         <div className={'contact-content'}>
             <Navigation/>
-            <Banner imageSrc={ContactIcons} imageAlt={'contact methods'}/>
+            <Banner
+                imageSrc={ContactIcons}
+                imageAlt={'contact methods'}
+                imageTitle={'Contact SB Myo via call, text, or email'}
+            />
             <section className={'contact-content-container'}>
                 <h2>Contact Me</h2>
                 <div className={'contact-info-container'}>
