@@ -4,6 +4,11 @@
 	width: 80vw;
 	max-width: 1400px;
 
+	@media (max-width: 1023px) {
+		width: 90vw;
+		margin: 0 auto 4em;
+	}
+
 	h2 {
 		text-align: center;
 	}
@@ -21,15 +26,11 @@
 		padding-top: 0;
 	}
 
-	@media (max-width: 1023px) {
-		display: block;
-		margin: 0 auto 4em;
-	}
-
 	.tongue-thrust-image-container {
 
 		@media (max-width: 1023px) {
 			max-width: 80vw;
+			margin: 0 auto;
 		}
 
 		img {
@@ -70,6 +71,7 @@
 					height: calc(80vw * 9 / 16);
 					display: block;
 					padding-bottom: 2em;
+					margin: 0 auto;
 				}
 			}
 		}
