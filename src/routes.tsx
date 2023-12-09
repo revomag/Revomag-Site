@@ -15,8 +15,6 @@ import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
 import withScrollRestoration from "./components/withScrollRestoration";
-import sitemap from '../sitemap.xml';
-import robots from '../robots.txt';
 
 /** Wrap routes in withScrollRestoration so that pages always load at top */
 const HomeWithScrollRestoration = withScrollRestoration(Home);
@@ -55,9 +53,6 @@ const router = createBrowserRouter(
             <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
             <Route path="/refer" element={<ReferAPatientWithScrollRestoration/>}/>
             <Route path="/book-appointment" element={<BookAppointmentWithScrollRestoration/>}/>
-
-            <Route path="/sitemap.xml" element={sitemap}/>
-            <Route path="/robots.txt" element={robots}/>
         </>
     )
 );
