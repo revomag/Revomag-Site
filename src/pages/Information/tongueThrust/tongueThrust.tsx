@@ -25,7 +25,7 @@ export default function TongueThrust(): ReactElement {
             />
             {!isMobile ?
                 <section className={'tongue-thrust-content-container'}>
-                    <h2>Tongue Thrust and Orthodontics</h2>
+                    <h1>Tongue Thrust and Orthodontics</h1>
                     <div className={'tongue-thrust-content-wrapper'}>
                         <div className={'tongue-thrust-content-copy'}>
                             <p>A tongue thrust describes a dysfunctional swallowing pattern in which an individual pushes the tongue against or between the teeth during swallowing.</p>

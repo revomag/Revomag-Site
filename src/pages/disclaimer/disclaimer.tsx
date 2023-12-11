@@ -11,7 +11,7 @@ export default function Disclaimer(): ReactElement {
         <div className={'disclaimer-content'}>
             <Navigation/>
             <section className={'disclaimer-content-container'}>
-                <h2>Disclaimer</h2>
+                <h1>Disclaimer</h1>
                 <p>The website is owned by Nicole Cantello and Santa Barbara Myo.</p>
                 <p>By viewing this website or anything made available on or through this website, including but not
                     limited to programs, products, services, opt-in gifts, e-books, videos, webinars, blog posts,

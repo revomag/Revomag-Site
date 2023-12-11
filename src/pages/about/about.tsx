@@ -19,7 +19,7 @@ export default function About(): ReactElement {
                 imageAlt={'bougainvillea hanging over wall'}
                 imageTitle={'bougainvillea hanging over wall'}
             />
-            <h2>About Nicole</h2>
+            <h1>About Nicole</h1>
             <div className={"about-content-container"}>
                 <div className={"about-image-container"}>
                     <img

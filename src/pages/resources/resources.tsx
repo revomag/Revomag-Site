@@ -18,7 +18,7 @@ export default function Resources(): ReactElement {
                 imageTitle={'Someone doing online research on myofunctional therapy'}
             />
             <section className={'resources-content-container'}>
-                <h2>RESOURCES</h2>
+                <h1>Resources</h1>
                 <p>Below are peer reviewed research studies, systemic reviews, meta studies/analysis, medical reviews, case reports, and research papers pertaining to Orofacial Myofuntional Therapy (OMT) and treatment/relation to the following:</p>
                 <h3>Myofuntional Therapy and Tongue Thrust:</h3>
                 <ul>

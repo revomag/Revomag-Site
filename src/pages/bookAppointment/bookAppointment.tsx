@@ -20,7 +20,7 @@ export default function BookAppointment(): ReactElement {
                 imageTitle={'Therapy appointment schedule'}
             />
             <section className={'appointment-content-wrapper'}>
-                <h2>Schedule a New Patient Comprehensive Exam</h2>
+                <h1>Schedule a New Patient Comprehensive Exam</h1>
                 <p>Your first visit will be a comprehensive exam reviewing your story, your mouth, throat, and airway.
                     This will take place in a comfortable office in Santa Barbara, CA by Nicole Cantello your Oral
                     Myofunctional Therapist. You can expect about a sixty to ninety minute visit which will include

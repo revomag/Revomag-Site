@@ -20,7 +20,7 @@ export default function Contact(): ReactElement {
                 imageTitle={'Contact SB Myo via call, text, or email'}
             />
             <section className={'contact-content-container'}>
-                <h2>Contact Me</h2>
+                <h1>Contact Me</h1>
                 <div className={'contact-info-container'}>
                     <p>Nicole Cantello, RDH, Myofunctional Therapist</p>
                     <div>

@@ -54,7 +54,7 @@ export default function Home(): ReactElement {
                     </p>
                 </div>
                 <div className={'myo-info'}>
-                    <h2>What is Myofunctional Therapy?</h2>
+                    <h1>What is Myofunctional Therapy?</h1>
                     <p>Orofacial "mouth and face" myofunctional "muscle function" therapy (OMT) is a neuromuscular re-education of the oral and facial muscles. It’s done through a series of tailored exercises, awareness and reduction of muscle compensations. The overarching goal is to restore normal function by correcting improper muscle movements, teaching correct chewing, swallowing and breathing patterns, and improving airway health.</p>
                     <h2>This therapy is used to manage a variety of disorders including:</h2>
                     <ul>
