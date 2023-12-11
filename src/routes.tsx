@@ -16,7 +16,6 @@ import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
 import Disclaimer from "./pages/disclaimer/disclaimer";
 import withScrollRestoration from "./components/withScrollRestoration";
-import Navigation from "./components/navigation/navigation";
 
 /** Wrap routes in withScrollRestoration so that pages always load at top */
 const HomeWithScrollRestoration = withScrollRestoration(Home);
