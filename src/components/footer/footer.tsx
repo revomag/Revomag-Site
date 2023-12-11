@@ -97,14 +97,14 @@ export default function Footer(): ReactElement {
                         buttonText={'Schedule an Appointment'}
                         href={"https://nicole-cantello.clientsecure.me"}
                     />
-                    <div className={'footer-right-links'}>
-                        <div>
-                            <span>&copy; Santa Barbara Myo 2023  |  </span>
-                            <a href={'/disclaimer'}>Disclaimer</a>
-                            {/*<span>  |  </span>*/}
-                            {/*<a>Sitemap</a>*/}
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div className={'footer-right-links'}>
+                <div>
+                    <span>&copy; Santa Barbara Myo 2023  |  </span>
+                    <a href={'/disclaimer'}>Disclaimer</a>
+                    {/*<span>  |  </span>*/}
+                    {/*<a>Sitemap</a>*/}
                 </div>
             </div>
         </div>
