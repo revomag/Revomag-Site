@@ -1,12 +1,15 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
-import Footer from "../../components/footer/footer";
 import Banner from "../../components/banner/banner";
 import Bougainvillea from "../../assets/bannerImages/Bougainvillea2.jpeg"
 import Headshot from "../../assets/NicoleHeadshot.jpg";
 import Family from "../../assets/familyPicture.jpg"
 import './about.scss';
 
+/**
+ * Renders the About page
+ * @constructor
+ */
 export default function About(): ReactElement {
     return (
         <>
@@ -75,7 +78,6 @@ export default function About(): ReactElement {
                     loading={'lazy'}
                 />
             </div>
-            <Footer/>
         </>
     );
 }

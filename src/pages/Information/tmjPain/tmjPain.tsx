@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import TMJpain from "../../../assets/bannerImages/TMJpain.jpeg";
 import './tmjPain.scss';
 
@@ -55,7 +54,6 @@ export default function TmjPain(): ReactElement {
                     </li>
                 </ul>
             </section>
-            <Footer/>
         </div>
     );
 }

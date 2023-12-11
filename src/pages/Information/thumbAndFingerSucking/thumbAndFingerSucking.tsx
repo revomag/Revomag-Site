@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import ThumbSucking from "../../../assets/bannerImages/thumbSucking.jpeg";
 import OpenBite from "../../../assets/thumbAndFingerSucking/Thumb sucking, open bite.jpeg";
 import NarrowPalate from "../../../assets/thumbAndFingerSucking/narrowPalateHighArch.png";
@@ -87,7 +86,6 @@ export default function ThumbAndFingerSucking(): ReactElement {
                 <p>A person swallows on average 2,000 times per day. While thumb or finger sucking, they are learning this swallowing behavior which continues even when it’s not in the mouth. This “tongue thrust” swallowing pattern is adopted and for many people, becomes the ordinary way that their body swallows into adulthood and throughout their life.</p>
                 <p>A tongue thrust is considered to be symptom of a myofunctional disorder. If the muscles are not re-trained, problems with speech, orthodontic treatment, dental health, swallowing, breathing, and sleep may persist throughout life. Myofunctional therapy is needed to make muscular changes in order to correct a tongue thrust, mouth breathing, and low tongue posture.</p>
             </section>
-            <Footer/>
         </div>
     );
 }

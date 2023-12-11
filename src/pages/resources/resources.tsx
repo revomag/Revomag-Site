@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import Footer from "../../components/footer/footer";
 import Research from "../../assets/bannerImages/resources.jpeg";
 import './resources.scss';
 
@@ -157,7 +156,6 @@ export default function Resources(): ReactElement {
                     </li>
                 </ul>
             </section>
-            <Footer/>
         </>
     );
 }

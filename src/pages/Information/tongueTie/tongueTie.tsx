@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import TongueTieBannerImage from "../../../assets/bannerImages/tongueTie.jpeg";
 import Snaggle from "../../../assets/tongueTie/narrowPalateSnaggle.jpeg"
 import './tongueTie.scss';
@@ -65,7 +64,6 @@ export default function TongueTie(): ReactElement {
                     https://www.zaghimd.com/tongue-tie
                 </a>
             </section>
-            <Footer/>
         </div>
     );
 }

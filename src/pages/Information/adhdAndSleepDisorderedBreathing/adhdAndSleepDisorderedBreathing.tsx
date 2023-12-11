@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import SleepDisorderedBreathing from "../../../assets/bannerImages/sleepDisruptedBreathing.jpeg";
 import './adhdAndSleepDisorderedBreathing.scss';
 
@@ -47,7 +46,6 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
                     </li>
                 </ol>
             </section>
-            <Footer/>
         </div>
     );
 }

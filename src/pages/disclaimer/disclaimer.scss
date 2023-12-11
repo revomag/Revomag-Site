@@ -1,0 +1,24 @@
+.disclaimer-content {
+	width: 100vw;
+	padding-top: 200px;
+
+	.disclaimer-content-container {
+		text-align: left;
+		margin: 0 auto;
+		width: 80vw;
+		max-width: 1400px;
+
+		@media (max-width: 1023px) {
+			display: block;
+			width: 90vw;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		h4 {
+			margin-bottom: -15px;
+		}
+	}
+}

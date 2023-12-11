@@ -2,7 +2,6 @@ import {ReactElement} from "react";
 import {isMobileDevice} from "../../../utils/helperFunctions";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import TongueThrustBanner from "../../../assets/bannerImages/girlWithBracesSmiling.jpeg";
 import TongueThrustOne from "../../../assets/tongueThrust/before after OMT.png";
 import TongueThrustTwo from "../../../assets/tongueThrust/before after OMT 2.png";
@@ -169,7 +168,6 @@ export default function TongueThrust(): ReactElement {
                     </div>
                 </section>
             }
-            <Footer/>
         </div>
     );
 }
