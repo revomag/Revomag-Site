@@ -18,7 +18,7 @@ export default function HowItWorks(): ReactElement {
                 imageTitle={'Woman with proper facial structure smiling'}
             />
             <div className={'how-content'}>
-                <h2>How It Works</h2>
+                <h1>How It Works</h1>
                 <h3 className={'how-goals'}>The four goals of myofunctional therapy are:</h3>
                 <ol>
                     <li>Nasal breathing all day and night</li>

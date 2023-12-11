@@ -18,7 +18,7 @@ export default function AdhdAndSleepDisorderedBreathing(): ReactElement {
                 imageTitle={'Boy mouth breathing while sleeping'}
             />
             <section className={'adhd-and-sleep-disordered-breathing-content-container'}>
-                <h2>Children with Sleep Disordered Breathing (SDB) and ADHD</h2>
+                <h1>Children with Sleep Disordered Breathing (SDB) and ADHD</h1>
                 <p>Children with sleep disorders are often inattentive or hyperactive, and some carry a diagnosis of attention deficit/hyperactivity disorder (ADHD) until their sleep disorder is detected.</p>
                 <p>Mouth breathing activates a fight or flight sympathetic state of your nervous system, whereas nasal breathing activates the parasympathetic response. The sympathetic nervous system is best know for it’s role in responding to dangerous or stressful situations. When activated, it speeds up your heart rate to deliver more blood to areas of your body that need more oxygen to get you out of danger.</p>
                 <p>At night, when your body is constantly in this state, you are physically unable to enter into deep sleep, which is the restorative and regenerative sleep that we all need. So while a child may be getting the correct “quantity” of sleep, they are not getting “quality” sleep. Additionally, mouth breathers get 18% less oxygen compared to someone who breaths through their nose. These two factors combined will have detrimental effects to a child’s growing body, including but not limited to, hormone health, physical growth (whole body and musculoskeletal growth) and mental/development growth.</p>

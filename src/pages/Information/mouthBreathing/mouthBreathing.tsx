@@ -20,7 +20,7 @@ export default function MouthBreathing(): ReactElement {
                 imageTitle={'Woman mouth breathing while asleep'}
             />
             <section className={'mouth-breathing-content-container'}>
-                <h2>MOUTH BREATHING</h2>
+                <h1>Mouth Breathing</h1>
                 <p>Mouth breathing has a great use when we need it, such as times that we sense danger when our bodies need to shift into a “fight or flight” sympathetic state. However, habitual mouth breathing can sustain this fight or flight response. This makes it difficult for the body and mind to rest, even when there is no impending danger. Mouth breathing during sleep has been associated with sleep disordered breathing and obstructive sleep apnea.</p>
                 <p>Mouth breathing activates the upper chest, shallow breathing and leads to over breathing. Nasal breathing activates “rest and digest” parasympathetic nervous system, activates the diaphragm and deeper breathing.</p>
                 <p>Mouth breathing is a postural habit that can develop for numerous reasons such as a nasal blockage (allergies, enlarged adenoids or tonsils, chronic nasal congestion), thumb or finger sucking habit, low tongue posture or a tongue tie. While the reasons may very, the consequences are the same.</p>

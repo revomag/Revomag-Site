@@ -22,7 +22,7 @@ export default function ThumbAndFingerSucking(): ReactElement {
                 imageTitle={'Sleeping girl sucking her thumb'}
             />
             <section className={'thumb-sucking-content-container'}>
-                <h2>Thumb and Finger Sucking</h2>
+                <h1>Thumb and Finger Sucking</h1>
                 <p>Thumb or finger sucking habits are quite normal in infancy and early childhood. Many children have these habits for their first few years of life and then stop naturally on their own. It is unnecessary to cause undue attention to these habits at a very early age, as it may cause more harm than good.</p>
                 <p>Sucking habits become a concern when they are considered excessive. The intensity, frequency, and duration of the habit are factors that can help you determine if your child’s sucking habit is excessive.</p>
                 <h3>Ask yourself the questions below as a guide:</h3>

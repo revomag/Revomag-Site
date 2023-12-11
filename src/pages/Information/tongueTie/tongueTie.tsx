@@ -19,7 +19,7 @@ export default function TongueTie(): ReactElement {
                 imageTitle={'Child with tongue tie'}
             />
             <section className={'tongue-tie-content-container'}>
-                <h2>TONGUE TIE</h2>
+                <h1>Tongue Tie</h1>
                 <p>Under the tongue is a band of tissue called the frenum. The frenum attaches the tongue to the floor of the mouth. If this attachment is too tight or restrictive, this is called a tongue tie. How your tongue is attached to the floor of the mouth plays a significant role in how your face grows and how your mouth functions through breathing, speech and swallowing.</p>
                 <h3>Tongue ties can affect:</h3>
                 <ul className={'tongue-tie-list'}>
