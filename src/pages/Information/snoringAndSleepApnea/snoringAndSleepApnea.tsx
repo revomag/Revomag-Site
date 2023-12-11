@@ -1,10 +1,9 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import SleepApneaCpap from "../../../assets/bannerImages/manUsingCpap.jpeg";
-import './snoringAndSleepApnea.scss';
 import Stanford from "../../../assets/mouthBreathing/Stanford Study.png";
+import './snoringAndSleepApnea.scss';
 
 /**
  * Renders Mouth Breathing page
@@ -78,7 +77,6 @@ export default function SnoringAndSleepApnea(): ReactElement {
                     </li>
                 </ul>
             </section>
-            <Footer/>
         </div>
     );
 }

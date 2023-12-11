@@ -1,6 +1,5 @@
 import {ReactElement, useEffect, useMemo, useState} from "react";
 import Navigation from "../../components/navigation/navigation";
-import Footer from "../../components/footer/footer";
 import Banner from "../../components/banner/banner";
 import BannerImageOne from "../../assets/bannerImages/sbHomeImage1.jpeg";
 import BannerImageTwo from "../../assets/bannerImages/sbHomeImage2.jpeg";
@@ -89,7 +88,6 @@ export default function Home(): ReactElement {
                     <p className={"disclaimer italic"}>The information on this website is in no way considered to be medical advice and is in no way intended to treat, cure or prevent any disease, symptom or condition. Medical advice should be obtained from an appropriately qualified and licensed medical professional. Please consult with your doctor for any change in lifestyle.</p>
                 </div>
             </section>
-            <Footer/>
         </>
     );
 }

@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import Footer from "../../components/footer/footer";
 import SmilingWoman from "../../assets/bannerImages/howItWorksWomanSmiling.jpeg";
 import './howItWorks.scss';
 
@@ -33,7 +32,6 @@ export default function HowItWorks(): ReactElement {
                 <p>Costs: During your comprehensive exam you will receive a quote for your therapy package based on an estimate of how many sessions will be required. A pay in full discount is available as are monthly payment plans. At Santa Barbara Myo, we believe that cost should never be a deterrent to someone receiving treatment. We will do everything in our power to find a plan that works for your budget. Dental and medical insurance usually do not cover costs associated with myofunctional therapy, however, we do accept funds from HSA and FSA accounts. Additionally, we are happy to supply you with a superbill to submit to your insurance for direct reimbursement if you have coverage. *we do not correspond with insurance directly.</p><br/>
                 <p>*The cost of the consultation is not included in the cost of therapy.</p>
             </div>
-            <Footer/>
         </>
     );
 }

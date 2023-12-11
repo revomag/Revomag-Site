@@ -1,11 +1,14 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
-import Footer from "../../components/footer/footer";
 import './referAPatient.scss';
 import Banner from "../../components/banner/banner";
 import Handshake from "../../assets/bannerImages/referPatient.jpeg";
 import SimpleButton from "../../components/simpleButton/simpleButton";
 
+/**
+ * Renders the Refer page
+ * @constructor
+ */
 export default function ReferAPatient(): ReactElement {
     return (
         <>
@@ -24,7 +27,6 @@ export default function ReferAPatient(): ReactElement {
                     destination={'https://hushforms.com/santabarbaramyo_refer'}
                 />
             </section>
-            <Footer/>
         </>
     );
 }

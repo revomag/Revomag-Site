@@ -1,7 +1,6 @@
 import {ReactElement} from "react";
 import Navigation from "../../../components/navigation/navigation";
 import Banner from "../../../components/banner/banner";
-import Footer from "../../../components/footer/footer";
 import OpenMouthBreathing from "../../../assets/bannerImages/OpenMouthWomanSeeping.jpeg";
 import GummySmile from "../../../assets/mouthBreathing/Gummy Smile.png"
 import Profile from "../../../assets/mouthBreathing/profile.png"
@@ -103,7 +102,6 @@ export default function MouthBreathing(): ReactElement {
                     </ul>
                 </div>
             </section>
-            <Footer/>
         </div>
     );
 }

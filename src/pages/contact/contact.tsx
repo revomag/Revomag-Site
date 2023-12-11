@@ -3,7 +3,6 @@ import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import SimplePracticeWidget from "../../components/simplePracticeWidget/simplePracticeWidget";
 import SimpleButton from "../../components/simpleButton/simpleButton";
-import Footer from "../../components/footer/footer";
 import ContactIcons from "../../assets/bannerImages/contact.jpeg";
 import './contact.scss';
 
@@ -38,7 +37,7 @@ export default function Contact(): ReactElement {
                 <div className={'contact-button-container'}>
                     {/*Book an Appointment through Simple Practice*/}
                     <SimplePracticeWidget
-                        buttonText={'Book an Appointment'}
+                        buttonText={'Schedule an Appointment'}
                         href={"https://nicole-cantello.clientsecure.me"}
                     />
                     {/*Existing patient Simple Practice login*/}
@@ -53,7 +52,6 @@ export default function Contact(): ReactElement {
                     />
                 </div>
             </section>
-            <Footer/>
         </div>
     );
 }

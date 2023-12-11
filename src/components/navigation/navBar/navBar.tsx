@@ -3,6 +3,10 @@ import {Link} from "react-router-dom";
 import Logo from '../../../assets/blackMyoLogo.svg';
 import './navBar.scss';
 
+/**
+ * Renders the desktop Nav Bar
+ * @constructor
+ */
 export default function NavBar(): ReactElement {
     return (
         <nav>

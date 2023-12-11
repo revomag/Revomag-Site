@@ -14,7 +14,9 @@ import Contact from "./pages/contact/contact";
 import HowItWorks from "./pages/howItWorks/howItWorks";
 import ReferAPatient from "./pages/referAPatient/referAPatient";
 import Resources from "./pages/resources/resources";
+import Disclaimer from "./pages/disclaimer/disclaimer";
 import withScrollRestoration from "./components/withScrollRestoration";
+import Navigation from "./components/navigation/navigation";
 
 /** Wrap routes in withScrollRestoration so that pages always load at top */
 const HomeWithScrollRestoration = withScrollRestoration(Home);
@@ -31,6 +33,7 @@ const ContactWithScrollRestoration = withScrollRestoration(Contact);
 const HowItWorksWithScrollRestoration = withScrollRestoration(HowItWorks);
 const ReferAPatientWithScrollRestoration = withScrollRestoration(ReferAPatient);
 const ResourcesWithScrollRestoration = withScrollRestoration(Resources);
+const DisclaimerWithScrollRestoration = withScrollRestoration(Disclaimer);
 
 /**
  * Site routing
@@ -53,6 +56,7 @@ const router = createBrowserRouter(
             <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
             <Route path="/refer" element={<ReferAPatientWithScrollRestoration/>}/>
             <Route path="/book-appointment" element={<BookAppointmentWithScrollRestoration/>}/>
+            <Route path="/disclaimer" element={<DisclaimerWithScrollRestoration/>}/>
         </>
     )
 );
