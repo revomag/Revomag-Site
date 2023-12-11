@@ -22,27 +22,27 @@ export default function Disclaimer(): ReactElement {
                 <p>The information provided in or through this Website is for educational and informational purposes
                     only and solely as a self-help tool for your own use.</p>
                 <h4>Not Medical, Mental Health, or Religious Advice.</h4>
-                <p>I am not, nor am I holding myself out to be a doctor/physician, nurse, physician’s assistant, advance
-                    practice nurse, or any other medical professional (“Medical Provider”), psychiatrist, psychologist,
-                    therapist, counselor, or social worker (“Mental Health Provider”), registered dietician or licensed
-                    nutritionist, or member of the clergy. Although I am a licensed dental hygienist in the state of
-                    California, when in the role of an Orofacial Myologist, I am not providing health care, clinical
-                    dental hygiene care, medical, dental, speech, occupational, physical, massage, or nutritional
-                    therapy services, or attempting to diagnose, treat, prevent or cure any physical, mental or
-                    emotional issue, disease or condition. The information provided in or through my Website pertaining
-                    to your health or wellness, exercise, relationships, business/career choices, finances, or any other
-                    aspect of your life is not intended to be a substitute for the professional medical advice,
-                    diagnosis or treatment provided by your own Medical Provider or Mental Health Provider. You agree
-                    and acknowledge that I am not providing medical advice, mental health advice, or religious advice in
-                    any way. Always seek the advice of your own Medical Provider and/or Mental Health Provider regarding
-                    any questions or concerns you have about your specific health or any medications, herbs or
-                    supplements you are currently taking and before implementing any recommendations or suggestions from
-                    our Website. Do not disregard medical advice or delay seeking medical advice because of information
-                    you have read on this Website. Do not start or stop taking any medications without speaking to your
-                    own Medical Provider or Mental Health Provider. If you have or suspect that you have a medical or
-                    mental health problem, contact your own Medical Provider or Mental Health Provider promptly. The
-                    information contained on this Website has not been evaluated by the Food and Drug
-                    Administration.</p>
+                <p>Although I am a licensed dental hygienist in the state of California, when in the role of an
+                    Orofacial Myologist, I am not providing health care, clinical dental hygiene care, medical, dental,
+                    speech, occupational, physical, massage, or nutritional therapy services, or attempting to diagnose,
+                    treat, prevent or cure any physical, mental or emotional issue, disease or condition. I am not, nor
+                    am I holding myself out to be a doctor/physician, nurse, physician’s assistant, advance practice
+                    nurse, or any other medical professional (“Medical Provider”), psychiatrist, psychologist,
+                    therapist, counselor, or social worker (“Mental Health Provider”), registered dietitian or licensed
+                    nutritionist, or member of the clergy while operating in this role. The information provided in or
+                    through my Website pertaining to your health or wellness, exercise, relationships, business/career
+                    choices, finances, or any other aspect of your life is not intended to be a substitute for the
+                    professional medical advice, diagnosis or treatment provided by your own Medical Provider or Mental
+                    Health Provider. You agree and acknowledge that I am not providing medical advice, mental health
+                    advice, or religious advice in any way. Always seek the advice of your own Medical Provider and/or
+                    Mental Health Provider regarding any questions or concerns you have about your specific health or
+                    any medications, herbs or supplements you are currently taking and before implementing any
+                    recommendations or suggestions from our Website. Do not disregard medical advice or delay seeking
+                    medical advice because of information you have read on this Website. Do not start or stop taking any
+                    medications without speaking to your own Medical Provider or Mental Health Provider. If you have or
+                    suspect that you have a medical or mental health problem, contact your own Medical Provider or
+                    Mental Health Provider promptly. The information contained on this Website has not been evaluated by
+                    the Food and Drug Administration.</p>
                 <h4>Not Legal or Financial Advice.</h4>
                 <p>I am not an attorney, accountant or financial advisor, nor am I holding myself out to be. The
                     information contained in this Website is not intended to be a substitute for legal or financial
