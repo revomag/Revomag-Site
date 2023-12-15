@@ -103,8 +103,8 @@ export default function Footer(): ReactElement {
                 <div>
                     <span>&copy; Santa Barbara Myo 2023  |  </span>
                     <a href={'/disclaimer'}>Disclaimer</a>
-                    {/*<span>  |  </span>*/}
-                    {/*<a>Sitemap</a>*/}
+                    <span>  |  </span>
+                    <a href={'/privacy'}>Privacy</a>
                 </div>
             </div>
         </div>

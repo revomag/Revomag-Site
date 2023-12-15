@@ -67,12 +67,6 @@ export default function Disclaimer(): ReactElement {
                     dedication, desire, motivation, actions, and numerous other factors. You fully agree that there are
                     no guarantees as to the specific outcome or results you can expect from using the information you
                     receive on or through this Website.</p>
-                <h4>Earnings Disclaimer.</h4>
-                <p>There can be no assurance as to any particular financial outcome based on the use of our Website. You
-                    agree that I am not responsible for your earnings, the success or failure of your personal or
-                    business decisions, the increase or decrease of your finances or income level, or any other result
-                    of any kind that you may have as a result of information presented to you through our Website. You
-                    are solely responsible for your results.</p>
                 <h4>Testimonials.</h4>
                 <p>I present real world experiences, testimonials, and insights about other people’s experiences with my
                     Website for purposes of illustration only. The testimonials, examples, and photos used are of actual
