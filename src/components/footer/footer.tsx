@@ -98,6 +98,66 @@ export default function Footer(): ReactElement {
                         href={"https://nicole-cantello.clientsecure.me"}
                     />
                 </div>
+                <div className={'footer-divider'}/>
+                <div className={'footer-sitemap-container'}>
+                    <div className={'footer-sitemap-general'}>
+                        <h4>General</h4>
+                        <ul>
+                            <li>
+                                <a href={'/home'}>Home</a>
+                            </li>
+                            <li>
+                                <a href={'/how-it-works'}>How It Works</a>
+                            </li>
+                            <li>
+                                <a href={'/about'}>About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={'footer-sitemap-information'}>
+                        <h4>Information</h4>
+                        <ul>
+                            <li>
+                                <a href={'/mouth-breathing'}>Mouth Breathing</a>
+                            </li>
+                            <li>
+                                <a href={'/snoring-and-sleep-apnea'}>Snoring/Sleep Apnea</a>
+                            </li>
+                            <li>
+                                <a href={'/adhd-and-sleep-disordered-breathing'}>ADHD</a>
+                            </li>
+                            <li>
+                                <a href={'/tmj-pain'}>TMJ Pain</a>
+                            </li>
+                            <li>
+                                <a href={'/tongue-tie'}>Tongue Tie</a>
+                            </li>
+                            <li>
+                                <a href={'/thumb-and-finger-sucking'}>Thumb Sucking</a>
+                            </li>
+                            <li>
+                                <a href={'/tongue-thrust'}>Tongue Thrust</a>
+                            </li>
+                            <li>
+                                <a href={'/resources'}>Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={'footer-sitemap-connect'}>
+                        <h4>Connect</h4>
+                        <ul>
+                            <li>
+                                <a href={'/book-appointment'}>Schedule Appointment</a>
+                            </li>
+                            <li>
+                                <a href={'/refer'}>Refer a Patient</a>
+                            </li>
+                            <li>
+                                <a href={'/contact'}>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className={'footer-right-links'}>
                 <div>
