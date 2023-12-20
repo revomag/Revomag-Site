@@ -24,6 +24,7 @@
 
 		.footer-content-left {
 			width: 30%;
+			min-width: 465px;
 
 			@media (max-width: 1023px) {
 				width: 100vw;
@@ -76,7 +77,6 @@
 
 		.footer-content-right {
 			color: white;
-			//width: 465px;
 			width: 30%;
 
 			@media (max-width: 1023px) {
@@ -88,6 +88,7 @@
 			display: flex;
 			color: white;
 			width: 30%;
+			min-width: 465px;
 
 			h4 {
 				margin-bottom: 5px;

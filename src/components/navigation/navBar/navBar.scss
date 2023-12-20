@@ -23,6 +23,8 @@ nav {
 	}
 
 	.nav-wrapper {
+		min-width: 1200px;
+
 		@media (min-width: 1024px) {
 			width: 100%;
 			height: 100%;
