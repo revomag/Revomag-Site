@@ -4,7 +4,7 @@ import NavBar from "./navBar/navBar";
 import HamburgerMenu from "./hamburgerMenu/hamburgerMenu";
 
 /**
- * Renders the appropriate navigation menu base on device type
+ * Renders the appropriate navigation menu based on the device type
  * @constructor
  */
 export default function Navigation(): ReactElement {
