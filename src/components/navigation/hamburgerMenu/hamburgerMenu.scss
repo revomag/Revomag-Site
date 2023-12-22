@@ -5,6 +5,10 @@
 	height: 85px;
 	z-index: 97;
 	background-color: white;
+
+	@media (min-width: 1250px) {
+		display: none;
+	}
 }
 
 #hamburger {

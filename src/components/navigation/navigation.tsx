@@ -1,5 +1,4 @@
 import {ReactElement} from "react";
-import {isMobileDevice} from "../../utils/helperFunctions";
 import NavBar from "./navBar/navBar";
 import HamburgerMenu from "./hamburgerMenu/hamburgerMenu";
 
@@ -8,11 +7,10 @@ import HamburgerMenu from "./hamburgerMenu/hamburgerMenu";
  * @constructor
  */
 export default function Navigation(): ReactElement {
-    const isMobile = isMobileDevice();
-
     return (
         <>
-            {isMobile ? <HamburgerMenu/> : <NavBar/>}
+            <HamburgerMenu/>
+            <NavBar/>
         </>
     );
 }

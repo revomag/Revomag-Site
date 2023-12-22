@@ -1,5 +1,4 @@
 import {ReactElement} from "react";
-import {isMobileDevice} from "../../utils/helperFunctions";
 import DesktopFooter from "./desktopFooter/desktopFooter";
 import MobileFooter from "./mobileFooter/mobileFooter";
 
@@ -8,11 +7,10 @@ import MobileFooter from "./mobileFooter/mobileFooter";
  * @constructor
  */
 export default function Footer(): ReactElement {
-    const isMobile = isMobileDevice();
-
     return (
         <>
-            {isMobile ? <MobileFooter/> : <DesktopFooter/>}
+            <DesktopFooter/>
+            <MobileFooter/>
         </>
     );
 }
