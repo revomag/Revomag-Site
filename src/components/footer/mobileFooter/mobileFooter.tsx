@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import SimplePracticeWidget from "../../simplePracticeWidget/simplePracticeWidget";
+import SimpleButton from "../../simpleButton/simpleButton";
 import Facebook from '../../../assets/icons/facebook.svg';
 import Instagram from '../../../assets/icons/instagram.svg';
 import LinkedIn from '../../../assets/icons/linkedin.svg';
@@ -19,9 +19,9 @@ export default function MobileFooter(): ReactElement {
                 <div className={'mobile-footer-book-appointment'}>
                     <h2>Ready To Learn More?</h2>
                     {/*Book an Appointment through Simple Practice*/}
-                    <SimplePracticeWidget
-                        buttonText={'Schedule an Appointment'}
-                        href={"https://nicole-cantello.clientsecure.me"}
+                    <SimpleButton
+                        buttonText={'Request a Consultation'}
+                        destination={'https://hushforms.com/santabarbaramyo_consultation'}
                     />
                 </div>
                 <div className={'mobile-footer-contact-container'}>
