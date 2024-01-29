@@ -36,10 +36,10 @@ export default function Contact(): ReactElement {
                 </div>
                 <div className={'contact-button-container'}>
                     {/*Book an Appointment through Simple Practice*/}
-                    <SimplePracticeWidget
-                        buttonText={'Schedule an Appointment'}
-                        href={"https://nicole-cantello.clientsecure.me"}
-                    />
+                    {/*<SimplePracticeWidget*/}
+                    {/*    buttonText={'Schedule an Appointment'}*/}
+                    {/*    href={"https://nicole-cantello.clientsecure.me"}*/}
+                    {/*/>*/}
                     {/*Existing patient Simple Practice login*/}
                     <SimplePracticeWidget
                         buttonText={'Existing Patient - Access Client Portal'}
