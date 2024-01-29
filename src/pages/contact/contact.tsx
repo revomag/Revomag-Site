@@ -24,7 +24,7 @@ export default function Contact(): ReactElement {
                 <div className={'contact-info-container'}>
                     <p>Nicole Cantello, RDH, Myofunctional Therapist</p>
                     <div>
-                        <a className={'contact-phone'} href={"tel:805-453-1343"}>(805) 570-2356 (text or phone calls welcome)</a>
+                        <a className={'contact-phone'} href={"tel:805-453-1343"}>(805) 453-1343 (text or phone calls welcome)</a>
                     </div>
                     <div>
                         <a className={'contact-email'} href={'mailto:nicole@santabarbaramyo.com'}>nicole@santabarbaramyo.com</a>
