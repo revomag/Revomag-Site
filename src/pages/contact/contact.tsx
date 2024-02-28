@@ -38,12 +38,12 @@ export default function Contact(): ReactElement {
                     {/*Book an Appointment through Simple Practice*/}
                     {/*<SimplePracticeWidget*/}
                     {/*    buttonText={'Schedule an Appointment'}*/}
-                    {/*    href={"https://nicole-cantello.clientsecure.me"}*/}
+                    {/*    href={"https://santabarbaramyo.clientsecure.me"}*/}
                     {/*/>*/}
                     {/*Existing patient Simple Practice login*/}
                     <SimplePracticeWidget
                         buttonText={'Existing Patient - Access Client Portal'}
-                        href={"https://nicole-cantello.clientsecure.me/sign-in"}
+                        href={"https://santabarbaramyo.clientsecure.me/sign-in"}
                     />
                     {/*Send message via Hushmail*/}
                     <SimpleButton
