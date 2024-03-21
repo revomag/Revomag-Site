@@ -49,7 +49,7 @@ export default function BookAppointment(): ReactElement {
                     exam appointment.</p>
                 <SimplePracticeWidget
                     buttonText={'Existing Patient - Access Portal'}
-                    href={"https://nicole-cantello.clientsecure.me/sign-in"}
+                    href={"https://santabarbaramyo.clientsecure.me/sign-in"}
                 />
             </section>
         </>
