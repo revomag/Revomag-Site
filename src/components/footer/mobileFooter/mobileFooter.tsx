@@ -85,15 +85,15 @@ export default function MobileFooter(): ReactElement {
                             <img src={Instagram} alt={'instagram link'}/>
                         </a>
                     </div>
-                    <div className={'social-icon'}>
-                        <a
-                            href={"https://www.linkedin.com/company/santa-barbara-myo/"}
-                            target={"_blank"}
-                            rel={"noreferrer"}
-                        >
-                            <img src={LinkedIn} alt={'linkedin link'}/>
-                        </a>
-                    </div>
+                    {/*<div className={'social-icon'}>*/}
+                    {/*    <a*/}
+                    {/*        href={"https://www.linkedin.com/company/santa-barbara-myo/"}*/}
+                    {/*        target={"_blank"}*/}
+                    {/*        rel={"noreferrer"}*/}
+                    {/*    >*/}
+                    {/*        <img src={LinkedIn} alt={'linkedin link'}/>*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
                 </div>
                 <div className={'tablet-footer-sitemap-container'}>
                     <div className={'mobile-footer-sitemap-general'}>

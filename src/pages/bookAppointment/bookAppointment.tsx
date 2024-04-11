@@ -28,9 +28,7 @@ export default function BookAppointment(): ReactElement {
                     treatment plan. We will also discuss the cost of your treatment and payment plan options. You should
                     plan for an expense of $225 for your initial visit which will be collected at time of service. (For
                     more details see the How It Works page) </p>
-                <p>I am currently seeing new patients age 5 and older on Mondays, Tuesdays, and Thursdays before 3pm.
-                    If you need another day, please reach out to me and I will work to accommodate you as best as I can.
-                </p>
+                <p>I am currently seeing new patients age 5 and older Mondays through Friday from 8:30 to 5:00.</p>
                 {/*<SimplePracticeWidget*/}
                 {/*    buttonText={'Schedule Comprehensive Exam'}*/}
                 {/*    href={"https://nicole-cantello.clientsecure.me/request/service"}*/}
