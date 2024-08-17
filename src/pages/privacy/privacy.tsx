@@ -12,8 +12,8 @@ export default function Privacy(): ReactElement {
             <Navigation/>
             <section className={'privacy-content-container'}>
                 <h1>Privacy Policy</h1>
-                <p>Santa Barbara Myo (the “Company”) respects the privacy concerns of the users of its website,
-                    www.santabarbarmyo.com and the services provided therein (the “Site”). The Company thus provides
+                <p>Goodlee CO (the “Company”) respects the privacy concerns of the users of its website,
+                    www.getrevomag.com and the services provided therein (the “Site”). The Company thus provides
                     this privacy statement to explain what information is gathered during a visit to the Site and how
                     such information may be used.</p>
                 <h4>Use of Information:</h4>
@@ -72,20 +72,20 @@ export default function Privacy(): ReactElement {
                     removal from any list, please follow the specific instructions set forth within the communications
                     you receive from the Company which you no longer wish to receive. If you are unsuccessful in
                     completing the instructions specified in any such communication, please e-mail us at
-                    nicole@santabarbaramyo.com, including a copy of the undesired email attached to the request, and
+                    contact@getrevomag.com, including a copy of the undesired email attached to the request, and
                     state you wish to be removed from the mailing list.</p>
                 <h4>Your Access to and Control Over Your Personally Identifiable Information:</h4>
                 <p>At any time, but only once per calendar year, or as otherwise required under applicable law, users
                     may contact Company to review the personally identifiable information that Company has collected
                     about you. If you discover any errors, please notify Company and the information will be corrected.
                     To review the personally identifiable information that company has collected about you, please send
-                    an email to nicole@santabarbaramyo.com with the subject line: “Personal Information Review Request.”
+                    an email to contact@getrevomag.com with the subject line: “Personal Information Review Request.”
                     Users may also request that Company delete a user account(s) or, if you have not established a user
                     account, your email address, and any related data at any time. If you wish to delete your user
-                    account(s), please email us at nicole@santabarbaramyo.com the words “Delete Account” in the subject
+                    account(s), please email us at contact@getrevomag.com the words “Delete Account” in the subject
                     line. If you do not have a user account and wish to delete your email address or other personally
                     identifiable information that you might have provided through your use of the Site, any Games,
-                    and/or any Services, please email us at nicole@santabarbaramyo.com with the words “Delete My
+                    and/or any Services, please email us at contact@getrevomag.com with the words “Delete My
                     Information” in the subject line.</p>
                 <p>You may also choose to confirm that the Company does not use your personal information in certain
                     ways and/or to otherwise “opt out” of certain uses of that personal information, including without
@@ -94,7 +94,7 @@ export default function Privacy(): ReactElement {
                     information may be used for a purpose that is materially different from the purpose(s) for which it
                     was originally collected or subsequently authorized by you. If you wish to limit your personal data
                     in either such way, or have other questions about how the Company may use your personal data, please
-                    contact us at nicole@santabarbaramyo.com.com with the words “Privacy Request” in the subject
+                    contact us at contact@getrevomag.com with the words “Privacy Request” in the subject
                     line.</p>
                 <h4>Your California Privacy Rights:</h4>
                 <p>California Civil Code Section 1798.83 permits California residents to request from companies
@@ -104,12 +104,12 @@ export default function Privacy(): ReactElement {
                     direct marketing purposes; accordingly, it will not maintain such a list of third parties. If you
                     are a resident of California and want additional information confirming how Company does not share
                     your personally identifiable information with third parties for their direct marketing purposes, you
-                    may contact us at nicole@santabarbaramyo.com with the words “California Privacy” in the subject line
+                    may contact us at contact@getrevomag.com with the words “California Privacy” in the subject line
                     of your email.</p>
                 <h4>Contact Information for Complaints or Concerns:</h4>
                 <p>If you have any complaints or concerns about the Company or about this privacy statement, please
                     contact:</p>
-                <p>nicole@santabarbaramyo.com</p>
+                <p>contact@getrevomag.com</p>
                 <p>Information provided by you via general e-mail inquiries to the Company such as your e-mail address
                     is used only to respond to your inquiries in the ordinary course of business, and is never shared
                     with third parties.</p>
@@ -131,7 +131,7 @@ export default function Privacy(): ReactElement {
                     revised from time to time by updating this posting. You are bound by any such revisions and should
                     therefore periodically visit this page to review the then current Online Privacy Policy to which you
                     are bound.</p>
-                <p>Last Updated: December 14, 2023</p>
+                <p>Last Updated: August 16, 2024</p>
             </section>
         </div>
     );

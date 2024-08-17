@@ -20,9 +20,6 @@ export default function NavBar(): ReactElement {
                     <Link className={"nav-link"} to={"/home"}>
                         HOME
                     </Link>
-                    <Link className={"nav-link"} to={"/how-it-works"}>
-                        HOW IT WORKS
-                    </Link>
                     <Link className={"nav-link"} to={"/contact"}>
                         CONTACT
                     </Link>

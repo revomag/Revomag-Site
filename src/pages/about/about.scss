@@ -1,8 +1,9 @@
 .about-content-container {
-	//display: flex;
+	display: flex;
+	flex-direction: row-reverse;
 	margin: 0 auto;
 	width: 70vw;
-	max-width: 1400px;
+	max-width: 800px;
 
 	@media (max-width: 1023px) {
 		display: block;
@@ -23,7 +24,7 @@
 		}
 
 		img {
-			height: 400px;
+			height: 500px;
 			padding-right: 3em;
 			padding-top: 2em;
 
@@ -45,21 +46,5 @@
 				display: none;
 			}
 		}
-	}
-}
-
-#family-image {
-	height: 500px;
-	padding-top: 3em;
-
-	@media (max-width: 800px) {
-		width: 70vw;
-		height: auto;
-	}
-
-	@media (min-width: 801px) and (max-width: 1023px) {
-		height: 400px;
-		margin: 0 auto;
-		padding: 2em 0 1em 2em;
 	}
 }
