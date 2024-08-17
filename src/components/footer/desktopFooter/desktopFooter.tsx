@@ -85,7 +85,7 @@ export default function DesktopFooter(): ReactElement {
                     {/*Book an Appointment through Simple Practice*/}
                     <SimpleButton
                         buttonText={'Buy RevoMag'}
-                        destination={'https://hushforms.com/santabarbaramyo_consultation'}
+                        destination={'https://hushforms.com/getrevomag_consultation'}
                     />
                 </div>
                 <div className={'footer-divider'}/>

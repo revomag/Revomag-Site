@@ -27,7 +27,7 @@ export default function Contact(): ReactElement {
                         <a className={'contact-phone'} href={"tel:805-453-1343"}>(805) 453-1343 (text or phone calls welcome)</a>
                     </div>
                     <div>
-                        <a className={'contact-email'} href={'mailto:nicole@santabarbaramyo.com'}>nicole@santabarbaramyo.com</a>
+                        <a className={'contact-email'} href={'mailto:nicole@getrevomag.com'}>nicole@getrevomag.com</a>
                     </div>
                 </div>
                 <div className={'contact-services-description'}>
@@ -38,17 +38,17 @@ export default function Contact(): ReactElement {
                     {/*Book an Appointment through Simple Practice*/}
                     {/*<SimplePracticeWidget*/}
                     {/*    buttonText={'Schedule an Appointment'}*/}
-                    {/*    href={"https://santabarbaramyo.clientsecure.me"}*/}
+                    {/*    href={"https://getrevomag.clientsecure.me"}*/}
                     {/*/>*/}
                     {/*Existing patient Simple Practice login*/}
                     <SimplePracticeWidget
                         buttonText={'Existing Patient - Access Client Portal'}
-                        href={"https://santabarbaramyo.clientsecure.me/sign-in"}
+                        href={"https://getrevomag.clientsecure.me/sign-in"}
                     />
                     {/*Send message via Hushmail*/}
                     <SimpleButton
                         buttonText={'Send An Encrypted Message'}
-                        destination={'https://hushforms.com/santabarbaramyo_contact'}
+                        destination={'https://hushforms.com/getrevomag_contact'}
                     />
                 </div>
             </section>

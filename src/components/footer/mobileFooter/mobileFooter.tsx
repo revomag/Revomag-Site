@@ -20,7 +20,7 @@ export default function MobileFooter(): ReactElement {
                     {/*Book an Appointment through Simple Practice*/}
                     <SimpleButton
                         buttonText={'Request a Consultation'}
-                        destination={'https://hushforms.com/santabarbaramyo_consultation'}
+                        destination={'https://hushforms.com/getrevomag_consultation'}
                     />
                 </div>
                 <div className={'mobile-footer-contact-container'}>
