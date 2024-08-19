@@ -16,11 +16,10 @@ export default function MobileFooter(): ReactElement {
         <div className={'mobile-footer-section'}>
             <div className={'mobile-footer-content-wrapper'}>
                 <div className={'mobile-footer-book-appointment'}>
-                    <h2>Ready To Learn More?</h2>
-                    {/*Book an Appointment through Simple Practice*/}
+                    <h2>Ready for a better Revolver Reload?</h2>
                     <SimpleButton
-                        buttonText={'Request a Consultation'}
-                        destination={'https://hushforms.com/getrevomag_consultation'}
+                        buttonText={'Get Revomag'}
+                        destination={'/products'}
                     />
                 </div>
                 <div className={'mobile-footer-contact-container'}>
@@ -87,6 +86,9 @@ export default function MobileFooter(): ReactElement {
                                 <a href={'/home'}>Home</a>
                             </li>
                             <li>
+                                <a href={'/products'}>Products</a>
+                            </li>
+                            <li>
                                 <a href={'/about'}>About</a>
                             </li>
                         </ul>
@@ -100,7 +102,7 @@ export default function MobileFooter(): ReactElement {
                         </ul>
                     </div>
                     <div className={'mobile-footer-sitemap-connect'}>
-                        <h4>Connect</h4>
+                        <h4>Support</h4>
                         <ul>
                             <li>
                                 <a href={'/contact'}>Contact</a>
@@ -111,6 +113,7 @@ export default function MobileFooter(): ReactElement {
                 <div className={'mobile-footer-sitemap-container'}>
                     <div>
                         <a href={'/home'}>Home</a><span> | </span>
+                        <a href={'/products'}>Products</a><span> | </span>
                         <a href={'/about'}>About</a><span> | </span>
                     </div>
                     <div>

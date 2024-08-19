@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import SimpleButton from "../../simpleButton/simpleButton";
+import GetRevomagProductButton from "../../shopifyButtons/getRevomag";
 import Facebook from '../../../assets/icons/facebook.svg';
 import Instagram from '../../../assets/icons/instagram.svg';
 import Address from '../../../assets/icons/address.png';
@@ -82,11 +82,7 @@ export default function DesktopFooter(): ReactElement {
                 <div className={'footer-divider'}/>
                 <div className={'footer-content-right'}>
                     <h2>Ready for a better Revolver Reload?</h2>
-                    {/*Book an Appointment through Simple Practice*/}
-                    <SimpleButton
-                        buttonText={'Buy RevoMag'}
-                        destination={'https://hushforms.com/getrevomag_consultation'}
-                    />
+                    <GetRevomagProductButton/>
                 </div>
                 <div className={'footer-divider'}/>
                 <div className={'footer-sitemap-container'}>
@@ -95,6 +91,9 @@ export default function DesktopFooter(): ReactElement {
                         <ul>
                             <li>
                                 <a href={'/home'}>Home</a>
+                            </li>
+                            <li>
+                                <a href={'/products'}>Products</a>
                             </li>
                             <li>
                                 <a href={'/about'}>About</a>
@@ -110,7 +109,7 @@ export default function DesktopFooter(): ReactElement {
                         </ul>
                     </div>
                     <div className={'footer-sitemap-connect'}>
-                        <h4>Connect</h4>
+                        <h4>Support</h4>
                         <ul>
                             <li>
                                 <a href={'/contact'}>Contact</a>
