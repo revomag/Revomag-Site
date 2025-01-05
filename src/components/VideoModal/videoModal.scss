@@ -1,0 +1,23 @@
+.open-modal-button {
+  display: inline-block;
+  width: 325px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff !important;
+  background: #FE6A09;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.open-modal-button:hover {
+  background-color: #da5802;
+  height: 56px;
+  width: 330px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  cursor: pointer;
+}
