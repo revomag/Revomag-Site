@@ -1,6 +1,6 @@
 import {ReactElement, useState} from "react";
 import {Link} from "react-router-dom";
-import Logo from "../../../assets/RevomagLogotype.svg";
+import Logo from "../../../assets/RevomagLogoOrangeWithTagline.png";
 import './hamburgerMenu.scss';
 
 /**
