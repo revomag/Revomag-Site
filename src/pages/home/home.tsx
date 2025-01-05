@@ -2,7 +2,6 @@ import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import HeroVideo from "../../assets/bannerImages/HeroVideo.mp4";
 import './home.scss';
-import SimpleButton from "../../components/simpleButton/simpleButton";
 import Hero from "../../assets/bannerImages/RevomagWEBBanner.jpg";
 import VideoModal from "../../components/VideoModal/VideoModal";
 
