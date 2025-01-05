@@ -33,7 +33,7 @@ const BuyRevomagFullDescriptionButton: React.FC = () => {
                                     'text-align': 'left',
                                 },
                                 title: { 'font-size': '26px' },
-                                button: { 'border-radius': '9px' },
+                                button: { 'border-radius': '9px', 'background': '#FE6A09' },
                                 price: { 'font-size': '18px' },
                                 compareAt: { 'font-size': '15.3px' },
                                 unitPrice: { 'font-size': '15.3px' },

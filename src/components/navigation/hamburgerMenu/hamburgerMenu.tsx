@@ -42,11 +42,6 @@ export default function HamburgerMenu(): ReactElement {
                         </Link>
                     </li>
                     <li>
-                        <Link className={"ham-nav-link"} to={"/contact"}>
-                            CONTACT
-                        </Link>
-                    </li>
-                    <li>
                         <Link className={"ham-nav-link"} to={"/about"}>
                             ABOUT
                         </Link>

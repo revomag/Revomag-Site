@@ -3,9 +3,8 @@ nav {
 	left: 0;
 	height: 85px;
 	width: 100%;
-	//background: #445639;
-	background: #f67002;
-	color: white;
+	background: #FE6A09;
+	color: black;
 	z-index: 99;
 	text-transform: uppercase;
 	font-family: "Lato", sans-serif;
@@ -18,6 +17,7 @@ nav {
 
 	a {
 		color: white;
+		font-weight: bold;
 
 		&:hover {
 			color: var(--neon-purple);

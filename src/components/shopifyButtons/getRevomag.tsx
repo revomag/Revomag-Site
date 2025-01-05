@@ -27,6 +27,7 @@ const GetRevomagProductButton: React.FC = () => {
                                 },
                                 button: {
                                     'border-radius': '9px',
+                                    'background': '#FE6A09',
                                 },
                             },
                             contents: {
@@ -64,6 +65,7 @@ const GetRevomagProductButton: React.FC = () => {
                                 },
                                 button: {
                                     'border-radius': '9px',
+                                    'background': '#FE6A09',
                                 },
                             },
                             text: {

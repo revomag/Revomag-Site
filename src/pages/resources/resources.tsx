@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import Research from "../../assets/bannerImages/resources.jpeg";
+import Research from "../../assets/bannerImages/Assembling.png";
 import './resources.scss';
 
 /**
