@@ -3,6 +3,7 @@ import Navigation from "../../components/navigation/navigation";
 import HeroVideo from "../../assets/bannerImages/HeroVideo.mp4";
 import './home.scss';
 import SimpleButton from "../../components/simpleButton/simpleButton";
+import Hero from "../../assets/bannerImages/RevomagWEBBanner.jpg";
 
 /**
  * Renders home page
@@ -12,6 +13,11 @@ export default function Home(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div className={'landing-banner-area'}>
+                <div className={'hero-image-container'}>
+                    <img src={Hero} alt={'revomag'} title={'revomag'} />
+                </div>
+            </div>
             <div className="banner-video-container">
                 <video autoPlay loop muted playsInline>
                     <source src={HeroVideo} type="video/mp4"/>

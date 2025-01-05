@@ -1,9 +1,6 @@
 import {ReactElement} from "react";
 import GetRevomagProductButton from "../../shopifyButtons/getRevomag";
-import Facebook from '../../../assets/icons/facebook.svg';
 import Instagram from '../../../assets/icons/instagram.svg';
-import Address from '../../../assets/icons/address.png';
-import Phone from '../../../assets/icons/phone.png';
 import Email from '../../../assets/icons/email.png';
 import './desktopFooter.scss';
 

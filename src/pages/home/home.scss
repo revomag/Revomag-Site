@@ -1,8 +1,35 @@
+.landing-banner-area {
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+
+	@media (max-width: 1023px) {
+		height: 40vh;
+		padding-top: 50px;
+	}
+
+	.hero-image-container {
+		height: 100%;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+
+			@media (max-width: 1023px) {
+				object-position: 100%;
+			}
+		}
+	}
+}
+
 .banner-video-container {
 	position: relative;
 	width: 100%;
 	max-height: calc(100vh - 110px);
 	overflow: hidden;
+	padding-top: 5em;
 
 	video {
 		width: 100%;
