@@ -2,7 +2,6 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Home from "./pages/home/home";
 import Products from "./pages/products/products";
 import About from "./pages/about/about";
-import Contact from "./pages/contact/contact";
 import Resources from "./pages/resources/resources";
 import Disclaimer from "./pages/disclaimer/disclaimer";
 import Privacy from "./pages/privacy/privacy";
@@ -12,7 +11,6 @@ import withScrollRestoration from "./components/withScrollRestoration";
 const HomeWithScrollRestoration = withScrollRestoration(Home);
 const ProductsWithScrollRestoration = withScrollRestoration(Products);
 const AboutWithScrollRestoration = withScrollRestoration(About);
-const ContactWithScrollRestoration = withScrollRestoration(Contact);
 const ResourcesWithScrollRestoration = withScrollRestoration(Resources);
 const DisclaimerWithScrollRestoration = withScrollRestoration(Disclaimer);
 const PrivacyWithScrollRestoration = withScrollRestoration(Privacy);
@@ -26,7 +24,6 @@ const router = createBrowserRouter(
             <Route path="/" element={<HomeWithScrollRestoration/>}/>
             <Route path="/home" element={<HomeWithScrollRestoration/>}/>
             <Route path="/products" element={<ProductsWithScrollRestoration/>}/>
-            <Route path="/contact" element={<ContactWithScrollRestoration/>}/>
             <Route path="/about" element={<AboutWithScrollRestoration/>}/>
             <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
             <Route path="/disclaimer" element={<DisclaimerWithScrollRestoration/>}/>

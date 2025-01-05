@@ -1,6 +1,6 @@
 import {ReactElement} from "react";
 import {Link} from "react-router-dom";
-import Logo from '../../../assets/RevomagLogoOrangeWithTagline.png';
+import Logo from '../../../assets/RevomagLogotypeWithTagline.png';
 import './navBar.scss';
 
 /**
@@ -22,9 +22,6 @@ export default function NavBar(): ReactElement {
                     </Link>
                     <Link className={"nav-link"} to={"/products"}>
                         PRODUCTS
-                    </Link>
-                    <Link className={"nav-link"} to={"/contact"}>
-                        CONTACT
                     </Link>
                     <Link className={"nav-link"} to={"/about"}>
                         ABOUT

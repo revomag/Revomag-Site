@@ -1,9 +1,6 @@
 import {ReactElement} from "react";
 import SimpleButton from "../../simpleButton/simpleButton";
-import Facebook from '../../../assets/icons/facebook.svg';
 import Instagram from '../../../assets/icons/instagram.svg';
-import Address from '../../../assets/icons/address.png';
-import Phone from '../../../assets/icons/phone.png';
 import Email from '../../../assets/icons/email.png';
 import './mobileFooter.scss';
 
@@ -23,22 +20,6 @@ export default function MobileFooter(): ReactElement {
                     />
                 </div>
                 <div className={'mobile-footer-contact-container'}>
-                    <div className={'mobile-footer-phone-container'}>
-                        <a
-                            href={"tel:719-648-5582"}
-                            target={"_blank"}
-                            rel={"noreferrer"}
-                        >
-                            <img src={Phone} alt={'Address drop pin'}/>
-                        </a>
-                        <a
-                            href={"tel:719-648-5582"}
-                            target={"_blank"}
-                            rel={"noreferrer"}
-                        >
-                            719-648-5582
-                        </a>
-                    </div>
                     <div className={'mobile-footer-email-container'}>
                         <a href="mailto:contact@getrevomag.com">
                             <img src={Email} alt={'Address drop pin'}/>
@@ -47,30 +28,11 @@ export default function MobileFooter(): ReactElement {
                             contact@getrevomag.com
                         </a>
                     </div>
-                    <div className={'mobile-footer-address-container'}>
-                        <img src={Address} alt={'Address drop pin'}/>
-                        <a
-                            href={""}
-                            target={"_blank"}
-                            rel={"noreferrer"}
-                        >
-                            Someplace in Massachusetts
-                        </a>
-                    </div>
                 </div>
                 <div className={'mobile-footer-social-media-container'}>
                     <div className={'social-icon'}>
                         <a
-                            href={""}
-                            target={"_blank"}
-                            rel={"noreferrer"}
-                        >
-                            <img src={Facebook} alt={'facebook link'}/>
-                        </a>
-                    </div>
-                    <div className={'social-icon'}>
-                        <a
-                            href={""}
+                            href={"https://www.instagram.com/revomagusa/"}
                             target={"_blank"}
                             rel={"noreferrer"}
                         >
@@ -101,24 +63,15 @@ export default function MobileFooter(): ReactElement {
                             </li>
                         </ul>
                     </div>
-                    <div className={'mobile-footer-sitemap-connect'}>
-                        <h4>Support</h4>
-                        <ul>
-                            <li>
-                                <a href={'/contact'}>Contact</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <div className={'mobile-footer-sitemap-container'}>
                     <div>
                         <a href={'/home'}>Home</a><span> | </span>
                         <a href={'/products'}>Products</a><span> | </span>
-                        <a href={'/about'}>About</a><span> | </span>
+                        <a href={'/about'}>About</a>
                     </div>
                     <div>
-                        <a href={'/resources'}>Resources</a><span> | </span>
-                        <a href={'/contact'}>Contact</a>
+                        <a href={'/resources'}>Resources</a>
                     </div>
                 </div>
             </div>
