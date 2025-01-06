@@ -24,9 +24,6 @@ export default function Home(): ReactElement {
                 </video>
             </div>
             <section className={'home-content'}>
-                {/*<div className={'revomag-info'}>*/}
-                {/*    <SimpleButton buttonText={"Promotional Video"} destination={'/'}/>*/}
-                {/*</div>*/}
                 <VideoModal
                     videoId={"VHS8xIsR9XY"}
                     buttonText={'View Promotional Video'}

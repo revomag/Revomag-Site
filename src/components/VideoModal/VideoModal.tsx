@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import './videoModal.scss';
 
 interface VideoModalProps {
     videoId: string;
     buttonText?: string;
-    buttonClassName?: string;
 }
 
 const VideoModal: React.FC<VideoModalProps> = ({
                                                    videoId,
-                                                   buttonText = "Play Video",
-                                                   buttonClassName = "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                                                   buttonText = "Play Video"
                                                }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
@@ -28,18 +26,38 @@ const VideoModal: React.FC<VideoModalProps> = ({
         };
     }, [isOpen]);
 
+    const buttonStyle = {
+        display: 'inline-block',
+        width: isHovered ? '330px' : '325px',
+        height: isHovered ? '56px' : '50px',
+        padding: '10px',
+        margin: '10px',
+        marginTop: isHovered ? '7px' : '10px',
+        marginBottom: isHovered ? '7px' : '10px',
+        color: '#fff',
+        background: isHovered ? '#da5802' : '#FE6A09',
+        border: 0,
+        borderRadius: '4px',
+        fontSize: '16px',
+        fontWeight: 600,
+        textDecoration: 'none',
+        cursor: isHovered ? 'pointer' : 'default',
+        transition: 'all 0.2s ease'
+    };
+
     return (
         <>
             <button
-                className={`open-modal-button ${buttonClassName}`}
+                style={buttonStyle}
                 onClick={() => setIsOpen(true)}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
                 aria-label={`Play ${buttonText}`}
             >
                 {buttonText}
             </button>
 
             {isOpen && (
-                // Overlay that covers the entire viewport
                 <div
                     className="fixed inset-0 bg-black/30 z-50"
                     onClick={() => setIsOpen(false)}
@@ -54,17 +72,15 @@ const VideoModal: React.FC<VideoModalProps> = ({
                         justifyContent: 'center'
                     }}
                 >
-                    {/* Video container */}
                     <div
                         style={{
-                            width: '70vw',
+                            width: window.innerWidth <= 768 ? '100vw' : '70vw',
                             position: 'absolute',
                             backgroundColor: 'black',
                             borderRadius: '8px'
                         }}
                         onClick={e => e.stopPropagation()}
                     >
-                        {/* Close button - positioned over video corner */}
                         <button
                             style={{
                                 position: 'absolute',
@@ -92,7 +108,6 @@ const VideoModal: React.FC<VideoModalProps> = ({
                             ✕
                         </button>
 
-                        {/* Video wrapper with 16:9 aspect ratio */}
                         <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                             <iframe
                                 style={{
