@@ -57,11 +57,19 @@
 		ul {
 			width: 55%;
 			min-width: 650px;
+
+			@media (max-width: 1023px) {
+				min-width: 80%;
+			}
 		}
 
 		ol {
 			width: 55%;
 			min-width: 650px;
+
+			@media (max-width: 1023px) {
+				min-width: 80%;
+			}
 		}
 
 		p {
