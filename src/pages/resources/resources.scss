@@ -8,6 +8,11 @@
 		text-align: center;
 	}
 
+	h4 {
+		margin: 0 auto;
+		text-align: center;
+	}
+
 	ul {
 		padding-top: 0;
 	}
@@ -17,8 +22,7 @@
 	}
 
 	p {
-		margin-top: 0;
-		margin-bottom: 0;
+		margin: 0;
 	}
 
 	a:hover {
@@ -27,7 +31,14 @@
 
 	.collapsible-wrapper {
 		padding-top: 3em;
-		padding-left: 10%;
+
+		@media (max-width: 1023px) {
+			padding-left: 0;
+		}
+
+		.resources-collapsible {
+			justify-items: center;
+		}
 
 		.resources-collapsible-collapsible-div {
 			justify-content: space-between;
@@ -44,11 +55,17 @@
 		}
 
 		ul {
-			width: 70%;
+			width: 55%;
+			min-width: 650px;
 		}
 
 		ol {
-			width: 70%;
+			width: 55%;
+			min-width: 650px;
+		}
+
+		p {
+			padding: 4px 0;
 		}
 	}
 

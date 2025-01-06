@@ -48,7 +48,10 @@ export default function CollapsibleSection({
                 onKeyDown={onKeyDown}
                 role="button"
                 tabIndex={0}
-                style={{display: 'flex', width: '80%'}}
+                style={{
+                    display: 'flex',
+                    width: window.innerWidth <= 768 ? '100%' : 'max(60%, 700px)'
+                }}
             >
                 <p className={className + '-title'}>{title}</p>
                 <img
