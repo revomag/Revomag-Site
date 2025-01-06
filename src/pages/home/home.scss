@@ -25,11 +25,8 @@
 }
 
 .banner-video-container {
-	position: relative;
-	width: 100%;
-	max-height: calc(100vh - 110px);
-	overflow: hidden;
-	padding-top: 5em;
+	width: 40%;
+	padding: 5em 0 0 5em;
 
 	video {
 		width: 100%;
