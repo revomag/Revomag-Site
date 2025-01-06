@@ -20,10 +20,10 @@ export default function Resources(): ReactElement {
             />
             <section className={'resources-content-container'}>
                 <h1>Resources</h1>
-                <p>The below resources provide an introduction to the use of the Revomag, as well as answers to commonly asked questions.</p>
+                <h4>The below resources provide an introduction to the use of the Revomag, as well as answers to commonly asked questions.</h4>
                 <div className={'collapsible-wrapper'}>
                     <CollapsibleSection
-                        title={'Terms used to describe Revomag components'}
+                        title={'Revomag component terms'}
                         className={'resources-collapsible'}
                         children={
                             <ul>
