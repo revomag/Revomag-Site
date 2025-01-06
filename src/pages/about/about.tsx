@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import Building from "../../assets/bannerImages/WorkingOn.png"
+import Building from "../../assets/bannerImages/DaveAction.jpg"
 import Headshot from "../../assets/DaveHeadshot.jpg";
 import './about.scss';
 
