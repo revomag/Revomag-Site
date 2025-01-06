@@ -1,7 +1,7 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
-import Hero from "../../assets/bannerImages/revomagHands.jpg"
+import Hero from "../../assets/bannerImages/RevomagLoading.jpg"
 import './products.scss';
 import BuyRevomagFullDescriptionButton from "../../components/shopifyButtons/buyRevomagFullDescription";
 

@@ -22,7 +22,34 @@
 	}
 
 	a:hover {
-		color: dimgrey;
+		color: black;
+	}
+
+	.collapsible-wrapper {
+		padding-top: 3em;
+		padding-left: 10%;
+
+		.resources-collapsible-collapsible-div {
+			justify-content: space-between;
+			margin-top: 1em;
+			padding: 5px 0;
+			background: #FE6A09;
+			border-radius: 5px;
+
+			.resources-collapsible-title {
+				padding-left: 5px;
+				color: white;
+				font-weight: 600;
+			}
+		}
+
+		ul {
+			width: 70%;
+		}
+
+		ol {
+			width: 70%;
+		}
 	}
 
 	@media (max-width: 1023px) {

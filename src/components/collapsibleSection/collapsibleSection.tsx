@@ -48,13 +48,13 @@ export default function CollapsibleSection({
                 onKeyDown={onKeyDown}
                 role="button"
                 tabIndex={0}
-                style={{display: 'flex'}}
+                style={{display: 'flex', width: '80%'}}
             >
                 <p className={className + '-title'}>{title}</p>
                 <img
                     src={isOpen ? collapseIcon : expandIcon}
                     alt={isOpen ? "collapse" : "expand"}
-                    style={{height: '11px', paddingTop: '16px', paddingLeft: '8px'}}
+                    style={{height: '15px', paddingTop: '8px', paddingLeft: '8px', paddingRight: '5px'}}
                 />
             </div>
             {isOpen && children}
