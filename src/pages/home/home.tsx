@@ -18,21 +18,18 @@ export default function Home(): ReactElement {
                     <img src={Hero} alt={'revomag'} title={'revomag'} />
                 </div>
             </div>
-            <div className="banner-video-container">
-                <video autoPlay loop muted playsInline>
-                    <source src={HeroVideo} type="video/mp4"/>
-                </video>
-            </div>
             <section className={'home-content'}>
-                {/*<div className={'revomag-info'}>*/}
-                {/*    <SimpleButton buttonText={"Promotional Video"} destination={'/'}/>*/}
-                {/*</div>*/}
                 <VideoModal
                     videoId={"VHS8xIsR9XY"}
                     buttonText={'View Promotional Video'}
                     buttonClassName={'revomag-promo-button'}
                 />
             </section>
+            <div className="banner-video-container">
+                <video autoPlay loop muted playsInline>
+                    <source src={HeroVideo} type="video/mp4"/>
+                </video>
+            </div>
         </>
     );
 }

@@ -18,7 +18,7 @@ export default function Products(): ReactElement {
                 imageAlt={'Revomag size in hand'}
                 imageTitle={'Revomag size in hand'}
             />
-            <div id={'button container'}>
+            <div id={'button container'} className={'shopify-info'}>
                 <BuyRevomagFullDescriptionButton/>
             </div>
         </>

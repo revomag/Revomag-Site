@@ -10,7 +10,7 @@ interface VideoModalProps {
 const VideoModal: React.FC<VideoModalProps> = ({
                                                    videoId,
                                                    buttonText = "Play Video",
-                                                   buttonClassName = "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                                                   buttonClassName
                                                }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,7 +31,7 @@ const VideoModal: React.FC<VideoModalProps> = ({
     return (
         <>
             <button
-                className={`open-modal-button ${buttonClassName}`}
+                className={buttonClassName}
                 onClick={() => setIsOpen(true)}
                 aria-label={`Play ${buttonText}`}
             >
@@ -39,7 +39,6 @@ const VideoModal: React.FC<VideoModalProps> = ({
             </button>
 
             {isOpen && (
-                // Overlay that covers the entire viewport
                 <div
                     className="fixed inset-0 bg-black/30 z-50"
                     onClick={() => setIsOpen(false)}
@@ -54,17 +53,15 @@ const VideoModal: React.FC<VideoModalProps> = ({
                         justifyContent: 'center'
                     }}
                 >
-                    {/* Video container */}
                     <div
                         style={{
-                            width: '70vw',
+                            width: window.innerWidth <= 768 ? '100vw' : '70vw',
                             position: 'absolute',
                             backgroundColor: 'black',
                             borderRadius: '8px'
                         }}
                         onClick={e => e.stopPropagation()}
                     >
-                        {/* Close button - positioned over video corner */}
                         <button
                             style={{
                                 position: 'absolute',
@@ -92,7 +89,6 @@ const VideoModal: React.FC<VideoModalProps> = ({
                             ✕
                         </button>
 
-                        {/* Video wrapper with 16:9 aspect ratio */}
                         <div style={{ position: 'relative', paddingTop: '56.25%' }}>
                             <iframe
                                 style={{
