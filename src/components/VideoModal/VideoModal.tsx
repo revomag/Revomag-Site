@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import './videoModal.scss';
 
 interface VideoModalProps {
     videoId: string;
     buttonText?: string;
+    buttonClassName?: string;
 }
 
 const VideoModal: React.FC<VideoModalProps> = ({
                                                    videoId,
-                                                   buttonText = "Play Video"
+                                                   buttonText = "Play Video",
+                                                   buttonClassName
                                                }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
@@ -26,32 +28,11 @@ const VideoModal: React.FC<VideoModalProps> = ({
         };
     }, [isOpen]);
 
-    const buttonStyle = {
-        display: 'inline-block',
-        width: isHovered ? '330px' : '325px',
-        height: isHovered ? '56px' : '50px',
-        padding: '10px',
-        margin: '10px',
-        marginTop: isHovered ? '7px' : '10px',
-        marginBottom: isHovered ? '7px' : '10px',
-        color: '#fff',
-        background: isHovered ? '#da5802' : '#FE6A09',
-        border: 0,
-        borderRadius: '4px',
-        fontSize: '16px',
-        fontWeight: 600,
-        textDecoration: 'none',
-        cursor: isHovered ? 'pointer' : 'default',
-        transition: 'all 0.2s ease'
-    };
-
     return (
         <>
             <button
-                style={buttonStyle}
+                className={buttonClassName}
                 onClick={() => setIsOpen(true)}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
                 aria-label={`Play ${buttonText}`}
             >
                 {buttonText}

@@ -1,4 +1,4 @@
-.open-modal-button {
+.revomag-promo-button {
   display: inline-block;
   width: 325px;
   height: 50px;
@@ -11,13 +11,13 @@
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-}
 
-.open-modal-button:hover {
-  background-color: #da5802;
-  height: 56px;
-  width: 330px;
-  margin-bottom: 7px;
-  margin-top: 7px;
-  cursor: pointer;
+  &:hover {
+    background-color: #da5802;
+    height: 56px;
+    width: 330px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    cursor: pointer;
+  }
 }

@@ -18,11 +18,6 @@ export default function Home(): ReactElement {
                     <img src={Hero} alt={'revomag'} title={'revomag'} />
                 </div>
             </div>
-            <div className="banner-video-container">
-                <video autoPlay loop muted playsInline>
-                    <source src={HeroVideo} type="video/mp4"/>
-                </video>
-            </div>
             <section className={'home-content'}>
                 <VideoModal
                     videoId={"VHS8xIsR9XY"}
@@ -30,6 +25,11 @@ export default function Home(): ReactElement {
                     buttonClassName={'revomag-promo-button'}
                 />
             </section>
+            <div className="banner-video-container">
+                <video autoPlay loop muted playsInline>
+                    <source src={HeroVideo} type="video/mp4"/>
+                </video>
+            </div>
         </>
     );
 }
