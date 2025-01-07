@@ -3,14 +3,16 @@ import './videoModal.scss';
 
 interface VideoModalProps {
     videoId: string;
-    buttonText?: string;
-    buttonClassName?: string;
+    text?: string;
+    baseClassName?: string;
+    displayType?: 'button' | 'text';
 }
 
 const VideoModal: React.FC<VideoModalProps> = ({
                                                    videoId,
-                                                   buttonText = "Play Video",
-                                                   buttonClassName
+                                                   text = "Play Video",
+                                                   baseClassName,
+                                                   displayType= 'button'
                                                }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -28,15 +30,41 @@ const VideoModal: React.FC<VideoModalProps> = ({
         };
     }, [isOpen]);
 
+    const renderTrigger = () => {
+        if (displayType === 'button') {
+            return (
+                <button
+                    className={`mdl-btn ${baseClassName}-button`}
+                    onClick={() => setIsOpen(true)}
+                    aria-label={`Play ${text}`}
+                >
+                    {text}
+                </button>
+            );
+        } else {
+            return (
+                <span
+                    className={`mdl-txt ${baseClassName}-text`}
+                    onClick={() => setIsOpen(true)}
+                    style={{ cursor: 'pointer' }}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            setIsOpen(true);
+                        }
+                    }}
+                >
+          {text}
+        </span>
+            );
+        }
+    };
+
     return (
         <>
-            <button
-                className={buttonClassName}
-                onClick={() => setIsOpen(true)}
-                aria-label={`Play ${buttonText}`}
-            >
-                {buttonText}
-            </button>
+            {renderTrigger()}
 
             {isOpen && (
                 <div

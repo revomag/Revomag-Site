@@ -21,8 +21,9 @@ export default function Home(): ReactElement {
             <section className={'home-content'}>
                 <VideoModal
                     videoId={"VHS8xIsR9XY"}
-                    buttonText={'View Promotional Video'}
-                    buttonClassName={'revomag-promo-button'}
+                    text={'View Promotional Video'}
+                    baseClassName={'revomag-promo-button'}
+                    displayType={'button'}
                 />
             </section>
             <div className="banner-video-container">

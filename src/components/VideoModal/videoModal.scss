@@ -1,4 +1,4 @@
-.revomag-promo-button {
+.mdl-btn {
   display: inline-block;
   width: 325px;
   height: 50px;
@@ -18,6 +18,15 @@
     width: 330px;
     margin-bottom: 7px;
     margin-top: 7px;
+    cursor: pointer;
+  }
+}
+
+.mdl-txt {
+  color: blue;
+
+  &:hover {
+    color: #03037e;
     cursor: pointer;
   }
 }
