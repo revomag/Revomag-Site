@@ -46,6 +46,21 @@
 	}
 }
 
+.video-modal-button-wrapper {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+
+	@media (max-width: 1023px) {
+		position: relative;
+		bottom: 0;
+		margin-top: 3em;
+		margin-bottom: -2em;
+	}
+}
+
 .home-content {
 	width: 100vw;
 	margin: 0 auto;
