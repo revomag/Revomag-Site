@@ -33,19 +33,19 @@
 		@media (max-width: 1023px) {
 			position: relative;
 			bottom: 0;
-			transform: translateX(-50%);
 		}
 	}
 }
 
 .banner-video-container {
-	width: 40%;
-	padding: 5em 0 0 5em;
+	width: 60%;
+	padding: 5em 0;
+	margin: 0 auto;
 
 	@media (max-width: 1023px) {
 		width: 90%;
 		margin: 0 auto;
-		padding: 0;
+		padding-bottom: 1em;
 	}
 
 	video {

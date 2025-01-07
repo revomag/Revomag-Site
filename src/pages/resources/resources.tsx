@@ -32,13 +32,13 @@ export default function Resources(): ReactElement {
                                     <p>Side tabs: Flexible part on each side of the Revomag. Used to release a cartridge into a chamber of the cylinder, or to retain the previous cartridge while loading the Revomag.</p>
                                 </li>
                                 <li>
-                                    <p>Follower: The part that sits on top of the magazine spring.</p>
+                                    <p>Follower: The part that sits on top of the spring.</p>
                                 </li>
                                 <li>
-                                    <p>Front Forward Opening: Also referred to as the mouth of the device. This is the opening where the cartridges are loaded and dispensed from.</p>
+                                    <p>Front Forward Opening: Also referred to as the mouth of the device. This is the opening where the cartridges are loaded and dispensed.</p>
                                 </li>
                                 <li>
-                                    <p>Advanced Cartridge: The advanced cartridge is the cartridge that protrudes slightly from the mouth for the Revomag. It is used to guide the cartridge into each chamber of the cylinder.</p>
+                                    <p>Advanced Cartridge: The advanced cartridge protrudes slightly from the mouth for the Revomag. It is used to guide the cartridge into each chamber of the cylinder.</p>
                                 </li>
                             </ul>
                         }
