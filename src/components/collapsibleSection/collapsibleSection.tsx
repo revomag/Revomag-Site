@@ -49,7 +49,7 @@ export default function CollapsibleSection({
                 role="button"
                 tabIndex={0}
                 style={{
-                    display: 'flex',
+                    display: 'flex', cursor: 'pointer',
                     width: window.innerWidth <= 768 ? '100%' : 'max(60%, 700px)'
                 }}
             >
