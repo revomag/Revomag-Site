@@ -4,6 +4,7 @@ import Banner from "../../components/banner/banner";
 import Research from "../../assets/bannerImages/Assembling.png";
 import './resources.scss';
 import CollapsibleSection from "../../components/collapsibleSection/collapsibleSection";
+import VideoModal from "../../components/VideoModal/VideoModal";
 
 /**
  * Renders the Resources page
@@ -46,6 +47,8 @@ export default function Resources(): ReactElement {
                         title={'Loading the Revomag'}
                         className={'resources-collapsible'}
                         children={
+                        <>
+                            <p>For a video tutorial of how to load the Revomag, <VideoModal videoId={'IhmqeNtx0I0'} text={'click here'} displayType={'text'}/></p>
                             <ol>
                                 <li>
                                     <p>Pinch the side tabs to drop the follower</p>
@@ -63,81 +66,88 @@ export default function Resources(): ReactElement {
                                     <p>Repeat steps 2, 3, and 4 until all cartridges have been loaded. (Note: The total number of cartridges loaded includes the final round which remains in the advanced forward position.)</p>
                                 </li>
                                 <li>
-                                    <p>Check the stack. Revolver cartridges have rims. Each rim should be oriented in front of the Cartridge rim below it so that the cartridge can fall freely. (See Potential rim - lock video for more detailed information.)</p>
+                                    <p>Check the stack. Revolver cartridges have rims. Each rim should be oriented in front of the Cartridge rim below it so that the cartridge can fall freely. (See <VideoModal videoId={'Kg64Vbj9J80'} displayType={'text'} text={'Potential rim - lock video'}/> for more detailed information.)</p>
                                 </li>
                             </ol>
+                        </>
                         }
                     />
                     <CollapsibleSection
                         title={'Loading A Revolver'}
                         className={'resources-collapsible'}
                         children={
-                            <ol>
-                                <li>
-                                    <p>After firing the cartridges. Transfer the revolver to your non-dominant hand and strike the ejector rod. Keep the revolver in your non-dominant hand for the remainder of the reload.</p>
-                                    <ul>
-                                        <li>
-                                            <p>Reloading takes dexterity and should be performed with your dominant hand.</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p>Pin the revolver to your stomach with the cylinder open. Cradle the frame between your index and middle finder. Use your thumb to hold the cylinder open.</p>
-                                    <ul>
-                                        <li>
-                                            <p>When using the Revomag and the practice cylinder, guiding each advanced cartridge into the chamber of the cylinder is primarily based on sight, because you are holding both items directly in your line of sight. However, once the revolver is down by your stomach, “feel” will become part of the reloading experience.</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p>Draw the Revomag using a scooping motion. Revomag can be carried in the pocket or inside the waistband.</p>
-                                </li>
-                                <li>
-                                    <p>Use that advanced cartridge as a guide into each chamber of the cylinder.</p>
-                                </li>
-                                <li>
-                                    <p>Press both release tabs using your thumb and index finger. Keep the release tabs pressed until the cartridge fully falls into the chamber.</p>
-                                    <ul>
-                                        <li>
-                                            <p>It is important to hold the Revomag in the palm of your hand keeping it in place with the middle, ring, and pinky fingers so that you can fully release the side tabs with your thumb and index fingers. If the side tabs are not fully released then a new cartridge will not reach the advanced forward position.</p>
-                                        </li>
-                                        <li>
-                                            <p>The Revomag uses gravity to insert the cartridge into the chamber. Therefore, proper vertical alignment is needed.</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ol>
+                            <>
+                                <p>For a video tutorial of how to use the Revomag to load a revolver, <VideoModal videoId={'GjCDzCzz_20'} text={'click here'} displayType={'text'}/></p>
+                                <ol>
+                                    <li>
+                                        <p>After firing the cartridges. Transfer the revolver to your non-dominant hand and strike the ejector rod. Keep the revolver in your non-dominant hand for the remainder of the reload.</p>
+                                        <ul>
+                                            <li>
+                                                <p>Reloading takes dexterity and should be performed with your dominant hand.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Pin the revolver to your stomach with the cylinder open. Cradle the frame between your index and middle finder. Use your thumb to hold the cylinder open.</p>
+                                        <ul>
+                                            <li>
+                                                <p>When using the Revomag and the practice cylinder, guiding each advanced cartridge into the chamber of the cylinder is primarily based on sight, because you are holding both items directly in your line of sight. However, once the revolver is down by your stomach, “feel” will become part of the reloading experience.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Draw the Revomag using a scooping motion. Revomag can be carried in the pocket or inside the waistband.</p>
+                                    </li>
+                                    <li>
+                                        <p>Use that advanced cartridge as a guide into each chamber of the cylinder.</p>
+                                    </li>
+                                    <li>
+                                        <p>Press both release tabs using your thumb and index finger. Keep the release tabs pressed until the cartridge fully falls into the chamber.</p>
+                                        <ul>
+                                            <li>
+                                                <p>It is important to hold the Revomag in the palm of your hand keeping it in place with the middle, ring, and pinky fingers so that you can fully release the side tabs with your thumb and index fingers. If the side tabs are not fully released then a new cartridge will not reach the advanced forward position.</p>
+                                            </li>
+                                            <li>
+                                                <p>The Revomag uses gravity to insert the cartridge into the chamber. Therefore, proper vertical alignment is needed.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </>
                         }
                     />
                     <CollapsibleSection
                         title={'Potential Rim - Lock'}
                         className={'resources-collapsible'}
                         children={
-                            <ul>
-                                <li>
-                                    <p>It is important to check the cartridge stack before using the Revomag for personal protection so that you can be certain it will operate flawlessly when you need it.</p>
-                                </li>
-                                <li>
-                                    <p>Revolver cartridges have rims. Each cartridge rim should be oriented in front of the cartridge rim below it.</p>
-                                </li>
-                                <li>
-                                    <p>When loading the Revomag, it is important to push each cartridge straight back until it can be retained by the side tabs. If the nose/front of the cartridge is pushed down during the loading process, then the rear of the cartridge may tip up causing the rim of the cartridge being loaded could go behind the rim of the cartridge below it. This would create a rim lock.</p>
-                                </li>
-                                <li>
-                                    <p>If a rim-lock occurs during the loading process, it can be remedied as follows. With the nose/tip of the cartridge in a downward vertical direction, firmly strike the base plate with your other hand. This will break spring tension and allow gravity to bring the locked rim in front of the cartridge rim below it. Now the cartridge will fall freely when the release side tabs are pressed.</p>
-                                </li>
-                                <li>
-                                    <p>A rim lock can also occur in circumstances such as:</p>
-                                    <ul>
-                                        <li>
-                                            <p>If the base plate was used for kubaton</p>
-                                        </li>
-                                        <li>
-                                            <p>If the device is dropped on the base plate</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <>
+                                <p>For a video tutorial of how to clear a rim lock in the Revomag, <VideoModal videoId={'Kg64Vbj9J80'} text={'click here'} displayType={'text'}/></p>
+                                <ul>
+                                    <li>
+                                        <p>It is important to check the cartridge stack before using the Revomag for personal protection so that you can be certain it will operate flawlessly when you need it.</p>
+                                    </li>
+                                    <li>
+                                        <p>Revolver cartridges have rims. Each cartridge rim should be oriented in front of the cartridge rim below it.</p>
+                                    </li>
+                                    <li>
+                                        <p>When loading the Revomag, it is important to push each cartridge straight back until it can be retained by the side tabs. If the nose/front of the cartridge is pushed down during the loading process, then the rear of the cartridge may tip up causing the rim of the cartridge being loaded could go behind the rim of the cartridge below it. This would create a rim lock.</p>
+                                    </li>
+                                    <li>
+                                        <p>If a rim-lock occurs during the loading process, it can be remedied as follows. With the nose/tip of the cartridge in a downward vertical direction, firmly strike the base plate with your other hand. This will break spring tension and allow gravity to bring the locked rim in front of the cartridge rim below it. Now the cartridge will fall freely when the release side tabs are pressed.</p>
+                                    </li>
+                                    <li>
+                                        <p>A rim lock can also occur in circumstances such as:</p>
+                                        <ul>
+                                            <li>
+                                                <p>If the base plate was used for kubaton</p>
+                                            </li>
+                                            <li>
+                                                <p>If the device is dropped on the base plate</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </>
                         }
                     />
                     <CollapsibleSection
@@ -180,6 +190,17 @@ export default function Resources(): ReactElement {
                                 </li>
                                 <li>
                                     <p>Firm striking tool for close quarter combat.</p>
+                                </li>
+                            </ul>
+                        }
+                    />
+                    <CollapsibleSection
+                        title={'Frequently Asked Questions'}
+                        className={'resources-collapsible'}
+                        children={
+                            <ul>
+                                <li>
+                                    <p><span style={{fontWeight: '600'}}>What's in the box:</span> <VideoModal videoId={'PqccMBplKw8'} text={'Click here'} displayType={'text'}/> for a video walk through of all that comes with your Revomag.</p>
                                 </li>
                             </ul>
                         }

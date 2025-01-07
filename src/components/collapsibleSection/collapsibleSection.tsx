@@ -57,7 +57,7 @@ export default function CollapsibleSection({
                 <img
                     src={isOpen ? collapseIcon : expandIcon}
                     alt={isOpen ? "collapse" : "expand"}
-                    style={{height: '15px', paddingTop: '8px', paddingLeft: '8px', paddingRight: '5px'}}
+                    style={{height: '15px', paddingTop: '8px', paddingLeft: '8px', paddingRight: '5px', cursor: 'pointer'}}
                 />
             </div>
             {isOpen && children}
