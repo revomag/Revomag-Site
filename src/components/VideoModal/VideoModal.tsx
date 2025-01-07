@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import './videoModal.scss';
 
 interface VideoModalProps {
@@ -11,8 +12,8 @@ interface VideoModalProps {
 const VideoModal: React.FC<VideoModalProps> = ({
                                                    videoId,
                                                    text = "Play Video",
-                                                   baseClassName,
-                                                   displayType= 'button'
+                                                   baseClassName = '',
+                                                   displayType = 'button'
                                                }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -23,10 +24,12 @@ const VideoModal: React.FC<VideoModalProps> = ({
 
         if (isOpen) {
             document.addEventListener('keydown', handleEsc);
+            document.body.style.overflow = 'hidden';
         }
 
         return () => {
             document.removeEventListener('keydown', handleEsc);
+            document.body.style.overflow = 'unset';
         };
     }, [isOpen]);
 
@@ -66,10 +69,8 @@ const VideoModal: React.FC<VideoModalProps> = ({
         <>
             {renderTrigger()}
 
-            {isOpen && (
+            {isOpen && createPortal(
                 <div
-                    className="fixed inset-0 bg-black/30 z-50"
-                    onClick={() => setIsOpen(false)}
                     style={{
                         position: 'fixed',
                         top: 0,
@@ -78,15 +79,18 @@ const VideoModal: React.FC<VideoModalProps> = ({
                         bottom: 0,
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                        zIndex: 1000
                     }}
+                    onClick={() => setIsOpen(false)}
                 >
                     <div
                         style={{
                             width: window.innerWidth <= 768 ? '100vw' : '70vw',
-                            position: 'absolute',
                             backgroundColor: 'black',
-                            borderRadius: '8px'
+                            borderRadius: '8px',
+                            position: 'relative'
                         }}
                         onClick={e => e.stopPropagation()}
                     >
@@ -95,7 +99,7 @@ const VideoModal: React.FC<VideoModalProps> = ({
                                 position: 'absolute',
                                 top: '8px',
                                 right: '8px',
-                                zIndex: 60,
+                                zIndex: 1001,
                                 color: 'white',
                                 backgroundColor: 'rgba(0, 0, 0, 0.6)',
                                 padding: '8px 12px',
@@ -134,7 +138,8 @@ const VideoModal: React.FC<VideoModalProps> = ({
                             />
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </>
     );
