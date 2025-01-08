@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Logo from '../../../assets/RevomagLogotypeWithTagline.png';
 import './navBar.scss';
 
@@ -8,27 +8,33 @@ import './navBar.scss';
  * @constructor
  */
 export default function NavBar(): ReactElement {
+    const location = useLocation();
+
+    const navLinks = [
+        { path: "/home", label: "HOME" },
+        { path: "/products", label: "PRODUCTS" },
+        { path: "/about", label: "ABOUT" },
+        { path: "/resources", label: "RESOURCES" }
+    ];
+
     return (
         <nav>
             <div className="nav-wrapper">
                 <div className="logo-container">
-                    <Link className={"logo-nav"} to={"/"}>
+                    <Link className={"logo-nav"} to={"/home"}>
                         <img src={Logo} alt="logo" />
                     </Link>
                 </div>
                 <div className="nav-links">
-                    <Link className={"nav-link"} to={"/home"}>
-                        HOME
-                    </Link>
-                    <Link className={"nav-link"} to={"/products"}>
-                        PRODUCTS
-                    </Link>
-                    <Link className={"nav-link"} to={"/about"}>
-                        ABOUT
-                    </Link>
-                    <Link className={"nav-link"} to={"/resources"}>
-                        RESOURCES
-                    </Link>
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.path}
+                            className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                            to={link.path}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </nav>
