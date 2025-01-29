@@ -18,9 +18,9 @@ export default function Products(): ReactElement {
                 imageAlt={'Revomag size in hand'}
                 imageTitle={'Revomag size in hand'}
             />
-            <div className={'availability'}>
-                <h2>Please note that our next available shipment date is January 29th. Any orders received prior to that date will be fulfilled on 1/29. Thank you for your patience and support!</h2>
-            </div>
+            {/*<div className={'availability'}>*/}
+            {/*    <h2>Please note that our next available shipment date is January 29th. Any orders received prior to that date will be fulfilled on 1/29. Thank you for your patience and support!</h2>*/}
+            {/*</div>*/}
             <div id={'button container'} className={'shopify-info'}>
                 <BuyRevomagFullDescriptionButton/>
             </div>

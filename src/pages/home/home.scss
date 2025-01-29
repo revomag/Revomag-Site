@@ -60,6 +60,36 @@
 	}
 }
 
+.home-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 80vw;
+	margin: 0 auto;
+
+	.icon-container {
+		padding-top: 15px;
+
+		img {
+			height: 5em;
+
+			@media (max-width: 1023px) {
+				height: 3em;
+			}
+		}
+
+		p {
+			font-weight: bold;
+			font-style: italic;
+			width: 141px;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			white-space: normal;
+			margin-top: 0;
+		}
+	}
+}
+
 .home-content {
 	width: 100vw;
 	margin: 0 auto;
