@@ -1,8 +1,12 @@
 import {ReactElement} from "react";
 import SimpleButton from "../../simpleButton/simpleButton";
-import Instagram from '../../../assets/icons/instagram.svg';
+import Instagram from '../../../assets/icons/instagram-white-icon.png';
 import Email from '../../../assets/icons/email.png';
 import './mobileFooter.scss';
+import X from "../../../assets/icons/twitter-x-16.png";
+import YouTube from "../../../assets/icons/youtube-app-white-icon.png";
+import Facebook from "../../../assets/icons/facebook-16.png";
+import Rumble from "../../../assets/icons/icons8-rumble-24.png";
 
 /**
  * Renders the DesktopFooter component
@@ -37,6 +41,42 @@ export default function MobileFooter(): ReactElement {
                             rel={"noreferrer"}
                         >
                             <img src={Instagram} alt={'instagram link'}/>
+                        </a>
+                    </div>
+                    <div className={'social-icon'}>
+                        <a
+                            href={"https://x.com/Revomagusa"}
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                        >
+                            <img src={X} alt={'X link'}/>
+                        </a>
+                    </div>
+                    <div className={'social-icon'}>
+                        <a
+                            href={"https://www.youtube.com/@getRevomag"}
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                        >
+                            <img src={YouTube} alt={'YouTube link'}/>
+                        </a>
+                    </div>
+                    <div className={'social-icon'}>
+                        <a
+                            href={"https://www.facebook.com/profile.php?id=61572692010797"}
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                        >
+                            <img src={Facebook} alt={'facebook link'}/>
+                        </a>
+                    </div>
+                    <div className={'social-icon'}>
+                        <a
+                            href={"https://rumble.com/c/c-7481551"}
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                        >
+                            <img src={Rumble} alt={'rumble link'}/>
                         </a>
                     </div>
                 </div>
