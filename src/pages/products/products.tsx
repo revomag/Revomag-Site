@@ -18,11 +18,43 @@ export default function Products(): ReactElement {
                 imageAlt={'Revomag size in hand'}
                 imageTitle={'Revomag size in hand'}
             />
-            {/*<div className={'availability'}>*/}
-            {/*    <h2>Please note that our next available shipment date is January 29th. Any orders received prior to that date will be fulfilled on 1/29. Thank you for your patience and support!</h2>*/}
-            {/*</div>*/}
             <div id={'button container'} className={'shopify-info'}>
                 <BuyRevomagFullDescriptionButton/>
+                <div className={'product-features'}>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>
+                            <span>Secure Grip:</span> Textured stippling provides enhanced grip, ensuring steady handling even in challenging conditions.
+                        </li>
+                        <li>
+                            Durable Construction: Made from tough nylon for long-lasting performance.
+                        </li>
+                        <li>
+                            Smooth &amp; Snag-Free: The clip has a rounded end which is snag free and ensures comfort and ease of use. It also has a flat black Cerakote finish which adds resilience.
+                        </li>
+                        <li>
+                            Ambidextrous Design: Perfect for both left and right-handed users, offering flexibility and ease of use for everyone.
+                        </li>
+                        <li>
+                            Versatile Carry: Can be carried in the pocket or inside the waistband which provide comfortable and discreet options for everyday carry.
+                        </li>
+                        <li>
+                            Self-Defense Ready: The point at the top is a SMACK CAP or striking surface. This offers an effective less-than-lethal force option when needed.
+                        </li>
+                        <li>
+                            Efficient Capacity: Holds eight 38 special, nine 327 mag, or six-seven 357 hollow point, ensuring you’re always prepared.
+                        </li>
+                        <li>
+                            Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
+                        </li>
+                        <li>
+                            Build Muscle Memory: Includes a practice cylinder to help you develop the necessary skills and confidence for quick and accurate reloading.
+                        </li>
+                        <li>
+                            Easy Maintenance: Comes with a hex L-key to disassemble for cleaning and to swap the belt clip for left-handed users.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </>
     );

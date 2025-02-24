@@ -7,14 +7,15 @@
   }
 }
 
-.availability h2 {
-  color: red;
-  max-width: 70vw;
-  padding-bottom: 1em;
-  margin: -1em auto 0;
+.product-features {
+  max-width: 950px;
+  margin: 0 auto;
 
-  @media (max-width: 1023px) {
-    max-width: 90vw;
-    font-size: 18px;
+  h2 {
+    justify-self: flex-start;
+  }
+
+  ul {
+    padding-top: 0;
   }
 }
