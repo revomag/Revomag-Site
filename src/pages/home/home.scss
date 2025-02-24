@@ -22,42 +22,6 @@
 			}
 		}
 	}
-
-	.video-modal-button-wrapper {
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 10;
-
-		@media (max-width: 1023px) {
-			position: relative;
-			bottom: 0;
-		}
-	}
-}
-
-.banner-video-container {
-	width: 60%;
-	padding: 5em 0;
-	margin: 0 auto;
-
-	@media (max-width: 1023px) {
-		width: 90%;
-		margin: 0 auto;
-		padding-bottom: 1em;
-	}
-
-	video {
-		width: 100%;
-		height: auto;
-		min-height: 350px;
-		object-fit: cover;
-
-		@media (max-width: 1023px) {
-			min-height: 0;
-		}
-	}
 }
 
 .home-icons {
@@ -91,14 +55,41 @@
 }
 
 .home-content {
-	width: 100vw;
+	width: 80vw;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 7em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	text-align: left;
 
-	.revomag-info {
-		padding-top: 2em;
+	.home-video {
+		flex-shrink: 0;
+		width: 100%;
+		max-width: 560px;
 
-		@media (max-width: 1023px) {
-			padding-top: 1em;
+		iframe {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 16 / 9;
+			object-fit: contain;
 		}
+	}
+
+	.home-mission {
+		flex: 1;
+		min-width: 0;
+		max-width: 560px;
+	}
+
+	@media (max-width: 1023px) {
+		width: 90vw;
+		padding-top: 3em;
+		padding-bottom: 1em;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
 	}
 }

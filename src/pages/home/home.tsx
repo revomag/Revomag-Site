@@ -1,13 +1,11 @@
 import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
-import HeroVideo from "../../assets/bannerImages/HeroVideo.mp4";
 import './home.scss';
 import Hero from "../../assets/bannerImages/RevomagWEBBanner.jpg";
 import Fast from "../../assets/icons/FastLoading.png";
 import Made from "../../assets/icons/MadeInMA.png";
 import Guaranteed from "../../assets/icons/Guarantee.png";
 import Free from "../../assets/icons/FreeShipping.png";
-import VideoModal from "../../components/VideoModal/VideoModal";
 
 /**
  * Renders home page
@@ -21,19 +19,22 @@ export default function Home(): ReactElement {
                 <div className={'hero-image-container'}>
                     <img src={Hero} alt={'revomag'} title={'revomag'} />
                 </div>
-                <div className={'video-modal-button-wrapper'}>
-                    <VideoModal
-                        videoId={"VHS8xIsR9XY"}
-                        text={'View Promotional Video'}
-                        baseClassName={'revomag-promo-button'}
-                        displayType={'button'}
+            </div>
+            <div className={'home-content'}>
+                <div className={'home-video'}>
+                    <iframe
+                        src="https://www.youtube.com/embed/VHS8xIsR9XY?si=qfZiU_Mn5mW_EDwM&rel=0&modestbranding=1&controls=1&showinfo=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
                     />
                 </div>
-            </div>
-            <div className="banner-video-container">
-                <video autoPlay loop muted playsInline>
-                    <source src={HeroVideo} type="video/mp4"/>
-                </video>
+                <div className={'home-mission'}>
+                    <p>
+                        At Revomag, we are dedicated to providing revolver owners with a faster and more concealable reloading solution for everyday carry and personal protection. Our innovative magazine-style reloader is designed to be fast to draw and easy to carry, offering an edge when seconds matter. Our mission is to equip individuals with a reliable and effective reload that prioritize safety, speed, and strength.
+                    </p>
+                </div>
             </div>
             <div className={"home-icons"}>
                 <div className={"icon-container"}>
