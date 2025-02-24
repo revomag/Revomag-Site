@@ -28,6 +28,10 @@ const GetRevomagProductButton: React.FC = () => {
                                 button: {
                                     'border-radius': '9px',
                                     'background': '#FE6A09',
+                                    ':hover': {
+                                        'background-color': '#556B2F !important',
+                                        'opacity': '1 !important'
+                                    }
                                 },
                             },
                             contents: {
