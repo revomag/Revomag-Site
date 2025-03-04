@@ -165,7 +165,7 @@ export default function Resources(): ReactElement {
                                     <p>No mag release button on the handle. It is possible that on a small sub-compact semi-auto the user can produce a malfunction by inadvertently pressing the mag release button. The most common instance of this is during the draw.</p>
                                 </li>
                                 <li>
-                                    <p>Revolvers are easy and comfortable to carry. The cylinder fits naturally between the recess of lets and torso. A shorter handle prevents excess printing. A shorter barrel prevents excess jabbing. Double action only revolvers have a rounded back edge that is softer on the body than the sharp corner of the side and handle of a semi-automatic handgun.</p>
+                                    <p>Revolvers are easy and comfortable to carry. The cylinder fits naturally between the recess of legs and torso. A shorter handle prevents excess printing. A shorter barrel prevents excess jabbing. Double action only revolvers have a rounded back edge that is softer on the body than the sharp corner of the side and handle of a semi-automatic handgun.</p>
                                 </li>
                                 <li>
                                     <p>Lightweight - most snub nose revolvers have a aluminum frame</p>
