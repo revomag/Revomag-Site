@@ -42,7 +42,7 @@ export default function Products(): ReactElement {
                             Self-Defense Ready: The point at the top is a SMACK CAP or striking surface. This offers an effective less-than-lethal force option when needed.
                         </li>
                         <li>
-                            Efficient Capacity: Holds eight 38 special, nine 327 mag, or six-seven 357 hollow point, ensuring you’re always prepared.
+                            Efficient Capacity: Holds eight 38 special or nine 327 mag, ensuring you’re always prepared.
                         </li>
                         <li>
                             Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
