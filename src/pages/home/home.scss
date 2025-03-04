@@ -24,6 +24,30 @@
 	}
 }
 
+#buy-now-button-container {
+	position: fixed;
+	top: 85px;
+	right: -25px;
+	z-index: 99;
+
+	@media (max-width: 1023px) {
+		top: 75px;
+		right: -45px;
+	}
+}
+
+@media (max-width: 1023px) {
+	#buy-now-button-container {
+		// Target multiple potential selectors
+		.shopify-buy-frame .shopify-buy-btn,
+		.shopify-buy-btn,
+		.shopify-buy-btn-wrapper button {
+			padding: 10px 20px !important;
+			font-size: 14px !important;
+		}
+	}
+}
+
 .home-icons {
 	display: flex;
 	flex-wrap: wrap;

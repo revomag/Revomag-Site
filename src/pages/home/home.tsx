@@ -6,6 +6,7 @@ import Fast from "../../assets/icons/FastLoading.png";
 import Made from "../../assets/icons/MadeInMA.png";
 import Guaranteed from "../../assets/icons/Guarantee.png";
 import Free from "../../assets/icons/FreeShipping.png";
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders home page
@@ -15,6 +16,12 @@ export default function Home(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <div className={'landing-banner-area'}>
                 <div className={'hero-image-container'}>
                     <img src={Hero} alt={'revomag'} title={'revomag'} />
