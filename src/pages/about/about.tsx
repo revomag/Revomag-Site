@@ -4,6 +4,7 @@ import Banner from "../../components/banner/banner";
 import Building from "../../assets/bannerImages/DaveAction.jpg"
 import Headshot from "../../assets/DaveHeadshot.jpg";
 import './about.scss';
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders the About page
@@ -13,6 +14,12 @@ export default function About(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <Banner
                 imageSrc={Building}
                 imageAlt={'manufacturing revomag'}

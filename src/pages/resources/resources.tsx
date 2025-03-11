@@ -5,6 +5,7 @@ import Research from "../../assets/bannerImages/Assembling.jpg";
 import './resources.scss';
 import CollapsibleSection from "../../components/collapsibleSection/collapsibleSection";
 import VideoModal from "../../components/VideoModal/VideoModal";
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders the Resources page
@@ -14,6 +15,12 @@ export default function Resources(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <Banner
                 imageSrc={Research}
                 imageAlt={'woman researching'}

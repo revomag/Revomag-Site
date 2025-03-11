@@ -4,6 +4,7 @@ import Banner from "../../components/banner/banner";
 import Hero from "../../assets/bannerImages/RevomagLoading.jpg"
 import './products.scss';
 import BuyRevomagFullDescriptionButton from "../../components/shopifyButtons/buyRevomagFullDescription";
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders the About page
@@ -13,6 +14,12 @@ export default function Products(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <Banner
                 imageSrc={Hero}
                 imageAlt={'Revomag size in hand'}
