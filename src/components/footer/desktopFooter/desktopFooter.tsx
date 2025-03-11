@@ -76,9 +76,14 @@ export default function DesktopFooter(): ReactElement {
                     </div>
                 </div>
                 <div className={'footer-divider'}/>
-                <div className={'footer-content-right'}>
+                <div className={'footer-content-center'}>
                     <h2>Ready for a better Revolver Reload?</h2>
-                    <GetRevomagProductButton/>
+                    <div id={'footer-buy-now-container'}>
+                        <GetRevomagProductButton
+                            buttonText={'Get Revomag'}
+                            className="footer-buy-button"
+                        />
+                    </div>
                 </div>
                 <div className={'footer-divider'}/>
                 <div className={'footer-sitemap-container'}>

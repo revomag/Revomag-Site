@@ -5,6 +5,7 @@ import Research from "../../assets/bannerImages/Assembling.jpg";
 import './resources.scss';
 import CollapsibleSection from "../../components/collapsibleSection/collapsibleSection";
 import VideoModal from "../../components/VideoModal/VideoModal";
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders the Resources page
@@ -14,6 +15,12 @@ export default function Resources(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <Banner
                 imageSrc={Research}
                 imageAlt={'woman researching'}
@@ -24,21 +31,53 @@ export default function Resources(): ReactElement {
                 <h4>The below resources provide an introduction to the use of the Revomag, as well as answers to commonly asked questions.</h4>
                 <div className={'collapsible-wrapper'}>
                     <CollapsibleSection
-                        title={'Revomag component terms'}
+                        title={'Frequently Asked Questions'}
                         className={'resources-collapsible'}
                         children={
                             <ul>
                                 <li>
-                                    <p>Side tabs: Flexible part on each side of the Revomag. Used to release a cartridge into a chamber of the cylinder, or to retain the previous cartridge while loading the Revomag.</p>
+                                    <p><span style={{fontWeight: '600'}}>What's in the box?</span> <VideoModal videoId={'PqccMBplKw8'} text={'Click here'} displayType={'text'}/> for a video walk through of all that comes with your Revomag.</p>
                                 </li>
                                 <li>
-                                    <p>Follower: The part that sits on top of the spring.</p>
-                                </li>
-                                <li>
-                                    <p>Front Forward Opening: Also referred to as the mouth of the device. This is the opening where the cartridges are loaded and dispensed.</p>
-                                </li>
-                                <li>
-                                    <p>Advanced Cartridge: The advanced cartridge protrudes slightly from the mouth for the Revomag. It is used to guide the cartridge into each chamber of the cylinder.</p>
+                                    <p><span style={{fontWeight: '600'}}>Is the Revomag 357 compatable?</span> Revomag can accommodate eight 357 magnum. Approved loads must not exceed 1.54 inches or 39.11mm. Approved loads include but may not be limited to:</p>
+                                    <div className={'mag-round-faq'}>
+                                        <p><span style={{fontWeight: '500'}}>Hornady “Critical Defense”</span></p>
+                                        <ul>
+                                            <li>
+                                                125 gr FXT
+                                            </li>
+                                            <li>
+                                                135 gr FXT
+                                            </li>
+                                            <li>
+                                                Other grains may apply
+                                            </li>
+                                        </ul>
+                                        <p><span style={{fontWeight: '500'}}>Hornady “Critical Duty”</span></p>
+                                        <ul>
+                                            <li>
+                                                125 gr FlexLock
+                                            </li>
+                                            <li>
+                                                135 gr FlexLock
+                                            </li>
+                                            <li>
+                                                Other grains may apply
+                                            </li>
+                                        </ul>
+                                        <p><span style={{fontWeight: '500'}}>Hornady “American Gunner”</span></p>
+                                        <ul>
+                                            <li>
+                                                125 gr XTP
+                                            </li>
+                                            <li>
+                                                135 gr XTP
+                                            </li>
+                                            <li>
+                                                Other grains may apply
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         }
@@ -195,12 +234,21 @@ export default function Resources(): ReactElement {
                         }
                     />
                     <CollapsibleSection
-                        title={'Frequently Asked Questions'}
+                        title={'Revomag component terms'}
                         className={'resources-collapsible'}
                         children={
                             <ul>
                                 <li>
-                                    <p><span style={{fontWeight: '600'}}>What's in the box:</span> <VideoModal videoId={'PqccMBplKw8'} text={'Click here'} displayType={'text'}/> for a video walk through of all that comes with your Revomag.</p>
+                                    <p>Side tabs: Flexible part on each side of the Revomag. Used to release a cartridge into a chamber of the cylinder, or to retain the previous cartridge while loading the Revomag.</p>
+                                </li>
+                                <li>
+                                    <p>Follower: The part that sits on top of the spring.</p>
+                                </li>
+                                <li>
+                                    <p>Front Forward Opening: Also referred to as the mouth of the device. This is the opening where the cartridges are loaded and dispensed.</p>
+                                </li>
+                                <li>
+                                    <p>Advanced Cartridge: The advanced cartridge protrudes slightly from the mouth for the Revomag. It is used to guide the cartridge into each chamber of the cylinder.</p>
                                 </li>
                             </ul>
                         }

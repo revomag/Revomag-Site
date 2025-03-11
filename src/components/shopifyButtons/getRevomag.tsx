@@ -1,9 +1,34 @@
 import React, { useEffect, useRef } from 'react';
 
-const GetRevomagProductButton: React.FC = () => {
-    const shopifyInitialized = useRef(false); // Track if Shopify has been initialized
+interface GetRevomagProductButtonProps {
+    buttonText?: string;
+    className?: string;
+}
+
+const GetRevomagProductButton: React.FC<GetRevomagProductButtonProps> = ({
+                                                                             buttonText = 'Get Revomag',
+                                                                             className = ''
+                                                                         }) => {
+    const shopifyInitialized = useRef(false);
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const adjustButtonStyles = () => {
+            setTimeout(() => {
+                const buttons = document.querySelectorAll(`.floating-buy-button .shopify-buy-btn`);
+
+                buttons.forEach((button) => {
+                    if (button instanceof HTMLElement) {
+                        // For mobile
+                        if (window.innerWidth <= 1023) {
+                            button.style.setProperty('padding', '10px 10px', 'important');
+                            button.style.setProperty('font-size', '14px', 'important');
+                        }
+                    }
+                });
+            }, 1000);
+        };
+
         const ShopifyBuyInit = () => {
             const client = window.ShopifyBuy.buildClient({
                 domain: '99d84c-f3.myshopify.com',
@@ -11,21 +36,28 @@ const GetRevomagProductButton: React.FC = () => {
             });
 
             window.ShopifyBuy.UI.onReady(client).then((ui: any) => {
+                const componentId = `product-component-${Date.now()}`;
+
+                if (containerRef.current) {
+                    containerRef.current.id = componentId;
+                }
+
                 ui.createComponent('product', {
                     id: '9487266677046',
-                    node: document.getElementById('product-component-1724046304183')!,
+                    node: document.getElementById(componentId)!,
                     moneyFormat: '%24%7B%7Bamount%7D%7D',
                     options: {
                         product: {
                             styles: {
                                 product: {
+                                    'position': 'static',
                                     '@media (min-width: 601px)': {
-                                        'max-width': 'calc(25% - 20px)',
-                                        'margin-left': '20px',
-                                        'margin-bottom': '50px',
+                                        'max-width': '100%',
+                                        'margin': '0',
                                     },
                                 },
                                 button: {
+                                    'position': 'static',
                                     'border-radius': '9px',
                                     'background': '#FE6A09',
                                     ':hover': {
@@ -40,7 +72,7 @@ const GetRevomagProductButton: React.FC = () => {
                                 price: false,
                             },
                             text: {
-                                button: 'Get Revomag',
+                                button: buttonText,
                             },
                         },
                         productSet: {
@@ -90,6 +122,9 @@ const GetRevomagProductButton: React.FC = () => {
                         toggle: {},
                     },
                 });
+
+                // Call adjustButtonStyles after component creation
+                adjustButtonStyles();
             });
         };
 
@@ -111,9 +146,17 @@ const GetRevomagProductButton: React.FC = () => {
             }
             shopifyInitialized.current = true;
         }
-    }, []);
 
-    return <div id="product-component-1724046304183" />;
+        // Add resize listener
+        window.addEventListener('resize', adjustButtonStyles);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('resize', adjustButtonStyles);
+        };
+    }, [buttonText]);
+
+    return <div ref={containerRef} className={className} />;
 };
 
 export default GetRevomagProductButton;

@@ -24,6 +24,17 @@
 	}
 }
 
+#buy-now-button-container {
+	position: fixed;
+	top: 85px;
+	right: -25px;
+	z-index: 99;
+
+	@media (max-width: 800px) {
+		display: none;
+	}
+}
+
 .home-icons {
 	display: flex;
 	flex-wrap: wrap;

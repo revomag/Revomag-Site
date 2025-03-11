@@ -4,6 +4,7 @@ import Banner from "../../components/banner/banner";
 import Hero from "../../assets/bannerImages/RevomagLoading.jpg"
 import './products.scss';
 import BuyRevomagFullDescriptionButton from "../../components/shopifyButtons/buyRevomagFullDescription";
+import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 
 /**
  * Renders the About page
@@ -13,6 +14,12 @@ export default function Products(): ReactElement {
     return (
         <>
             <Navigation/>
+            <div id={'buy-now-button-container'}>
+                <GetRevomagProductButton
+                    buttonText={'Buy Revomag'}
+                    className="floating-buy-button"
+                />
+            </div>
             <Banner
                 imageSrc={Hero}
                 imageAlt={'Revomag size in hand'}
@@ -43,6 +50,9 @@ export default function Products(): ReactElement {
                         </li>
                         <li>
                             Efficient Capacity: Holds eight 38 special or nine 327 mag, ensuring you’re always prepared.
+                        </li>
+                        <li>
+                            357 Mag Compatible: Loads must not exceed 1.54 inches or 39.11mm in length. See <a href={'/resources'}>Frequently Asked Questions</a> for additional information.
                         </li>
                         <li>
                             Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
