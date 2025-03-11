@@ -45,6 +45,9 @@ export default function Products(): ReactElement {
                             Efficient Capacity: Holds eight 38 special, nine 327 mag, or six-seven 357 hollow point, ensuring you’re always prepared.
                         </li>
                         <li>
+                            357 Mag Compatible: Loads must not exceed 1.54 inches or 39.11mm in length. See <a href={'/resources'}>Frequently Asked Questions</a> for additional information.
+                        </li>
+                        <li>
                             Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
                         </li>
                         <li>
