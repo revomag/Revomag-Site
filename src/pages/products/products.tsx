@@ -49,7 +49,7 @@ export default function Products(): ReactElement {
                             Self-Defense Ready: The point at the top is a SMACK CAP or striking surface. This offers an effective less-than-lethal force option when needed.
                         </li>
                         <li>
-                            Efficient Capacity: Holds eight 38 special or 357 magnum, or nine 327 mag, ensuring you’re always prepared. (357 has limited compatibility. Cartridges must not exceed 1.54 inches or 39.11mm in length. See Frequently Asked Questions for additional information.)
+                            Efficient Capacity: Holds eight 38 special or 357 magnum, or nine 327 mag, ensuring you’re always prepared. (357 has limited compatibility. Cartridges must not exceed 1.54 inches or 39.11mm in length. See <a href={'/resources'}>Frequently Asked Questions</a> for additional information.)
                         </li>
                         <li>
                             Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
