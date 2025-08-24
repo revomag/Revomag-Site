@@ -1,4 +1,4 @@
-import {ReactElement} from "react";
+import {ReactElement, useEffect} from "react";
 import Navigation from "../../components/navigation/navigation";
 import './home.scss';
 import Hero from "../../assets/bannerImages/RevomagWEBBanner.jpg";
@@ -7,12 +7,25 @@ import Made from "../../assets/icons/MadeInMA.png";
 import Guaranteed from "../../assets/icons/Guarantee.png";
 import Free from "../../assets/icons/FreeShipping.png";
 import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
+import ProductImagePreloader from "../../services/productImagePreloader";
 
 /**
  * Renders home page
  * @constructor
  */
 export default function Home(): ReactElement {
+    useEffect(() => {
+        // Preload product images when home page loads
+        const preloader = ProductImagePreloader.getInstance();
+        
+        // Start preloading after a short delay to not interfere with page load
+        const timeoutId = setTimeout(() => {
+            preloader.preloadProductImages(['9487266677046', '10313165603126']);
+        }, 2000);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <>
             <Navigation/>
