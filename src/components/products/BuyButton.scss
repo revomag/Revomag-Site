@@ -1,0 +1,36 @@
+.buy-button-wrapper {
+  display: inline-block;
+
+  .buy-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FE6A09;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #556B2F;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  // Floating button styles (for home page)
+  &.floating-buy-button {
+    .buy-button {
+      padding: 15px 40px;
+      font-size: 18px;
+
+      @media (max-width: 1023px) {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

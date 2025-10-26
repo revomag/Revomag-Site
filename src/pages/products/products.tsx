@@ -3,8 +3,8 @@ import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
 import Hero from "../../assets/bannerImages/RevomagLoading.jpg"
 import './products.scss';
-import ShopifyProductDisplay from "../../components/shopifyButtons/shopifyProductDisplay";
-import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
+import ProductDisplay from "../../components/products/ProductDisplay";
+import { PRODUCTS } from "../../config/products";
 
 /**
  * Renders the About page
@@ -14,31 +14,23 @@ export default function Products(): ReactElement {
     return (
         <>
             <Navigation/>
-            <div id={'buy-now-button-container'}>
-                <GetRevomagProductButton
-                    buttonText={'Buy Revomag'}
-                    className="floating-buy-button"
-                />
-            </div>
             <Banner
                 imageSrc={Hero}
                 imageAlt={'Revomag size in hand'}
                 imageTitle={'Revomag size in hand'}
             />
-            
+
             <div className={'products-container'}>
                 <div className={'product-variant'}>
-                    <ShopifyProductDisplay 
-                        productId="9487266677046" 
-                        showDescription={false}
+                    <ProductDisplay
+                        product={PRODUCTS.regular}
                         showImages={true}
                     />
                 </div>
-                
+
                 <div className={'product-variant'}>
-                    <ShopifyProductDisplay 
-                        productId="10313165603126" 
-                        showDescription={false}
+                    <ProductDisplay
+                        product={PRODUCTS.filigree}
                         showImages={true}
                     />
                 </div>

@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import GetRevomagProductButton from "../../shopifyButtons/getRevomag";
+import BuyButton from "../../products/BuyButton";
 import Instagram from '../../../assets/icons/instagram-white-icon.png';
 import X from '../../../assets/icons/twitter-x-16.png';
 import Facebook from '../../../assets/icons/facebook-16.png';
@@ -79,7 +79,7 @@ export default function DesktopFooter(): ReactElement {
                 <div className={'footer-content-center'}>
                     <h2>Ready for a better Revolver Reload?</h2>
                     <div id={'footer-buy-now-container'}>
-                        <GetRevomagProductButton
+                        <BuyButton
                             buttonText={'Get Revomag'}
                             className="footer-buy-button"
                         />

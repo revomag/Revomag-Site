@@ -1,0 +1,290 @@
+.product-display {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+
+  .product-images {
+    margin-bottom: 20px;
+
+    .main-image {
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+
+    .image-thumbnails {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .thumbnail {
+        cursor: pointer;
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+          border-color: #FE6A09;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .product-info {
+    .product-header {
+      margin-bottom: 20px;
+
+      .product-title {
+        font-size: 26px;
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        font-size: 18px;
+        font-weight: 500;
+        display: inline-block;
+      }
+    }
+
+    .product-actions {
+      margin-top: 15px;
+
+      .quantity-selector {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        label {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        input {
+          width: 70px;
+          padding: 8px;
+          font-size: 16px;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+
+          &:focus {
+            outline: none;
+            border-color: #FE6A09;
+          }
+        }
+      }
+
+      .add-to-cart-button {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #FE6A09;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #556B2F;
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}
+
+// Modal styling (reused from Shopify component)
+.simple-image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+  }
+
+  .modal-image-container {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    max-height: 85vh;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      max-height: 80vh;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 85vh;
+      object-fit: contain;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 48px;
+      cursor: pointer;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        top: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        font-size: 36px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    z-index: 2;
+    line-height: 1;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &.modal-prev {
+      left: -60px;
+
+      @media (max-width: 768px) {
+        left: 10px;
+      }
+    }
+
+    &.modal-next {
+      right: -60px;
+
+      @media (max-width: 768px) {
+        right: 10px;
+      }
+    }
+  }
+
+  .modal-indicators {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      bottom: -30px;
+    }
+
+    .indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      &.active {
+        background-color: white;
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .product-display {
+    .product-info {
+      .product-header {
+        .product-title {
+          font-size: 22px;
+          display: block;
+          margin-right: 0;
+        }
+
+        .product-price {
+          font-size: 16px;
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import {ReactElement, useEffect} from "react";
+import {ReactElement} from "react";
 import Navigation from "../../components/navigation/navigation";
 import './home.scss';
 import Hero from "../../assets/bannerImages/RevomagWEBBanner.jpg";
@@ -6,31 +6,18 @@ import Fast from "../../assets/icons/FastLoading.png";
 import Made from "../../assets/icons/MadeInMA.png";
 import Guaranteed from "../../assets/icons/Guarantee.png";
 import Free from "../../assets/icons/FreeShipping.png";
-import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
-import ProductImagePreloader from "../../services/productImagePreloader";
+import BuyButton from "../../components/products/BuyButton";
 
 /**
  * Renders home page
  * @constructor
  */
 export default function Home(): ReactElement {
-    useEffect(() => {
-        // Preload product images when home page loads
-        const preloader = ProductImagePreloader.getInstance();
-        
-        // Start preloading after a short delay to not interfere with page load
-        const timeoutId = setTimeout(() => {
-            preloader.preloadProductImages(['9487266677046', '10313165603126']);
-        }, 2000);
-
-        return () => clearTimeout(timeoutId);
-    }, []);
-
     return (
         <>
             <Navigation/>
             <div id={'buy-now-button-container'}>
-                <GetRevomagProductButton
+                <BuyButton
                     buttonText={'Buy Revomag'}
                     className="floating-buy-button"
                 />

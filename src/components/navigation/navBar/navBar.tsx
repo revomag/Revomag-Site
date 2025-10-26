@@ -1,6 +1,7 @@
 import {ReactElement} from "react";
 import {Link, useLocation} from "react-router-dom";
 import Logo from '../../../assets/RevomagLogotypeWithTagline.png';
+import CartWidget from '../../cart/CartWidget';
 import './navBar.scss';
 
 /**
@@ -35,6 +36,7 @@ export default function NavBar(): ReactElement {
                             {link.label}
                         </Link>
                     ))}
+                    <CartWidget />
                 </div>
             </div>
         </nav>

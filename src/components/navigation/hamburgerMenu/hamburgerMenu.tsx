@@ -1,6 +1,7 @@
 import {ReactElement, useState} from "react";
 import {Link} from "react-router-dom";
 import Logo from "../../../assets/RevomagLogotypeWithTagline.png";
+import CartWidget from '../../cart/CartWidget';
 import './hamburgerMenu.scss';
 
 /**
@@ -47,8 +48,13 @@ export default function HamburgerMenu(): ReactElement {
                         </Link>
                     </li>
                     <li>
-                        <Link className={"ham-nav-link last"} to={"/resources"}>
+                        <Link className={"ham-nav-link"} to={"/resources"}>
                             RESOURCES
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={"ham-nav-link last"} to={"/cart"}>
+                            CART
                         </Link>
                     </li>
                 </ul>
@@ -57,6 +63,9 @@ export default function HamburgerMenu(): ReactElement {
                 <Link className={"ham-logo-nav"} to={"/"} style={{textDecoration: "none"}}>
                     <img src={Logo} alt="logo" />
                 </Link>
+                <div className="ham-cart-widget">
+                    <CartWidget />
+                </div>
             </div>
         </div>
     );
