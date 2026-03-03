@@ -227,7 +227,25 @@ Create **two separate products** in Stripe (simpler for side-by-side display):
 - [ ] Update navigation with cart icon
 - [ ] Remove Shopify components
 
-### Phase 6: Testing & QA
+### Phase 6: Netlify Serverless Backend
+**Duration:** 1-2 days
+
+**Why:** Modern Stripe Checkout requires server-side session creation. Using Netlify Functions provides a backend without managing servers.
+
+**Cost:** FREE (Netlify free tier: 125,000 function calls/month)
+
+- [ ] Install Stripe Node.js library (`npm install stripe`)
+- [ ] Add Stripe Secret Key to `.env` (for local testing)
+- [ ] Create `netlify/functions/create-checkout-session.js`
+- [ ] Implement Checkout Session creation endpoint
+- [ ] Update frontend checkout service to call Netlify Function
+- [ ] Create `netlify.toml` configuration file
+- [ ] Add environment variables to Netlify Dashboard
+- [ ] Test locally with `netlify dev`
+- [ ] Test checkout flow end-to-end
+- [ ] Deploy and verify in production
+
+### Phase 7: Testing & QA
 **Duration:** 3-4 days
 
 - [ ] Test cart functionality (add/remove/update)
@@ -238,7 +256,7 @@ Create **two separate products** in Stripe (simpler for side-by-side display):
 - [ ] Cross-browser testing
 - [ ] Performance testing
 
-### Phase 7: Deployment
+### Phase 8: Deployment
 **Duration:** 1-2 days
 
 - [ ] Deploy to staging with test keys
@@ -248,7 +266,7 @@ Create **two separate products** in Stripe (simpler for side-by-side display):
 - [ ] Monitor for 48 hours
 - [ ] Keep Shopify as backup for 2 weeks
 
-**Total Timeline: 16-23 days (2.5-3.5 weeks)**
+**Total Timeline: 17-25 days (2.5-4 weeks)**
 
 ---
 

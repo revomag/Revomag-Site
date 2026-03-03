@@ -1,3 +1,23 @@
+# Build settings
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# Dev server settings
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 5173
+  autoLaunch = false
+
+# Environment variables (set these in Netlify Dashboard)
+# STRIPE_SECRET_KEY - Your Stripe secret key
+# VITE_STRIPE_PUBLISHABLE_KEY - Your Stripe publishable key
+# VITE_STRIPE_PRICE_ID_REGULAR - Price ID for regular product
+# VITE_STRIPE_PRICE_ID_FILIGREE - Price ID for filigree product
+
+# Redirects for SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
