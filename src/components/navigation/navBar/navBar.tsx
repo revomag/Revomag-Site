@@ -26,15 +26,20 @@ export default function NavBar(): ReactElement {
                     </Link>
                 </div>
                 <div className="nav-links">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.path}
-                            className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
-                            to={link.path}
-                        >
-                            {link.label}
-                        </Link>
-                    ))}
+                    {navLinks.map((link) => {
+                        const isActive = link.path === '/products'
+                            ? location.pathname.startsWith('/products')
+                            : location.pathname === link.path;
+                        return (
+                            <Link
+                                key={link.path}
+                                className={`nav-link ${isActive ? 'active' : ''}`}
+                                to={link.path}
+                            >
+                                {link.label}
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </nav>

@@ -8,6 +8,7 @@ import Guaranteed from "../../assets/icons/Guarantee.png";
 import Free from "../../assets/icons/FreeShipping.png";
 import GetRevomagProductButton from "../../components/shopifyButtons/getRevomag";
 import ProductImagePreloader from "../../services/productImagePreloader";
+import { getAllProductIds } from "../../data/products";
 
 /**
  * Renders home page
@@ -20,7 +21,7 @@ export default function Home(): ReactElement {
         
         // Start preloading after a short delay to not interfere with page load
         const timeoutId = setTimeout(() => {
-            preloader.preloadProductImages(['9487266677046', '10313165603126']);
+            preloader.preloadProductImages(getAllProductIds());
         }, 2000);
 
         return () => clearTimeout(timeoutId);
