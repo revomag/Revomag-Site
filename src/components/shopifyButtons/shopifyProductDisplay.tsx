@@ -104,7 +104,7 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
                             layout: 'vertical',
                             contents: {
                                 img: false,
-                                imgWithCarousel: showImages,
+                                imgWithCarousel: false,
                                 description: showDescription,
                                 title: true,
                                 price: true,
@@ -154,66 +154,31 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
                     },
                 });
 
-                // Since Shopify uses iframes, we'll create a click overlay
-                const setupClickOverlay = () => {
-                    const container = document.getElementById(uniqueId);
-                    
-                    if (container) {
-                        // Remove any existing overlays first
-                        const existingOverlay = container.querySelector('.shopify-image-overlay');
-                        if (existingOverlay) {
-                            existingOverlay.remove();
-                        }
-                        
-                        // Find the iframe
-                        const iframe = container.querySelector('iframe');
-                        
-                        if (iframe) {
-                            // Wait a bit more for iframe to fully load
-                            setTimeout(() => {
-                                // Create an overlay div that covers only the image area (top portion)
-                                const overlay = document.createElement('div');
-                                overlay.className = 'shopify-image-overlay';
-                                overlay.style.cssText = `
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 65%;
-                                    z-index: 100;
-                                    cursor: pointer;
-                                    background: transparent;
-                                    pointer-events: auto;
-                                `;
-                                
-                                // Make the container relative positioned
-                                container.style.position = 'relative';
-                                
-                                // Add click handler to overlay
-                                overlay.addEventListener('click', (e: MouseEvent) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    if (productImagesRef.current.length > 0) {
-                                        const firstImage = productImagesRef.current[0];
-                                        setCurrentImageIndex(0);
-                                        setModalImage(firstImage);
-                                    } else {
-                                        setModalImage('test');
+                // Force-hide any images the SDK renders despite imgWithCarousel: false
+                if (showImages) {
+                    const hideSDKImages = () => {
+                        const container = document.getElementById(uniqueId);
+                        if (container) {
+                            const iframes = container.querySelectorAll('iframe');
+                            iframes.forEach(iframe => {
+                                try {
+                                    const doc = iframe.contentDocument || iframe.contentWindow?.document;
+                                    if (doc) {
+                                        const hasImages = doc.querySelector('img, .shopify-buy__carousel, .shopify-buy__product-img-wrapper');
+                                        if (hasImages) {
+                                            (iframe as HTMLElement).style.display = 'none';
+                                        }
                                     }
-                                });
-                                
-                                // Append overlay to container
-                                container.appendChild(overlay);
-                            }, 500);
+                                } catch (e) {
+                                    // Cross-origin iframe, skip
+                                }
+                            });
                         }
-                    }
-                };
-                
-                // Try multiple times to ensure iframe has loaded and Shopify content is ready
-                setTimeout(setupClickOverlay, 1500);
-                setTimeout(setupClickOverlay, 2500);
-                setTimeout(setupClickOverlay, 4000);
-                setTimeout(setupClickOverlay, 6000);
+                    };
+                    setTimeout(hideSDKImages, 1000);
+                    setTimeout(hideSDKImages, 2500);
+                    setTimeout(hideSDKImages, 5000);
+                }
             });
         };
 
@@ -245,6 +210,32 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
 
     return (
         <>
+            {showImages && productImages.length > 0 && (
+                <div className="product-image-gallery">
+                    <div className="gallery-hero" onClick={() => {
+                        setCurrentImageIndex(currentImageIndex);
+                        setModalImage(productImages[currentImageIndex]);
+                    }}>
+                        <img
+                            src={productImages[currentImageIndex]}
+                            alt="Product"
+                        />
+                    </div>
+                    {productImages.length > 1 && (
+                        <div className="gallery-thumbnails">
+                            {productImages.map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt={`Product thumbnail ${index + 1}`}
+                                    className={`gallery-thumb ${index === currentImageIndex ? 'active' : ''}`}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            )}
             <div id={uniqueId} />
             {modalImage && (
                 <div className="simple-image-modal" onClick={() => setModalImage(null)}>
