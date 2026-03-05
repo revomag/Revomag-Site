@@ -53,7 +53,7 @@ export const handler = async (event, context) => {
       };
     }
 
-    const stripe = Stripe(stripeSecretKey);
+    const stripe = new Stripe(stripeSecretKey);
 
     // Parse request body
     let requestBody;
@@ -71,7 +71,8 @@ export const handler = async (event, context) => {
       };
     }
 
-    const { lineItems, successUrl, cancelUrl } = requestBody;
+    const { lineItems } = requestBody;
+    const origin = event.headers.origin || event.headers.referer?.replace(/\/[^/]*$/, '') || '';
 
     // Validate required fields
     if (!lineItems || !Array.isArray(lineItems) || lineItems.length === 0) {
@@ -104,8 +105,8 @@ export const handler = async (event, context) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: successUrl || `${event.headers.origin}/order-success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: cancelUrl || `${event.headers.origin}/cart`,
+      success_url: `${origin}/order-success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/cart`,
       shipping_address_collection: {
         allowed_countries: ['US'], // Update based on where you ship
       },

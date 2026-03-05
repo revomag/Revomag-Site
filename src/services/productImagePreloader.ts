@@ -62,13 +62,13 @@ class ProductImagePreloader {
 
     private async fetchProductImages(productId: string): Promise<string[]> {
         const gid = `gid://shopify/Product/${productId}`;
-        const query = `{
-            node(id: "${gid}") {
+        const query = `query ProductImages($id: ID!) {
+            node(id: $id) {
                 ... on Product {
                     images(first: 20) {
                         edges {
                             node {
-                                src
+                                url
                             }
                         }
                     }
@@ -82,7 +82,7 @@ class ProductImagePreloader {
                 'Content-Type': 'application/json',
                 'X-Shopify-Storefront-Access-Token': STOREFRONT_ACCESS_TOKEN,
             },
-            body: JSON.stringify({ query }),
+            body: JSON.stringify({ query, variables: { id: gid } }),
         });
 
         if (!response.ok) {
@@ -93,7 +93,7 @@ class ProductImagePreloader {
         const edges = data?.data?.node?.images?.edges || [];
 
         return edges
-            .map((edge: any) => edge.node?.src)
+            .map((edge: any) => edge.node?.url)
             .filter((url: string) => url && url.startsWith('http'))
             .map((url: string) => {
                 if (url.includes('_100x100')) {

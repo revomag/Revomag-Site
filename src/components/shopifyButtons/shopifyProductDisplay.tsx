@@ -36,6 +36,8 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
     }, [productImages, productId]);
 
     useEffect(() => {
+        let cleanupPreload: (() => void) | undefined;
+
         const ShopifyBuyInit = () => {
             // Check for preloaded images first, or trigger preload
             const preloader = ProductImagePreloader.getInstance();
@@ -46,13 +48,16 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
                 console.log(`Using ${preloadedImages.length} preloaded images for product ${productId}`);
             } else {
                 // Preload images and update state when ready
+                let cancelled = false;
                 preloader.preloadProductImages([productId]).then(() => {
+                    if (cancelled) return;
                     const images = preloader.getPreloadedImages(productId);
                     if (images && images.length > 0) {
                         setProductImages(images);
                         console.log(`Loaded ${images.length} images for product ${productId}`);
                     }
                 });
+                cleanupPreload = () => { cancelled = true; };
             }
 
             const client = window.ShopifyBuy.buildClient({
@@ -194,6 +199,8 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
             }
             shopifyInitialized.current = true;
         }
+
+        return () => { cleanupPreload?.(); };
     }, [productId, showDescription, showImages, uniqueId]);
 
     const handlePrevImage = () => {
