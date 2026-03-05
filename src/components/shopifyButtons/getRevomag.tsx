@@ -3,11 +3,13 @@ import React, { useEffect, useRef } from 'react';
 interface GetRevomagProductButtonProps {
     buttonText?: string;
     className?: string;
+    productId?: string;
 }
 
 const GetRevomagProductButton: React.FC<GetRevomagProductButtonProps> = ({
                                                                              buttonText = 'Get Revomag',
-                                                                             className = ''
+                                                                             className = '',
+                                                                             productId = '9487266677046'
                                                                          }) => {
     const shopifyInitialized = useRef(false);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +45,7 @@ const GetRevomagProductButton: React.FC<GetRevomagProductButtonProps> = ({
                 }
 
                 ui.createComponent('product', {
-                    id: '9487266677046',
+                    id: productId,
                     node: document.getElementById(componentId)!,
                     moneyFormat: '%24%7B%7Bamount%7D%7D',
                     options: {
@@ -154,7 +156,7 @@ const GetRevomagProductButton: React.FC<GetRevomagProductButtonProps> = ({
         return () => {
             window.removeEventListener('resize', adjustButtonStyles);
         };
-    }, [buttonText]);
+    }, [buttonText, productId]);
 
     return <div ref={containerRef} className={className} />;
 };

@@ -1,75 +1,16 @@
-.shopify-info {
-  margin-bottom: 5em;
-
-  @media (max-width: 1023px) {
-    width: 85vw;
-    margin: 0 auto;
-  }
-}
-
-.product-features {
-  max-width: 950px;
-  margin: 2em auto 3em;
-
-  h2 {
-    justify-self: flex-start;
-  }
-
-  ul {
-    padding-top: 0;
-
-    li {
-      padding-bottom: 5px;
-    }
-  }
-}
-
-.products-container {
-  max-width: 1200px;
-  margin: 2em auto 3em;
-  padding: 0 20px;
-
-  @media (min-width: 768px) {
+.catalog-grid {
+    max-width: 1200px;
+    margin: 2em auto 3em;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10em;
-  }
-
-  .product-variant {
-    margin-bottom: 3em;
+    grid-template-columns: 1fr;
+    gap: 2em;
 
     @media (min-width: 768px) {
-      margin-bottom: 0;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    h2 {
-      margin-bottom: 1em;
-      font-size: 24px;
-      color: #333;
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
-}
-
-.product-description {
-  max-width: 950px;
-  margin: 2em auto;
-  padding: 0 20px;
-  
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 1em;
-    color: #333;
-    text-align: left;
-    
-    span {
-      font-weight: bold;
-    }
-  }
-  
-  h3 {
-    font-size: 20px;
-    margin-bottom: 0.5em;
-    color: #333;
-  }
 }
