@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useRef } from "react";
+import { ReactElement, useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
@@ -11,6 +11,7 @@ import {
     SHARED_DESCRIPTION,
     WHATS_IN_THE_BOX,
     FEATURES,
+    OSS_HISTORY,
 } from "../../data/products";
 import './productDetail.scss';
 
@@ -78,23 +79,29 @@ export default function ProductDetail(): ReactElement {
                     </div>
                 )}
 
-                <div className="product-detail-description">
-                    <p>{SHARED_DESCRIPTION}</p>
-                    <h3>What's in the Box?</h3>
-                    <p dangerouslySetInnerHTML={{ __html: WHATS_IN_THE_BOX }} />
-                </div>
+                {product.slug === 'pbd-tools-oss-limited-edition' ? (
+                    <OssTabbedContent />
+                ) : (
+                    <>
+                        <div className="product-detail-description">
+                            <p>{SHARED_DESCRIPTION}</p>
+                            <h3>What's in the Box?</h3>
+                            <p dangerouslySetInnerHTML={{ __html: WHATS_IN_THE_BOX }} />
+                        </div>
 
-                <div className="product-detail-features">
-                    <h2>Features:</h2>
-                    <ul>
-                        {FEATURES.map((feature, index) => (
-                            <li key={index}>
-                                {feature.title && <span>{feature.title}</span>}{' '}
-                                <span dangerouslySetInnerHTML={{ __html: feature.description }} />
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                        <div className="product-detail-features">
+                            <h2>Features:</h2>
+                            <ul>
+                                {FEATURES.map((feature, index) => (
+                                    <li key={index}>
+                                        {feature.title && <span>{feature.title}</span>}{' '}
+                                        <span dangerouslySetInnerHTML={{ __html: feature.description }} />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </>
+                )}
 
                 {otherProducts.length > 0 && (
                     <div className="product-detail-other">
@@ -108,5 +115,58 @@ export default function ProductDetail(): ReactElement {
                 )}
             </div>
         </>
+    );
+}
+
+function OssTabbedContent(): ReactElement {
+    const [activeTab, setActiveTab] = useState<'details' | 'history'>('details');
+
+    return (
+        <div className="product-tabs">
+            <div className="tab-buttons">
+                <button
+                    className={`tab-button${activeTab === 'details' ? ' active' : ''}`}
+                    onClick={() => setActiveTab('details')}
+                >
+                    Product Details
+                </button>
+                <button
+                    className={`tab-button${activeTab === 'history' ? ' active' : ''}`}
+                    onClick={() => setActiveTab('history')}
+                >
+                    OSS History
+                </button>
+            </div>
+
+            <div className="tab-content">
+                {activeTab === 'details' ? (
+                    <>
+                        <div className="product-detail-description">
+                            <p>{SHARED_DESCRIPTION}</p>
+                            <h3>What's in the Box?</h3>
+                            <p dangerouslySetInnerHTML={{ __html: WHATS_IN_THE_BOX }} />
+                        </div>
+
+                        <div className="product-detail-features">
+                            <h2>Features:</h2>
+                            <ul>
+                                {FEATURES.map((feature, index) => (
+                                    <li key={index}>
+                                        {feature.title && <span>{feature.title}</span>}{' '}
+                                        <span dangerouslySetInnerHTML={{ __html: feature.description }} />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </>
+                ) : (
+                    <div className="product-detail-description">
+                        {OSS_HISTORY.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
+                    </div>
+                )}
+            </div>
+        </div>
     );
 }

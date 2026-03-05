@@ -103,6 +103,42 @@
     }
 }
 
+.product-tabs {
+    margin: 2em auto;
+
+    .tab-buttons {
+        display: flex;
+        border-bottom: 2px solid #ddd;
+        gap: 0;
+    }
+
+    .tab-button {
+        padding: 0.75em 1.5em;
+        background: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        margin-bottom: -2px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #555;
+        transition: color 0.2s, border-color 0.2s;
+
+        &:hover {
+            color: #333;
+        }
+
+        &.active {
+            font-weight: 700;
+            color: #333;
+            border-bottom-color: #FE6A09;
+        }
+    }
+
+    .tab-content {
+        padding-top: 1em;
+    }
+}
+
 .product-detail-other {
     margin: 3em auto 4em;
     border-top: 1px solid #ddd;

@@ -58,6 +58,14 @@ export const FEATURES = [
     },
 ];
 
+export const OSS_HISTORY = [
+    'Prior to official involvement in the Second World War, the United States of America realized that a conventional force would need to be supplemented by elite small groups if the country entered the war.',
+    'Plans were made for the establishment of the Office of Strategic Services (OSS); an organization capable of carrying out sabotage, intelligence, recruitment, guerrilla and direct action operations while working in small teams or with resistance forces.',
+    'They were meant to be masters of wartime craft. Trained in intelligence and reconnaissance. Inspiring and capable enough to build large forces of resistance fighters in occupied territory. Incredible knowledge of advanced systems that would make their work as saboteurs effective. Finally, when the need arose, they would be required to use their hands, knives and a variety of small arms to engage the enemy with deadly efficiency.',
+    'The recruits were trained at Camp 2 in Maryland. Hours were spent engaging other recruits in hand-to-hand training, and utilizing a variety of concealed knives. They trained in the Fairbairn and Sykes method of revolver shooting from the hip with Colt and Smith & Wesson revolvers at multiple targets.',
+    'When they were ready, they deployed to the European and Pacific theaters and fought back against the armies of tyrants. And their ability to shape the battlefield allowed the United States and her allies to achieve victory on both fronts.',
+];
+
 const products: Product[] = [
     {
         slug: 'revomag',
