@@ -29,6 +29,10 @@ export default function useProductImage(productId: string): UseProductImageResul
             return;
         }
 
+        // Reset state when switching to an uncached product
+        setImageUrl(null);
+        setLoading(true);
+
         let cancelled = false;
 
         preloader.preloadProductImages([productId]).then(() => {
