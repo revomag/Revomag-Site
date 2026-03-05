@@ -6,7 +6,6 @@ export interface Product {
     shopifyProductId: string;
     shortDescription: string;
     uniqueDescription: string[];
-    cardImage: string;
     bannerImage: string;
     isActive: boolean;
     sortOrder: number;
@@ -66,31 +65,26 @@ const products: Product[] = [
         shopifyProductId: '9487266677046',
         shortDescription: 'The original revolver mag. Fast to draw, easy to carry.',
         uniqueDescription: [],
-        cardImage: '', // TODO: Add static card thumbnail
         bannerImage: RevomagLoadingBanner,
         isActive: true,
         sortOrder: 1,
     },
     {
-        slug: 'revomag-357',
-        name: 'Revomag .357',
+        slug: 'filigree',
+        name: 'Revomag Filigree',
         shopifyProductId: '10313165603126',
-        shortDescription: 'Purpose-built for .357 Magnum revolvers.',
+        shortDescription: 'Revomag with a filigree design.',
         uniqueDescription: [],
-        cardImage: '', // TODO: Add static card thumbnail
         bannerImage: RevomagLoadingBanner,
         isActive: true,
         sortOrder: 2,
     },
     {
-        slug: 'filigree',
-        name: 'Revomag Filigree',
-        shopifyProductId: '', // TODO: Add Shopify product ID
-        shortDescription: 'Revomag with a filigree design.',
-        uniqueDescription: [
-            // TODO: Add unique description paragraphs for the filigree product
-        ],
-        cardImage: '', // TODO: Add static card thumbnail
+        slug: 'pbd-tools-oss-limited-edition',
+        name: 'Polite But Dangerous Tools OSS Limited Edition',
+        shopifyProductId: '10611592331574',
+        shortDescription: 'Limited edition collaboration with Polite But Dangerous Tools.',
+        uniqueDescription: [],
         bannerImage: RevomagLoadingBanner,
         isActive: true,
         sortOrder: 3,

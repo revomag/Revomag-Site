@@ -11,7 +11,6 @@ import withScrollRestoration from "./components/withScrollRestoration";
 /** Wrap routes in withScrollRestoration so that pages always load at top */
 const HomeWithScrollRestoration = withScrollRestoration(Home);
 const ProductsWithScrollRestoration = withScrollRestoration(Products);
-const ProductDetailWithScrollRestoration = withScrollRestoration(ProductDetail);
 const AboutWithScrollRestoration = withScrollRestoration(About);
 const ResourcesWithScrollRestoration = withScrollRestoration(Resources);
 const DisclaimerWithScrollRestoration = withScrollRestoration(Disclaimer);
@@ -26,7 +25,7 @@ const router = createBrowserRouter(
             <Route path="/" element={<HomeWithScrollRestoration/>}/>
             <Route path="/home" element={<HomeWithScrollRestoration/>}/>
             <Route path="/products" element={<ProductsWithScrollRestoration/>}/>
-            <Route path="/products/:slug" element={<ProductDetailWithScrollRestoration/>}/>
+            <Route path="/products/:slug" element={<ProductDetail/>}/>
             <Route path="/about" element={<AboutWithScrollRestoration/>}/>
             <Route path="/resources" element={<ResourcesWithScrollRestoration/>}/>
             <Route path="/disclaimer" element={<DisclaimerWithScrollRestoration/>}/>

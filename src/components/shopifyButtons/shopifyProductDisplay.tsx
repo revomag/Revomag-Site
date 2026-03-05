@@ -37,99 +37,30 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
 
     useEffect(() => {
         const ShopifyBuyInit = () => {
-            // Check for preloaded images first
+            // Check for preloaded images first, or trigger preload
             const preloader = ProductImagePreloader.getInstance();
             const preloadedImages = preloader.getPreloadedImages(productId);
-            
+
             if (preloadedImages && preloadedImages.length > 0) {
                 setProductImages(preloadedImages);
                 console.log(`Using ${preloadedImages.length} preloaded images for product ${productId}`);
+            } else {
+                // Preload images and update state when ready
+                preloader.preloadProductImages([productId]).then(() => {
+                    const images = preloader.getPreloadedImages(productId);
+                    if (images && images.length > 0) {
+                        setProductImages(images);
+                        console.log(`Loaded ${images.length} images for product ${productId}`);
+                    }
+                });
             }
 
             const client = window.ShopifyBuy.buildClient({
                 domain: '99d84c-f3.myshopify.com',
                 storefrontAccessToken: 'b203cc343fe629d92d6022d0a7551415',
             });
-            
+
             clientRef.current = client;
-            
-            // Only fetch product data if we don't have preloaded images
-            if (!preloadedImages || preloadedImages.length === 0) {
-                client.product.fetch(productId).then((product: any) => {
-                    if (product) {
-                        // Extract product images
-                        if (product.images) {
-                            const imageUrls = product.images.map((img: any) => img.src)
-                                .filter((url: string) => 
-                                    url && url.startsWith('http') && 
-                                    !url.includes('‹') && 
-                                    !url.includes('›')
-                                );
-                            setProductImages(imageUrls);
-                        }
-                    }
-                }).catch(() => {
-                    // Try to extract images from the iframe by messaging
-                    setTimeout(() => {
-                    const container = document.getElementById(uniqueId);
-                    if (container) {
-                        const iframe = container.querySelector('iframe');
-                        if (iframe && iframe.contentWindow) {
-                            // Try to inspect the iframe's document (may fail due to CORS)
-                            try {
-                                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                                if (iframeDoc) {
-                                    // Extract product images
-                                    const images = iframeDoc.querySelectorAll('img');
-                                    const imageUrls: string[] = [];
-                                    images.forEach((img: any) => {
-                                        if (img.src && 
-                                           !img.src.includes('data:image') && 
-                                           img.src.startsWith('http') && 
-                                           !img.src.includes('‹') && 
-                                           !img.src.includes('›') &&
-                                           !img.src.includes('arrow.svg') &&
-                                           !img.src.endsWith('.svg')) {
-                                            imageUrls.push(img.src);
-                                        }
-                                    });
-                                    // Also try to find image variants or thumbnails
-                                    const allImageElements = iframeDoc.querySelectorAll('[src*=".jpg"], [src*=".png"], [style*="background-image"]');
-                                    
-                                    allImageElements.forEach((el: any) => {
-                                        let imageSrc = el.src;
-                                        if (!imageSrc && el.style.backgroundImage) {
-                                            const match = el.style.backgroundImage.match(/url\("?([^"]*)"?\)/);
-                                            imageSrc = match ? match[1] : null;
-                                        }
-                                        if (imageSrc && imageSrc.includes('cdn.shopify.com') && !imageUrls.includes(imageSrc)) {
-                                            // Convert small thumbnails to larger versions
-                                            let highResUrl = imageSrc;
-                                            if (imageSrc.includes('_100x100')) {
-                                                highResUrl = imageSrc.replace('_100x100', '_1000x1500');
-                                            }
-                                            
-                                            if (!imageUrls.includes(highResUrl)) {
-                                                imageUrls.push(highResUrl);
-                                            }
-                                        }
-                                    });
-                                    
-                                    if (imageUrls.length > 0) {
-                                        setProductImages(imageUrls);
-                                        return;
-                                    }
-                                }
-                            } catch (e) {
-                                // Cannot access iframe content (CORS blocked)
-                            }
-                        }
-                    }
-                    
-                    
-                }, 3000);
-                });
-            }
 
             window.ShopifyBuy.UI.onReady(client).then((ui: any) => {
                 componentRef.current = ui.createComponent('product', {

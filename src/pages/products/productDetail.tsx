@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useRef } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navigation from "../../components/navigation/navigation";
 import Banner from "../../components/banner/banner";
@@ -32,6 +32,13 @@ export default function ProductDetail(): ReactElement {
     }
 
     const otherProducts = getOtherProducts(product.slug);
+    const backLinkRef = useRef<HTMLAnchorElement>(null);
+
+    useEffect(() => {
+        if (backLinkRef.current) {
+            backLinkRef.current.scrollIntoView({ behavior: 'instant', block: 'start' });
+        }
+    }, [slug]);
 
     return (
         <>
@@ -50,7 +57,7 @@ export default function ProductDetail(): ReactElement {
             />
 
             <div className="product-detail">
-                <Link to="/products" className="back-to-products">&larr; All Products</Link>
+                <Link ref={backLinkRef} to="/products" className="back-to-products">&larr; All Products</Link>
 
                 {product.shopifyProductId && (
                     <div className="product-detail-shopify">
