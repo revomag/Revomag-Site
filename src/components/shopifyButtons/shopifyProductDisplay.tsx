@@ -36,100 +36,36 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
     }, [productImages, productId]);
 
     useEffect(() => {
+        let cleanupPreload: (() => void) | undefined;
+
         const ShopifyBuyInit = () => {
-            // Check for preloaded images first
+            // Check for preloaded images first, or trigger preload
             const preloader = ProductImagePreloader.getInstance();
             const preloadedImages = preloader.getPreloadedImages(productId);
-            
+
             if (preloadedImages && preloadedImages.length > 0) {
                 setProductImages(preloadedImages);
                 console.log(`Using ${preloadedImages.length} preloaded images for product ${productId}`);
+            } else {
+                // Preload images and update state when ready
+                let cancelled = false;
+                preloader.preloadProductImages([productId]).then(() => {
+                    if (cancelled) return;
+                    const images = preloader.getPreloadedImages(productId);
+                    if (images && images.length > 0) {
+                        setProductImages(images);
+                        console.log(`Loaded ${images.length} images for product ${productId}`);
+                    }
+                });
+                cleanupPreload = () => { cancelled = true; };
             }
 
             const client = window.ShopifyBuy.buildClient({
                 domain: '99d84c-f3.myshopify.com',
                 storefrontAccessToken: 'b203cc343fe629d92d6022d0a7551415',
             });
-            
+
             clientRef.current = client;
-            
-            // Only fetch product data if we don't have preloaded images
-            if (!preloadedImages || preloadedImages.length === 0) {
-                client.product.fetch(productId).then((product: any) => {
-                    if (product) {
-                        // Extract product images
-                        if (product.images) {
-                            const imageUrls = product.images.map((img: any) => img.src)
-                                .filter((url: string) => 
-                                    url && url.startsWith('http') && 
-                                    !url.includes('‹') && 
-                                    !url.includes('›')
-                                );
-                            setProductImages(imageUrls);
-                        }
-                    }
-                }).catch(() => {
-                    // Try to extract images from the iframe by messaging
-                    setTimeout(() => {
-                    const container = document.getElementById(uniqueId);
-                    if (container) {
-                        const iframe = container.querySelector('iframe');
-                        if (iframe && iframe.contentWindow) {
-                            // Try to inspect the iframe's document (may fail due to CORS)
-                            try {
-                                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                                if (iframeDoc) {
-                                    // Extract product images
-                                    const images = iframeDoc.querySelectorAll('img');
-                                    const imageUrls: string[] = [];
-                                    images.forEach((img: any) => {
-                                        if (img.src && 
-                                           !img.src.includes('data:image') && 
-                                           img.src.startsWith('http') && 
-                                           !img.src.includes('‹') && 
-                                           !img.src.includes('›') &&
-                                           !img.src.includes('arrow.svg') &&
-                                           !img.src.endsWith('.svg')) {
-                                            imageUrls.push(img.src);
-                                        }
-                                    });
-                                    // Also try to find image variants or thumbnails
-                                    const allImageElements = iframeDoc.querySelectorAll('[src*=".jpg"], [src*=".png"], [style*="background-image"]');
-                                    
-                                    allImageElements.forEach((el: any) => {
-                                        let imageSrc = el.src;
-                                        if (!imageSrc && el.style.backgroundImage) {
-                                            const match = el.style.backgroundImage.match(/url\("?([^"]*)"?\)/);
-                                            imageSrc = match ? match[1] : null;
-                                        }
-                                        if (imageSrc && imageSrc.includes('cdn.shopify.com') && !imageUrls.includes(imageSrc)) {
-                                            // Convert small thumbnails to larger versions
-                                            let highResUrl = imageSrc;
-                                            if (imageSrc.includes('_100x100')) {
-                                                highResUrl = imageSrc.replace('_100x100', '_1000x1500');
-                                            }
-                                            
-                                            if (!imageUrls.includes(highResUrl)) {
-                                                imageUrls.push(highResUrl);
-                                            }
-                                        }
-                                    });
-                                    
-                                    if (imageUrls.length > 0) {
-                                        setProductImages(imageUrls);
-                                        return;
-                                    }
-                                }
-                            } catch (e) {
-                                // Cannot access iframe content (CORS blocked)
-                            }
-                        }
-                    }
-                    
-                    
-                }, 3000);
-                });
-            }
 
             window.ShopifyBuy.UI.onReady(client).then((ui: any) => {
                 componentRef.current = ui.createComponent('product', {
@@ -173,7 +109,7 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
                             layout: 'vertical',
                             contents: {
                                 img: false,
-                                imgWithCarousel: showImages,
+                                imgWithCarousel: false,
                                 description: showDescription,
                                 title: true,
                                 price: true,
@@ -223,66 +159,31 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
                     },
                 });
 
-                // Since Shopify uses iframes, we'll create a click overlay
-                const setupClickOverlay = () => {
-                    const container = document.getElementById(uniqueId);
-                    
-                    if (container) {
-                        // Remove any existing overlays first
-                        const existingOverlay = container.querySelector('.shopify-image-overlay');
-                        if (existingOverlay) {
-                            existingOverlay.remove();
-                        }
-                        
-                        // Find the iframe
-                        const iframe = container.querySelector('iframe');
-                        
-                        if (iframe) {
-                            // Wait a bit more for iframe to fully load
-                            setTimeout(() => {
-                                // Create an overlay div that covers only the image area (top portion)
-                                const overlay = document.createElement('div');
-                                overlay.className = 'shopify-image-overlay';
-                                overlay.style.cssText = `
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 65%;
-                                    z-index: 100;
-                                    cursor: pointer;
-                                    background: transparent;
-                                    pointer-events: auto;
-                                `;
-                                
-                                // Make the container relative positioned
-                                container.style.position = 'relative';
-                                
-                                // Add click handler to overlay
-                                overlay.addEventListener('click', (e: MouseEvent) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    if (productImagesRef.current.length > 0) {
-                                        const firstImage = productImagesRef.current[0];
-                                        setCurrentImageIndex(0);
-                                        setModalImage(firstImage);
-                                    } else {
-                                        setModalImage('test');
+                // Force-hide any images the SDK renders despite imgWithCarousel: false
+                if (showImages) {
+                    const hideSDKImages = () => {
+                        const container = document.getElementById(uniqueId);
+                        if (container) {
+                            const iframes = container.querySelectorAll('iframe');
+                            iframes.forEach(iframe => {
+                                try {
+                                    const doc = iframe.contentDocument || iframe.contentWindow?.document;
+                                    if (doc) {
+                                        const hasImages = doc.querySelector('img, .shopify-buy__carousel, .shopify-buy__product-img-wrapper');
+                                        if (hasImages) {
+                                            (iframe as HTMLElement).style.display = 'none';
+                                        }
                                     }
-                                });
-                                
-                                // Append overlay to container
-                                container.appendChild(overlay);
-                            }, 500);
+                                } catch (e) {
+                                    // Cross-origin iframe, skip
+                                }
+                            });
                         }
-                    }
-                };
-                
-                // Try multiple times to ensure iframe has loaded and Shopify content is ready
-                setTimeout(setupClickOverlay, 1500);
-                setTimeout(setupClickOverlay, 2500);
-                setTimeout(setupClickOverlay, 4000);
-                setTimeout(setupClickOverlay, 6000);
+                    };
+                    setTimeout(hideSDKImages, 1000);
+                    setTimeout(hideSDKImages, 2500);
+                    setTimeout(hideSDKImages, 5000);
+                }
             });
         };
 
@@ -298,6 +199,8 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
             }
             shopifyInitialized.current = true;
         }
+
+        return () => { cleanupPreload?.(); };
     }, [productId, showDescription, showImages, uniqueId]);
 
     const handlePrevImage = () => {
@@ -314,6 +217,32 @@ const ShopifyProductDisplay: React.FC<ShopifyProductDisplayProps> = ({
 
     return (
         <>
+            {showImages && productImages.length > 0 && (
+                <div className="product-image-gallery">
+                    <div className="gallery-hero" onClick={() => {
+                        setCurrentImageIndex(currentImageIndex);
+                        setModalImage(productImages[currentImageIndex]);
+                    }}>
+                        <img
+                            src={productImages[currentImageIndex]}
+                            alt="Product"
+                        />
+                    </div>
+                    {productImages.length > 1 && (
+                        <div className="gallery-thumbnails">
+                            {productImages.map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt={`Product thumbnail ${index + 1}`}
+                                    className={`gallery-thumb ${index === currentImageIndex ? 'active' : ''}`}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            )}
             <div id={uniqueId} />
             {modalImage && (
                 <div className="simple-image-modal" onClick={() => setModalImage(null)}>

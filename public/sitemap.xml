@@ -13,6 +13,21 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://www.getrevomag.com/products/revomag</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.getrevomag.com/products/pbd-tools-oss-limited-edition</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.getrevomag.com/products/filigree</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
         <loc>https://www.getrevomag.com/home</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
