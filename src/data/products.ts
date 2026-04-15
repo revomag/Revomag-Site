@@ -18,7 +18,7 @@ export const WHATS_IN_THE_BOX = `Included with the <span>Revomag</span> is a <sp
 export const FEATURES = [
     {
         title: 'Secure Grip:',
-        description: 'Textured stippling provides enhanced grip, ensuring steady handling even in challenging conditions.',
+        description: 'Custom laser engraving enhances grip, ensuring steady handling even in challenging conditions.',
     },
     {
         title: null,
@@ -26,7 +26,7 @@ export const FEATURES = [
     },
     {
         title: null,
-        description: 'Smooth & Snag-Free: The clip has a rounded end which is snag free and ensures comfort and ease of use. It also has a flat black Cerakote finish which adds resilience.',
+        description: 'Smooth & Snag-Free: The clip has a rounded end which is snag free and ensures comfort and ease of use.',
     },
     {
         title: null,
@@ -34,15 +34,7 @@ export const FEATURES = [
     },
     {
         title: null,
-        description: 'Versatile Carry: Can be carried in the pocket or inside the waistband which provide comfortable and discreet options for everyday carry.',
-    },
-    {
-        title: null,
-        description: 'Self-Defense Ready: The point at the top is a SMACK CAP or striking surface. This offers an effective less-than-lethal force option when needed.',
-    },
-    {
-        title: null,
-        description: 'Efficient Capacity: Holds eight 38 special or 357 magnum, or nine 327 mag, ensuring you\'re always prepared. (357 has limited compatibility. Cartridges must not exceed 1.54 inches or 39.11mm in length. See <a href="/resources">Frequently Asked Questions</a> for additional information.)',
+        description: 'Efficient Capacity: Holds eight 38 special, eight 357 magnum, nine 327 magnum or 32 H&R magnum, ensuring you\'re always prepared.',
     },
     {
         title: null,

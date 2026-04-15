@@ -31,6 +31,35 @@ export default function Resources(): ReactElement {
                 <h4>The below resources provide an introduction to the use of the Revomag, as well as answers to commonly asked questions.</h4>
                 <div className={'collapsible-wrapper'}>
                     <CollapsibleSection
+                        title={'Best practices'}
+                        className={'resources-collapsible'}
+                        children={
+                            <ul>
+                                <li>
+                                    <p>During the loading process, push each cartridge straight back and not down on the nose of the cartridge. Pushing down could lead to rim-lock.</p>
+                                </li>
+                                <li>
+                                    <p>During the loading process, and once each cartridge is completely inserted, make sure to fully press the side tabs. This will drive the previous cartridge down and help the cartridges stack properly.</p>
+                                </li>
+                                <li>
+                                    <p>During the loading process, push each cartridge all the way to the back. Use the provided sight window in the back of the Revomag to ensure that the cartridges are tightly stacked in the back wall.</p>
+                                </li>
+                                <li>
+                                    <p>Use the provided sight window in the back to ensure that all cartridge rims are properly aligned. Each cartridge rim should be in front of the cartridge rim directly below it.</p>
+                                </li>
+                                <li>
+                                    <p>After the Revomag is loaded, the last cartridge will stick out of the top forward opening. Use this advanced cartridge as a guide into each chamber of the cylinder.</p>
+                                </li>
+                                <li>
+                                    <p>Keep the side-tabs fully pressed until the cartridge falls into the chamber of the cylinder. If the side-tabs are prematurely released, then you can “pluck” the cartridge out of the chamber of the cylinder before it is seated.</p>
+                                </li>
+                                <li>
+                                    <p>Make sure that the side tabs are fully pressed and fully released. This will provide each cartridge with the needed momentum to slide up the stainless steel ramp and into the ready position.</p>
+                                </li>
+                            </ul>
+                        }
+                    />
+                    <CollapsibleSection
                         title={'Frequently Asked Questions'}
                         className={'resources-collapsible'}
                         children={
@@ -112,35 +141,6 @@ export default function Resources(): ReactElement {
                                     </li>
                                 </ol>
                             </>
-                        }
-                    />
-                    <CollapsibleSection
-                        title={'Best practices'}
-                        className={'resources-collapsible'}
-                        children={
-                            <ul>
-                                <li>
-                                    <p>During the loading process, push each cartridge straight back and not down on the nose of the cartridge. Pushing down could lead to rim-lock.</p>
-                                </li>
-                                <li>
-                                    <p>During the loading process, and once each cartridge is completely inserted, make sure to fully press the side tabs. This will drive the previous cartridge down and help the cartridges stack properly.</p>
-                                </li>
-                                <li>
-                                    <p>During the loading process, push each cartridge all the way to the back. Use the provided sight window in the back of the Revomag to ensure that the cartridges are tightly stacked in the back wall.</p>
-                                </li>
-                                <li>
-                                    <p>Use the provided sight window in the back to ensure that all cartridge rims are properly aligned. Each cartridge rim should be in front of the cartridge rim directly below it.</p>
-                                </li>
-                                <li>
-                                    <p>After the Revomag is loaded, the last cartridge will stick out of the top forward opening. Use this advanced cartridge as a guide into each chamber of the cylinder.</p>
-                                </li>
-                                <li>
-                                    <p>Keep the side-tabs fully pressed until the cartridge falls into the chamber of the cylinder. If the side-tabs are prematurely released, then you can “pluck” the cartridge out of the chamber of the cylinder before it is seated.</p>
-                                </li>
-                                <li>
-                                    <p>Make sure that the side tabs are fully pressed and fully released. This will provide each cartridge with the needed momentum to slide up the stainless steel ramp and into the ready position.</p>
-                                </li>
-                            </ul>
                         }
                     />
                     <CollapsibleSection
