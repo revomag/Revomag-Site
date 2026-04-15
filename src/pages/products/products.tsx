@@ -58,25 +58,19 @@ export default function Products(): ReactElement {
                 <h2>Features:</h2>
                 <ul>
                     <li>
-                        <span>Secure Grip:</span> Textured stippling provides enhanced grip, ensuring steady handling even in challenging conditions.
+                        <span>Secure Grip:</span> Custom laser engraving enhances grip, ensuring steady handling even in challenging conditions.
                     </li>
                     <li>
                         Durable Construction: Made from tough nylon for long-lasting performance.
                     </li>
                     <li>
-                        Smooth &amp; Snag-Free: The clip has a rounded end which is snag free and ensures comfort and ease of use. It also has a flat black Cerakote finish which adds resilience.
+                        Smooth &amp; Snag-Free: The clip has a rounded end which is snag free and ensures comfort and ease of use.
                     </li>
                     <li>
                         Ambidextrous Design: Perfect for both left and right-handed users, offering flexibility and ease of use for everyone.
                     </li>
                     <li>
-                        Versatile Carry: Can be carried in the pocket or inside the waistband which provide comfortable and discreet options for everyday carry.
-                    </li>
-                    <li>
-                        Self-Defense Ready: The point at the top is a SMACK CAP or striking surface. This offers an effective less-than-lethal force option when needed.
-                    </li>
-                    <li>
-                        Efficient Capacity: Holds eight 38 special or 357 magnum, or nine 327 mag, ensuring you're always prepared. (357 has limited compatibility. Cartridges must not exceed 1.54 inches or 39.11mm in length. See <a href={'/resources'}>Frequently Asked Questions</a> for additional information.)
+                        Efficient Capacity: Holds eight 38 special, eight 357 magnum, nine 327 magnum or 32 H&R magnum, ensuring you're always prepared.
                     </li>
                     <li>
                         Safer Storage: Reduces lead exposure by 87% when compared to an 8 cartridge speed strip. This makes pocket storage cleaner and safer.
